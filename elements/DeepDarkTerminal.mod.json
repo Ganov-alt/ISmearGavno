@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:MysteriousCrust"
+      },
+      {
+        "value": "CUSTOM:MysteriousCrust"
+      },
+      {
+        "value": "CUSTOM:MysteriousCrust"
+      },
+      {
+        "value": "CUSTOM:DeepDarkTechnicBoard"
+      },
+      {
+        "value": "Blocks.ENDER_CHEST"
+      },
+      {
+        "value": "CUSTOM:DeepDarkTechnicBoard"
+      },
+      {
+        "value": "CUSTOM:MetalSheet"
+      },
+      {
+        "value": "CUSTOM:MetalSheet"
+      },
+      {
+        "value": "CUSTOM:MetalSheet"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DeepDarkTerminalMainBlock"
+    },
+    "name": "deep_dark_terminal",
+    "namespace": "mod"
+  }
+}

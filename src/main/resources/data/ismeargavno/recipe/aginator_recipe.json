@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "ismeargavno:time_fragment"
+    },
+    "b": {
+      "item": "minecraft:bookshelf"
+    }
+  },
+  "result": {
+    "id": "ismeargavno:aginator_block",
+    "count": 1
+  }
+}

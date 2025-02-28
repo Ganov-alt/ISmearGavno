@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "ded",
+    "cba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:redstone"
+    },
+    "b": {
+      "item": "minecraft:sculk"
+    },
+    "c": {
+      "item": "minecraft:iron_ingot"
+    },
+    "d": {
+      "item": "minecraft:sculk_vein"
+    },
+    "e": {
+      "item": "ismeargavno:under_ground_amalgam_item"
+    }
+  },
+  "result": {
+    "id": "ismeargavno:deep_dark_technic_board",
+    "count": 2
+  }
+}

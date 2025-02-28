@@ -1,0 +1,49 @@
+{
+  "_fv": 73,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Bionic Toes ",
+    "icon": "bionictoes",
+    "color": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "NEUTRAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredByMilk": false,
+    "isProtectedByTotem": false,
+    "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "ENTITY_GRAVITY"
+        },
+        "amount": 0.1,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "SAFE_FALL_DISTANCE"
+        },
+        "amount": 4.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "JUMP_STRENGTH"
+        },
+        "amount": 0.12,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "MOVEMENT_SPEED"
+        },
+        "amount": 0.005,
+        "operation": "ADD_VALUE"
+      }
+    ]
+  }
+}

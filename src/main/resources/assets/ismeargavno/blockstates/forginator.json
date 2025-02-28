@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ismeargavno:block/forginator"
+    },
+    "facing=east": {
+      "model": "ismeargavno:block/forginator",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ismeargavno:block/forginator",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ismeargavno:block/forginator",
+      "y": 270
+    }
+  }
+}

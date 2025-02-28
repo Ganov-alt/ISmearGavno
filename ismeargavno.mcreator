@@ -1,0 +1,3474 @@
+{
+  "mod_elements": [
+    {
+      "name": "Forginator",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forginator",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/item/forginator.json",
+          "src/main/resources/assets/ismeargavno/blockstates/forginator.json",
+          "src/main/java/net/mcreator/ismeargavno/block/ForginatorBlock.java",
+          "src/main/resources/assets/ismeargavno/models/block/forginator.json",
+          "src/main/resources/data/ismeargavno/loot_table/blocks/forginator.json",
+          "src/main/java/net/mcreator/ismeargavno/block/entity/ForginatorBlockEntity.java"
+        ]
+      },
+      "path": "~/Forginator"
+    },
+    {
+      "name": "ISmearGavno",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "i_smear_gavno",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "ForginatorRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forginator_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/forginator_recipe.json"
+        ]
+      },
+      "path": "~/Forginator"
+    },
+    {
+      "name": "ForginatorGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forginator_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/network/ForginatorGuiButtonMessage.java",
+          "src/main/java/net/mcreator/ismeargavno/client/gui/ForginatorGuiScreen.java",
+          "src/main/java/net/mcreator/ismeargavno/world/inventory/ForginatorGuiMenu.java"
+        ]
+      },
+      "path": "~/Forginator"
+    },
+    {
+      "name": "MysteriousCrust",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mysterious_crust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/item/mysterious_crust.json",
+          "src/main/java/net/mcreator/ismeargavno/item/MysteriousCrustItem.java"
+        ]
+      },
+      "path": "~/Forginator"
+    },
+    {
+      "name": "ForginatorSmelt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forginator_smelt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/ForginatorSmeltProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Forginator"
+    },
+    {
+      "name": "SilverFishScales",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silver_fish_scales",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/SilverFishScalesItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/silver_fish_scales.json"
+        ]
+      },
+      "path": "~/SilverFishScales"
+    },
+    {
+      "name": "SilverfishDrop",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silverfish_drop",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/SilverfishDropProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SilverFishScales"
+    },
+    {
+      "name": "UnderGroundAmalgamItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "under_ground_amalgam_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/UnderGroundAmalgamItemItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/under_ground_amalgam_item.json"
+        ]
+      },
+      "path": "~/SilverFishScales"
+    },
+    {
+      "name": "UndergroundAmalgam",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "underground_amalgam",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/underground_amalgam.json"
+        ]
+      },
+      "path": "~/SilverFishScales"
+    },
+    {
+      "name": "DeepDarkTechnicBoard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_dark_technic_board",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/item/deep_dark_technic_board.json",
+          "src/main/java/net/mcreator/ismeargavno/item/DeepDarkTechnicBoardItem.java"
+        ]
+      },
+      "path": "~/StorageEpic"
+    },
+    {
+      "name": "DeepDarkTechnicBoardRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_dark_technic_board_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/deep_dark_technic_board_recipe.json"
+        ]
+      },
+      "path": "~/StorageEpic"
+    },
+    {
+      "name": "HotDogRoller",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hot_dog_roller",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/blockstates/hot_dog_roller.json",
+          "src/main/java/net/mcreator/ismeargavno/block/HotDogRollerBlock.java",
+          "src/main/resources/assets/ismeargavno/models/block/hot_dog_roller_outer.json",
+          "src/main/java/net/mcreator/ismeargavno/block/entity/HotDogRollerBlockEntity.java",
+          "src/main/resources/data/ismeargavno/loot_table/blocks/hot_dog_roller.json",
+          "src/main/resources/assets/ismeargavno/models/item/hot_dog_roller.json",
+          "src/main/resources/assets/ismeargavno/models/block/hot_dog_roller.json",
+          "src/main/resources/assets/ismeargavno/models/block/hot_dog_roller_inner.json"
+        ]
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "SausageSeller",
+      "type": "villagerprofession",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sausage_seller",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/textures/entity/villager/profession/sausage_seller.png.mcmeta"
+        ]
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "Payot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "payot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/PayotItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/payot.json"
+        ]
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "GoldCoin",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_coin",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/item/gold_coin.json",
+          "src/main/java/net/mcreator/ismeargavno/item/GoldCoinItem.java"
+        ]
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "Jewliger",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jewliger",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/item/jewliger_spawn_egg.json",
+          "src/main/java/net/mcreator/ismeargavno/entity/JewligerEntity.java",
+          "src/main/java/net/mcreator/ismeargavno/client/renderer/JewligerRenderer.java"
+        ]
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "VillagerToJew",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "villager_to_jew",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/VillagerToJewProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "SuspiciousSausageCasing",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suspicious_sausage_casing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/SuspiciousSausageCasingItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/suspicious_sausage_casing.json"
+        ]
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "SlopPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slop_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/SlopPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "Slop",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slop",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/SlopItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/slop.json"
+        ]
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "SausageSellerTrade1",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sausage_seller_trade_1",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "HotDogRollerGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hot_dog_roller_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/network/HotDogRollerGuiButtonMessage.java",
+          "src/main/java/net/mcreator/ismeargavno/world/inventory/HotDogRollerGuiMenu.java",
+          "src/main/java/net/mcreator/ismeargavno/client/gui/HotDogRollerGuiScreen.java"
+        ]
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "OddSausage",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "odd_sausage",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/item/odd_sausage.json",
+          "src/main/java/net/mcreator/ismeargavno/item/OddSausageItem.java"
+        ]
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "HotdogMaker",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hotdog_maker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/HotdogMakerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "VeganSausageOnPlayerStoppedUsing",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vegan_sausage_on_player_stopped_using",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/VeganSausageOnPlayerStoppedUsingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "VeganSausage",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vegan_sausage",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/item/vegan_sausage.json",
+          "src/main/java/net/mcreator/ismeargavno/item/VeganSausageItem.java"
+        ]
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "MoneyHungrySausagePlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "money_hungry_sausage_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/MoneyHungrySausagePlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "MoneyHungrySausage",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "money_hungry_sausage",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/item/money_hungry_sausage.json",
+          "src/main/java/net/mcreator/ismeargavno/item/MoneyHungrySausageItem.java"
+        ]
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "GuildedSausagePlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guilded_sausage_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/GuildedSausagePlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "GuildedSausage",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guilded_sausage",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/item/guilded_sausage.json",
+          "src/main/java/net/mcreator/ismeargavno/item/GuildedSausageItem.java"
+        ]
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "CoinRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coin_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/coin_recipe.json"
+        ]
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "SausageStander",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sausage_stander",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/worldgen/structure_set/sausage_stander.json",
+          "src/main/resources/data/ismeargavno/worldgen/template_pool/sausage_stander.json",
+          "src/main/resources/data/ismeargavno/worldgen/structure/sausage_stander.json"
+        ]
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "SlopRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slop_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/slop_recipe.json"
+        ]
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "SausageCasingTooltip",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sausage_casing_tooltip",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "PayotTooltip",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "payot_tooltip",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "Guildedsausagetooltip",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guildedsausagetooltip",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "Oddsausagetooltip",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oddsausagetooltip",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "MoneyHungrtySausagetooltip",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "money_hungrty_sausagetooltip",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "VeganSausagetooltip",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vegan_sausagetooltip",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "Silverfishscaletooltip",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silverfishscaletooltip",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/SilverFishScales"
+    },
+    {
+      "name": "MysteriousCrustTooltip",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mysterious_crust_tooltip",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Forginator"
+    },
+    {
+      "name": "MoltenIronChunk",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "molten_iron_chunk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/MoltenIronChunkItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/molten_iron_chunk.json"
+        ]
+      },
+      "path": "~/Forginator"
+    },
+    {
+      "name": "MoltenIronChunkItemInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "molten_iron_chunk_item_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/MoltenIronChunkItemInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Forginator"
+    },
+    {
+      "name": "MoltenSheet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "molten_sheet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/item/molten_sheet.json",
+          "src/main/java/net/mcreator/ismeargavno/item/MoltenSheetItem.java"
+        ]
+      },
+      "path": "~/Forginator"
+    },
+    {
+      "name": "MoltenSheetItemInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "molten_sheet_item_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/MoltenSheetItemInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Forginator"
+    },
+    {
+      "name": "MoltenChunkToSheet",
+      "type": "anvilrecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "molten_chunk_to_sheet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/anvilrecipes/MoltenChunkToSheetAnvilRecipe.java"
+        ]
+      },
+      "path": "~/Forginator"
+    },
+    {
+      "name": "MetalSheet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metal_sheet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/MetalSheetItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/metal_sheet.json"
+        ]
+      },
+      "path": "~/Forginator"
+    },
+    {
+      "name": "MoltenSheetRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "molten_sheet_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/MoltenSheetRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Forginator"
+    },
+    {
+      "name": "DeepDarkTerminalMainBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_dark_terminal_main_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/block/DeepDarkTerminalMainBlockBlock.java",
+          "src/main/resources/data/ismeargavno/loot_table/blocks/deep_dark_terminal_main_block.json",
+          "src/main/java/net/mcreator/ismeargavno/block/entity/DeepDarkTerminalMainBlockBlockEntity.java",
+          "src/main/resources/assets/ismeargavno/models/item/deep_dark_terminal_main_block.json",
+          "src/main/resources/assets/ismeargavno/models/block/deep_dark_terminal_main_block.json",
+          "src/main/resources/assets/ismeargavno/blockstates/deep_dark_terminal_main_block.json"
+        ]
+      },
+      "path": "~/StorageEpic"
+    },
+    {
+      "name": "DeepDarkTerminal",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_dark_terminal",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/deep_dark_terminal.json"
+        ]
+      },
+      "path": "~/StorageEpic"
+    },
+    {
+      "name": "DeepDarkTerminalGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_dark_terminal_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/network/DeepDarkTerminalGuiButtonMessage.java",
+          "src/main/java/net/mcreator/ismeargavno/world/inventory/DeepDarkTerminalGuiMenu.java",
+          "src/main/java/net/mcreator/ismeargavno/client/gui/DeepDarkTerminalGuiScreen.java"
+        ]
+      },
+      "path": "~/StorageEpic"
+    },
+    {
+      "name": "DeepDarkTerminalButtonPress",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_dark_terminal_button_press",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/DeepDarkTerminalButtonPressProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/StorageEpic"
+    },
+    {
+      "name": "DeepDarkChip",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_dark_chip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/DeepDarkChipItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/deep_dark_chip.json"
+        ]
+      },
+      "path": "~/StorageEpic"
+    },
+    {
+      "name": "DeepDarkChipRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_dark_chip_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/deep_dark_chip_recipe.json"
+        ]
+      },
+      "path": "~/StorageEpic"
+    },
+    {
+      "name": "DeepDarkChipRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_dark_chip_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/DeepDarkChipRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/StorageEpic"
+    },
+    {
+      "name": "DeepDarkStorageUnit",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_dark_storage_unit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/block/entity/DeepDarkStorageUnitBlockEntity.java",
+          "src/main/resources/assets/ismeargavno/models/item/deep_dark_storage_unit.json",
+          "src/main/resources/assets/ismeargavno/blockstates/deep_dark_storage_unit.json",
+          "src/main/resources/data/ismeargavno/loot_table/blocks/deep_dark_storage_unit.json",
+          "src/main/resources/assets/ismeargavno/models/block/deep_dark_storage_unit.json",
+          "src/main/java/net/mcreator/ismeargavno/block/DeepDarkStorageUnitBlock.java"
+        ]
+      },
+      "path": "~/StorageEpic"
+    },
+    {
+      "name": "DeepDarkStorageUnitGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_dark_storage_unit_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/client/gui/DeepDarkStorageUnitGuiScreen.java",
+          "src/main/java/net/mcreator/ismeargavno/world/inventory/DeepDarkStorageUnitGuiMenu.java"
+        ]
+      },
+      "path": "~/StorageEpic"
+    },
+    {
+      "name": "PortalToBirthCanal",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal_to_birth_canal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/blockstates/portal_to_birth_canal.json",
+          "src/main/resources/data/ismeargavno/loot_table/blocks/portal_to_birth_canal.json",
+          "src/main/java/net/mcreator/ismeargavno/block/PortalToBirthCanalBlock.java",
+          "src/main/resources/assets/ismeargavno/models/block/portal_to_birth_canal.json",
+          "src/main/resources/data/ismeargavno/worldgen/configured_feature/portal_to_birth_canal.json",
+          "src/main/resources/data/ismeargavno/worldgen/placed_feature/portal_to_birth_canal.json",
+          "src/main/resources/assets/ismeargavno/models/item/portal_to_birth_canal.json",
+          "src/main/resources/data/ismeargavno/neoforge/biome_modifier/portal_to_birth_canal_biome_modifier.json"
+        ]
+      },
+      "path": "~/BirthCanal"
+    },
+    {
+      "name": "CanalWall",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "canal_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/block/canal_wall.json",
+          "src/main/java/net/mcreator/ismeargavno/block/CanalWallBlock.java",
+          "src/main/resources/assets/ismeargavno/blockstates/canal_wall.json",
+          "src/main/resources/data/ismeargavno/loot_table/blocks/canal_wall.json",
+          "src/main/resources/assets/ismeargavno/models/item/canal_wall.json"
+        ]
+      },
+      "path": "~/BirthCanal"
+    },
+    {
+      "name": "CanalBiome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "canal_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/worldgen/configured_feature/canal_biome_tree.json",
+          "src/main/resources/data/ismeargavno/worldgen/placed_feature/canal_biome_tree.json",
+          "src/main/resources/data/ismeargavno/worldgen/biome/canal_biome.json"
+        ]
+      },
+      "path": "~/BirthCanal"
+    },
+    {
+      "name": "BloodCrystal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_crystal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/BloodCrystalItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/blood_crystal.json"
+        ]
+      },
+      "path": "~/BirthCanal"
+    },
+    {
+      "name": "CrystalizedBlood",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystalized_blood",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/worldgen/configured_feature/crystalized_blood.json",
+          "src/main/resources/assets/ismeargavno/models/block/crystalized_blood.json",
+          "src/main/resources/data/ismeargavno/loot_table/blocks/crystalized_blood.json",
+          "src/main/resources/data/ismeargavno/neoforge/biome_modifier/crystalized_blood_biome_modifier.json",
+          "src/main/resources/data/ismeargavno/worldgen/placed_feature/crystalized_blood.json",
+          "src/main/resources/assets/ismeargavno/blockstates/crystalized_blood.json",
+          "src/main/resources/assets/ismeargavno/models/item/crystalized_blood.json",
+          "src/main/java/net/mcreator/ismeargavno/block/CrystalizedBloodBlock.java"
+        ]
+      },
+      "path": "~/BirthCanal"
+    },
+    {
+      "name": "TheBirthCanal",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_birth_canal",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/dimension_type/the_birth_canal.json",
+          "src/main/resources/data/ismeargavno/dimension/the_birth_canal.json",
+          "src/main/java/net/mcreator/ismeargavno/world/dimension/TheBirthCanalDimension.java"
+        ]
+      },
+      "path": "~/BirthCanal"
+    },
+    {
+      "name": "PortalToBirthCanalBlockDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal_to_birth_canal_block_destroyed_by_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/PortalToBirthCanalBlockDestroyedByPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/BirthCanal"
+    },
+    {
+      "name": "Baby",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baby",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/client/renderer/BabyRenderer.java",
+          "src/main/java/net/mcreator/ismeargavno/entity/BabyEntity.java",
+          "src/main/resources/assets/ismeargavno/models/item/baby_spawn_egg.json"
+        ]
+      },
+      "path": "~/BirthCanal"
+    },
+    {
+      "name": "ForsakenHeart",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forsaken_heart",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/ForsakenHeartItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/forsaken_heart.json"
+        ]
+      },
+      "path": "~/BirthCanal"
+    },
+    {
+      "name": "BeatingHeart",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beating_heart",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/item/beating_heart.json",
+          "src/main/java/net/mcreator/ismeargavno/item/BeatingHeartItem.java"
+        ]
+      },
+      "path": "~/BirthCanal"
+    },
+    {
+      "name": "Forsaken2BeatingHeart",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forsaken_2_beating_heart",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/forsaken_2_beating_heart.json"
+        ]
+      },
+      "path": "~/BirthCanal"
+    },
+    {
+      "name": "Enhancedstorageunitbloodgyu",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enhancedstorageunitbloodgyu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/world/inventory/EnhancedstorageunitbloodgyuMenu.java",
+          "src/main/java/net/mcreator/ismeargavno/client/gui/EnhancedstorageunitbloodgyuScreen.java"
+        ]
+      },
+      "path": "~/StorageEpic"
+    },
+    {
+      "name": "EnhancedStorageUnit",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enhanced_storage_unit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/block/EnhancedStorageUnitBlock.java",
+          "src/main/resources/data/ismeargavno/loot_table/blocks/enhanced_storage_unit.json",
+          "src/main/resources/assets/ismeargavno/blockstates/enhanced_storage_unit.json",
+          "src/main/resources/assets/ismeargavno/models/item/enhanced_storage_unit.json",
+          "src/main/java/net/mcreator/ismeargavno/block/entity/EnhancedStorageUnitBlockEntity.java",
+          "src/main/resources/assets/ismeargavno/models/block/enhanced_storage_unit.json"
+        ]
+      },
+      "path": "~/StorageEpic"
+    },
+    {
+      "name": "BionicToes",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bionic_toes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/BionicToesItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/bionic_toes_boots.json"
+        ]
+      },
+      "path": "~/Bionic Toes"
+    },
+    {
+      "name": "BionicToesAntiFall",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bionic_toes_anti_fall",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/potion/BionicToesAntiFallMobEffect.java"
+        ]
+      },
+      "path": "~/Bionic Toes"
+    },
+    {
+      "name": "BionicToesBootsTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bionic_toes_boots_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/BionicToesBootsTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Bionic Toes"
+    },
+    {
+      "name": "BionicToesRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bionic_toes_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/bionic_toes_recipe.json"
+        ]
+      },
+      "path": "~/Bionic Toes"
+    },
+    {
+      "name": "CurdledMilk",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curdled_milk",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/blockstates/curdled_milk.json",
+          "src/main/resources/assets/ismeargavno/models/item/curdled_milk.json",
+          "src/main/resources/assets/ismeargavno/models/block/curdled_milk.json",
+          "src/main/java/net/mcreator/ismeargavno/block/CurdledMilkBlock.java",
+          "src/main/resources/data/ismeargavno/loot_table/blocks/curdled_milk.json"
+        ]
+      },
+      "path": "~/Calcium Biome"
+    },
+    {
+      "name": "CalciumLand",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calcium_land",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/worldgen/biome/calcium_land.json"
+        ]
+      },
+      "path": "~/Calcium Biome"
+    },
+    {
+      "name": "BoneSpike",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bone_spike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/block/BoneSpikeBlock.java",
+          "src/main/resources/assets/ismeargavno/models/block/bone_spike_bottom.json",
+          "src/main/resources/assets/ismeargavno/blockstates/bone_spike.json",
+          "src/main/resources/data/ismeargavno/worldgen/placed_feature/bone_spike.json",
+          "src/main/resources/data/ismeargavno/loot_table/blocks/bone_spike.json",
+          "src/main/resources/data/ismeargavno/neoforge/biome_modifier/bone_spike_biome_modifier.json",
+          "src/main/resources/assets/ismeargavno/models/item/bone_spike.json",
+          "src/main/resources/data/ismeargavno/worldgen/configured_feature/bone_spike.json",
+          "src/main/resources/assets/ismeargavno/models/block/bone_spike.json"
+        ]
+      },
+      "path": "~/Calcium Biome"
+    },
+    {
+      "name": "CalciumRecombobulationModule",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calcium_recombobulation_module",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/block/calcium_recombobulation_module.json",
+          "src/main/resources/data/ismeargavno/loot_table/blocks/calcium_recombobulation_module.json",
+          "src/main/resources/assets/ismeargavno/models/item/calcium_recombobulation_module.json",
+          "src/main/java/net/mcreator/ismeargavno/block/entity/CalciumRecombobulationModuleBlockEntity.java",
+          "src/main/java/net/mcreator/ismeargavno/block/CalciumRecombobulationModuleBlock.java",
+          "src/main/resources/assets/ismeargavno/blockstates/calcium_recombobulation_module.json"
+        ]
+      },
+      "path": "~/Calcium Biome"
+    },
+    {
+      "name": "CalciumRecombShrine",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calcium_recomb_shrine",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/worldgen/template_pool/calcium_recomb_shrine.json",
+          "src/main/resources/data/ismeargavno/worldgen/structure_set/calcium_recomb_shrine.json",
+          "src/main/resources/data/ismeargavno/worldgen/structure/calcium_recomb_shrine.json"
+        ]
+      },
+      "path": "~/Calcium Biome"
+    },
+    {
+      "name": "CalciumRecombGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calcium_recomb_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/network/CalciumRecombGuiButtonMessage.java",
+          "src/main/java/net/mcreator/ismeargavno/world/inventory/CalciumRecombGuiMenu.java",
+          "src/main/java/net/mcreator/ismeargavno/client/gui/CalciumRecombGuiScreen.java"
+        ]
+      },
+      "path": "~/Calcium Biome"
+    },
+    {
+      "name": "CalciumRecombButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calcium_recomb_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/CalciumRecombButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Calcium Biome"
+    },
+    {
+      "name": "BlockHarvester",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_harvester",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/item/block_harvester.json",
+          "src/main/java/net/mcreator/ismeargavno/item/BlockHarvesterItem.java"
+        ]
+      },
+      "path": "~/Calcium Biome"
+    },
+    {
+      "name": "HotDogRollerPlayerStartsToDestroy",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hot_dog_roller_player_starts_to_destroy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/HotDogRollerPlayerStartsToDestroyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SausageStand"
+    },
+    {
+      "name": "CalciumRecombobulationModuleBlockDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calcium_recombobulation_module_block_destroyed_by_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/CalciumRecombobulationModuleBlockDestroyedByPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Calcium Biome"
+    },
+    {
+      "name": "BlockHarvesterRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_harvester_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/block_harvester_recipe.json"
+        ]
+      },
+      "path": "~/Calcium Biome"
+    },
+    {
+      "name": "BlockHarvesterInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_harvester_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Calcium Biome"
+    },
+    {
+      "name": "CALCIUMRecombInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calcium_recomb_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Calcium Biome"
+    },
+    {
+      "name": "ForsakenHeartInfo",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forsaken_heart_info",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/BirthCanal"
+    },
+    {
+      "name": "BirthCanalPortal",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birth_canal_portal",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/BirthCanal"
+    },
+    {
+      "name": "BabyContainmentChamber",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baby_containment_chamber",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/worldgen/structure_set/baby_containment_chamber.json",
+          "src/main/resources/data/ismeargavno/worldgen/structure/baby_containment_chamber.json",
+          "src/main/resources/data/ismeargavno/worldgen/template_pool/baby_containment_chamber.json"
+        ]
+      },
+      "path": "~/BirthCanal"
+    },
+    {
+      "name": "AginatorGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aginator_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/network/AginatorGuiButtonMessage.java",
+          "src/main/java/net/mcreator/ismeargavno/world/inventory/AginatorGuiMenu.java",
+          "src/main/java/net/mcreator/ismeargavno/client/gui/AginatorGuiScreen.java"
+        ]
+      },
+      "path": "~/Aginator"
+    },
+    {
+      "name": "AginatorBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aginator_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/block/AginatorBlockBlock.java",
+          "src/main/resources/assets/ismeargavno/models/block/aginator_block.json",
+          "src/main/resources/data/ismeargavno/loot_table/blocks/aginator_block.json",
+          "src/main/resources/assets/ismeargavno/models/item/aginator_block.json",
+          "src/main/java/net/mcreator/ismeargavno/block/entity/AginatorBlockBlockEntity.java",
+          "src/main/resources/assets/ismeargavno/blockstates/aginator_block.json"
+        ]
+      },
+      "path": "~/Aginator"
+    },
+    {
+      "name": "Dust",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dust",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/DustItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/dust.json"
+        ]
+      },
+      "path": "~/Aginator"
+    },
+    {
+      "name": "MalleableMilkCurdles",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "malleable_milk_curdles",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/item/malleable_milk_curdles.json",
+          "src/main/java/net/mcreator/ismeargavno/item/MalleableMilkCurdlesItem.java"
+        ]
+      },
+      "path": "~/Aginator"
+    },
+    {
+      "name": "AginatorProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aginator_proc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/AginatorProcProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Aginator"
+    },
+    {
+      "name": "AccelBioDomeBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accel_bio_dome_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/loot_table/blocks/accel_bio_dome_block.json",
+          "src/main/java/net/mcreator/ismeargavno/block/AccelBioDomeBlockBlock.java",
+          "src/main/resources/assets/ismeargavno/blockstates/accel_bio_dome_block.json",
+          "src/main/resources/assets/ismeargavno/models/item/accel_bio_dome_block.json",
+          "src/main/resources/assets/ismeargavno/models/block/accel_bio_dome_block.json"
+        ]
+      },
+      "path": "~/PocketDimension"
+    },
+    {
+      "name": "AccelBioDomeBlockBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accel_bio_dome_block_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/AccelBioDomeBlockBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PocketDimension"
+    },
+    {
+      "name": "AccelBioDomeBlockNeighbourBlockChanges",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accel_bio_dome_block_neighbour_block_changes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/AccelBioDomeBlockNeighbourBlockChangesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PocketDimension"
+    },
+    {
+      "name": "PocketDimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pocket_dimension",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/dimension/pocket_dimension.json",
+          "src/main/java/net/mcreator/ismeargavno/world/dimension/PocketDimensionDimension.java",
+          "src/main/resources/data/ismeargavno/dimension_type/pocket_dimension.json"
+        ]
+      },
+      "path": "~/PocketDimension"
+    },
+    {
+      "name": "GeneratedPocketXYZ",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generated_pocket_xyz",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/GeneratedPocketXYZProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PocketDimension"
+    },
+    {
+      "name": "PocketDimensionPlayerEntersDimension",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pocket_dimension_player_enters_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/PocketDimensionPlayerEntersDimensionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PocketDimension"
+    },
+    {
+      "name": "AccelBioDomeBlockOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accel_bio_dome_block_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/AccelBioDomeBlockOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PocketDimension"
+    },
+    {
+      "name": "AccelBioDomeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accel_bio_dome_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/accel_bio_dome_recipe.json"
+        ]
+      },
+      "path": "~/PocketDimension"
+    },
+    {
+      "name": "TimeFragment",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_fragment",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/item/time_fragment.json",
+          "src/main/java/net/mcreator/ismeargavno/item/TimeFragmentItem.java"
+        ]
+      },
+      "path": "~/Aginator"
+    },
+    {
+      "name": "EnderPearlTimeFrag",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_pearl_time_frag",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/EnderPearlTimeFragProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Aginator"
+    },
+    {
+      "name": "AginatorRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aginator_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/aginator_recipe.json"
+        ]
+      },
+      "path": "~/Aginator"
+    },
+    {
+      "name": "HealAndLuck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heal_and_luck",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/HealAndLuckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PocketDimension"
+    },
+    {
+      "name": "Homeless",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "homeless",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/client/renderer/HomelessRenderer.java",
+          "src/main/java/net/mcreator/ismeargavno/entity/HomelessEntity.java",
+          "src/main/resources/data/ismeargavno/neoforge/biome_modifier/homeless_biome_modifier.json",
+          "src/main/java/net/mcreator/ismeargavno/entity/HomelessEntityProjectile.java",
+          "src/main/resources/assets/ismeargavno/models/item/homeless_spawn_egg.json"
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "Faeces",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "faeces",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/FaecesItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/faeces.json"
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "FaecesPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "faeces_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/FaecesPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "UnrefinedWhippetPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unrefined_whippet_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/UnrefinedWhippetPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "UnrefinedWhippet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unrefined_whippet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/UnrefinedWhippetItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/unrefined_whippet.json"
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "ColouredWrapper",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coloured_wrapper",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/item/coloured_wrapper.json",
+          "src/main/java/net/mcreator/ismeargavno/item/ColouredWrapperItem.java"
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "Colouredwrappershredrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "colouredwrappershredrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/colouredwrappershredrecipe.json"
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "StarGasWrapper",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "star_gas_wrapper",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/StarGasWrapperItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/star_gas_wrapper.json"
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "StargaswrapperRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stargaswrapper_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/stargaswrapper_recipe.json"
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "StarGas",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "star_gas",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/item/star_gas.json",
+          "src/main/java/net/mcreator/ismeargavno/item/StarGasItem.java"
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "StarGasPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "star_gas_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/StarGasPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "LitBoofington",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lit_boofington",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/LitBoofingtonItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/lit_boofington.json"
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "LitBoofingtonPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lit_boofington_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/LitBoofingtonPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "ThatBoofington",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "that_boofington",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/ThatBoofingtonItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/that_boofington.json"
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "ThatBoofingtonPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "that_boofington_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/ThatBoofingtonPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "MakeStargas",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "make_stargas",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/make_stargas.json"
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "Grinder",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grinder",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/item/grinder.json",
+          "src/main/java/net/mcreator/ismeargavno/item/GrinderItem.java"
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "GrinderRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grinder_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/grinder_recipe.json"
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "GroundChorus",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ground_chorus",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/GroundChorusItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/ground_chorus.json"
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "ChorusGrind",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_grind",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/chorus_grind.json"
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "BoofingtonRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boofington_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/boofington_recipe.json"
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "HomelessGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "homeless_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/network/HomelessGuiButtonMessage.java",
+          "src/main/java/net/mcreator/ismeargavno/client/gui/HomelessGuiScreen.java",
+          "src/main/java/net/mcreator/ismeargavno/world/inventory/HomelessGuiMenu.java"
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "TradeForGoodies",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trade_for_goodies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/TradeForGoodiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "CreditCard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "credit_card",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/CreditCardItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/credit_card.json"
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "CreditCardRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "credit_card_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/credit_card_recipe.json"
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "CreditCardGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "credit_card_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/world/inventory/CreditCardGuiMenu.java",
+          "src/main/java/net/mcreator/ismeargavno/client/gui/CreditCardGuiScreen.java",
+          "src/main/java/net/mcreator/ismeargavno/network/CreditCardGuiButtonMessage.java"
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "CreditCardGuiTransfer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "credit_card_gui_transfer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/CreditCardGuiTransferProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "ATM",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atm",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/blockstates/atm.json",
+          "src/main/java/net/mcreator/ismeargavno/block/ATMBlock.java",
+          "src/main/resources/data/ismeargavno/loot_table/blocks/atm.json",
+          "src/main/resources/assets/ismeargavno/models/block/atm.json",
+          "src/main/resources/assets/ismeargavno/models/item/atm.json",
+          "src/main/java/net/mcreator/ismeargavno/block/entity/ATMBlockEntity.java"
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "ATMRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atm_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/atm_recipe.json"
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "HoboRoad",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hobo_road",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/worldgen/structure/hobo_road.json",
+          "src/main/resources/data/ismeargavno/worldgen/structure_set/hobo_road.json",
+          "src/main/resources/data/ismeargavno/worldgen/template_pool/hobo_road.json"
+        ]
+      },
+      "path": "~/HomlessAndGalaxyGas"
+    },
+    {
+      "name": "DankGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dank_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/client/gui/DankGuiScreen.java",
+          "src/main/java/net/mcreator/ismeargavno/world/inventory/DankGuiMenu.java",
+          "src/main/java/net/mcreator/ismeargavno/network/DankGuiButtonMessage.java"
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "Phone",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/item/phone.json",
+          "src/main/java/net/mcreator/ismeargavno/item/inventory/PhoneInventoryCapability.java",
+          "src/main/java/net/mcreator/ismeargavno/item/PhoneItem.java"
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "PhoneRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phone_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/PhoneRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "DankifyProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dankify_proc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/DankifyProcProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "MountainDew",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mountain_dew",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/MountainDewItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/mountain_dew.json"
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "MountainDewPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mountain_dew_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/MountainDewPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "DankPlayerRejoinProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dank_player_rejoin_proc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/DankPlayerRejoinProcProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "Upvote",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upvote",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/UpvoteItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/upvote.json"
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "UpvotePlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upvote_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/UpvotePlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "Downvote",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "downvote",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/DownvoteItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/downvote.json"
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "PhoneScrollingRig",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phone_scrolling_rig",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/block/phone_scrolling_rig_top.json",
+          "src/main/resources/data/ismeargavno/loot_table/blocks/phone_scrolling_rig.json",
+          "src/main/resources/assets/ismeargavno/models/block/phone_scrolling_rig_full.json",
+          "src/main/resources/assets/ismeargavno/models/item/phone_scrolling_rig.json",
+          "src/main/resources/assets/ismeargavno/blockstates/phone_scrolling_rig.json",
+          "src/main/resources/assets/ismeargavno/models/block/phone_scrolling_rig.json",
+          "src/main/java/net/mcreator/ismeargavno/block/entity/PhoneScrollingRigBlockEntity.java",
+          "src/main/java/net/mcreator/ismeargavno/block/PhoneScrollingRigBlock.java"
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "PhoneRigGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phone_rig_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/world/inventory/PhoneRigGuiMenu.java",
+          "src/main/java/net/mcreator/ismeargavno/network/PhoneRigGuiButtonMessage.java",
+          "src/main/java/net/mcreator/ismeargavno/client/gui/PhoneRigGuiScreen.java"
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "PhoneRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phone_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/phone_recipe.json"
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "MountaindewRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mountaindew_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/mountaindew_recipe.json"
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "PhonescrollingrigRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phonescrollingrig_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/phonescrollingrig_recipe.json"
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "Getdankbuttonpressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "getdankbuttonpressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/GetdankbuttonpressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "AnimeWaifu",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anime_waifu",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/painting_variant/anime_waifu.json"
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "PyramidFragment",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pyramid_fragment",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/PyramidFragmentItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/pyramid_fragment.json"
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "Redditor",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redditor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/entity/RedditorEntity.java",
+          "src/main/java/net/mcreator/ismeargavno/client/renderer/RedditorRenderer.java",
+          "src/main/resources/assets/ismeargavno/models/item/redditor_spawn_egg.json"
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "RedditorGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redditor_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/client/gui/RedditorGuiScreen.java",
+          "src/main/java/net/mcreator/ismeargavno/world/inventory/RedditorGuiMenu.java",
+          "src/main/java/net/mcreator/ismeargavno/network/RedditorGuiButtonMessage.java"
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "RedditorTradeRequestButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redditor_trade_request_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/RedditorTradeRequestButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "RedditorsDwelling",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redditors_dwelling",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/worldgen/structure/redditors_dwelling.json",
+          "src/main/resources/data/ismeargavno/worldgen/structure_set/redditors_dwelling.json",
+          "src/main/resources/data/ismeargavno/worldgen/template_pool/redditors_dwelling.json"
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "EyeScoop",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eye_scoop",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/EyeScoopItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/eye_scoop.json"
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "EyescoopRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eyescoop_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/eyescoop_recipe.json"
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "Eye",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eye",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/EyeItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/eye.json"
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "EyeScoopLivingEntityIsHitWithItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eye_scoop_living_entity_is_hit_with_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/EyeScoopLivingEntityIsHitWithItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "Illuminati",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "illuminati",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/item/illuminati.json",
+          "src/main/java/net/mcreator/ismeargavno/item/IlluminatiItem.java"
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "MakeIlluminati",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "make_illuminati",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/make_illuminati.json"
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "IlluminatiBeam",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "illuminati_beam",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/entity/IlluminatiBeamEntity.java"
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "IlluminatiPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "illuminati_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/IlluminatiPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "IlluminatiBeamProjectileHitsLivingEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "illuminati_beam_projectile_hits_living_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/IlluminatiBeamProjectileHitsLivingEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "IlluminatiBeamProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "illuminati_beam_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/IlluminatiBeamProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/DankMemes"
+    },
+    {
+      "name": "IlluminatiBeamWhileProjectileFlyingTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "illuminati_beam_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/IlluminatiBeamWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/DankMemes"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "Generated_pocket_xyz",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "Generated_pocket",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "Pocketx",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Pockety",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Pocketz",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "dankymerme",
+      "files": [
+        "super_mario_64_-_main_theme_music_-_bob-omb_battlefield"
+      ],
+      "category": "music",
+      "subtitle": "Danky Song Plays"
+    },
+    {
+      "name": "momgetthecamera",
+      "files": [
+        "mom-get-the-camera"
+      ],
+      "category": "music",
+      "subtitle": "Mom gets the camera"
+    },
+    {
+      "name": "spongebobstank",
+      "files": [
+        "sponge-stank-noise_1"
+      ],
+      "category": "music",
+      "subtitle": "Stinky"
+    }
+  ],
+  "tag_elements": {
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:DeepDarkTerminalMainBlock"
+    ],
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CUSTOM:CrystalizedBlood",
+      "~CUSTOM:PortalToBirthCanal"
+    ],
+    "BLOCKS:minecraft:mineable/hoe": [
+      "~CUSTOM:CanalWall",
+      "~CUSTOM:PortalToBirthCanal"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:Illuminati",
+      "~CUSTOM:EyeScoop",
+      "~CUSTOM:Grinder",
+      "~CUSTOM:LitBoofington"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:BlockHarvester"
+    ],
+    "ITEMS:minecraft:fuel": [
+      "Blocks.LOG#0",
+      "Blocks.LOG#1",
+      "Blocks.LOG#2",
+      "Blocks.LOG#3",
+      "Blocks.LOG2#0",
+      "Blocks.LOG2#1",
+      "Blocks.MANGROVE_LOG",
+      "Blocks.CHERRY_LOG",
+      "Blocks.STRIPPED_OAK_LOG",
+      "Blocks.STRIPPED_SPRUCE_LOG",
+      "Blocks.STRIPPED_BIRCH_LOG",
+      "Blocks.STRIPPED_JUNGLE_LOG",
+      "Blocks.STRIPPED_ACACIA_LOG",
+      "Blocks.STRIPPED_DARK_OAK_LOG",
+      "Blocks.STRIPPED_MANGROVE_LOG",
+      "Blocks.STRIPPED_CHERRY_LOG",
+      "Blocks.OAK_WOOD",
+      "Blocks.SPRUCE_WOOD",
+      "Blocks.BIRCH_WOOD",
+      "Blocks.JUNGLE_WOOD",
+      "Blocks.ACACIA_WOOD",
+      "Blocks.DARK_OAK_WOOD",
+      "Blocks.MANGROVE_WOOD",
+      "Blocks.CHERRY_WOOD",
+      "Blocks.STRIPPED_OAK_WOOD",
+      "Blocks.STRIPPED_SPRUCE_WOOD",
+      "Blocks.STRIPPED_BIRCH_WOOD",
+      "Blocks.STRIPPED_JUNGLE_WOOD",
+      "Blocks.STRIPPED_ACACIA_WOOD",
+      "Blocks.STRIPPED_DARK_OAK_WOOD",
+      "Blocks.STRIPPED_MANGROVE_WOOD",
+      "Blocks.STRIPPED_CHERRY_WOOD"
+    ],
+    "ITEMS:minecraft:meat": [
+      "~CUSTOM:GuildedSausage",
+      "~CUSTOM:OddSausage"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.COBBLESTONE",
+      "~CUSTOM:CanalWall"
+    ],
+    "ITEMS:forge:dyes": [
+      "Items.DYE#0",
+      "Items.DYE#1",
+      "Items.DYE#2",
+      "Items.DYE#3",
+      "Items.DYE#4",
+      "Items.DYE#5",
+      "Items.DYE#6",
+      "Items.DYE#7",
+      "Items.DYE#8",
+      "Items.DYE#9",
+      "Items.DYE#10",
+      "Items.DYE#11",
+      "Items.DYE#12",
+      "Items.DYE#13",
+      "Items.DYE#14",
+      "Items.DYE#15",
+      "Items.DYE#16",
+      "Items.DYE#17",
+      "Items.DYE#18",
+      "Items.DYE#19"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:ATM",
+      "~CUSTOM:EnhancedStorageUnit",
+      "~CUSTOM:CrystalizedBlood",
+      "~CUSTOM:DeepDarkStorageUnit",
+      "~CUSTOM:DeepDarkTerminalMainBlock",
+      "~CUSTOM:Forginator"
+    ],
+    "BIOMES:minecraft:has_structure/nether_fossil": [
+      "~CUSTOM:CalciumLand"
+    ],
+    "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:PhoneScrollingRig"
+    ],
+    "ITEMS:minecraft:fuelplanks": [
+      "Blocks.PLANKS#0",
+      "Blocks.PLANKS#1",
+      "Blocks.PLANKS#2",
+      "Blocks.PLANKS#3",
+      "Blocks.PLANKS#4",
+      "Blocks.PLANKS#5",
+      "Blocks.MANGROVE_PLANKS",
+      "Blocks.CHERRY_PLANKS",
+      "Blocks.BAMBOO_PLANKS"
+    ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:CurdledMilk"
+    ],
+    "ITEMS:minecraft:fuelcoal": [
+      "Blocks.COAL_BLOCK",
+      "Items.COAL#0",
+      "Items.COAL#1"
+    ],
+    "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:HotDogRoller"
+    ],
+    "ITEMS:minecraft:vegansausageinsides": [
+      "Blocks.REEDS",
+      "Blocks.SAPLING#0",
+      "Blocks.SAPLING#1",
+      "Blocks.SAPLING#2",
+      "Blocks.SAPLING#3",
+      "Blocks.SAPLING#4",
+      "Blocks.SAPLING#5",
+      "Blocks.MANGROVE_PROPAGULE",
+      "Blocks.CHERRY_SAPLING",
+      "Blocks.LEAVES#0",
+      "Blocks.LEAVES#1",
+      "Blocks.LEAVES#2",
+      "Blocks.LEAVES#3",
+      "Blocks.LEAVES2#0",
+      "Blocks.LEAVES2#1",
+      "Blocks.MANGROVE_LEAVES",
+      "Blocks.AZALEA_LEAVES",
+      "Blocks.TALLGRASS#1",
+      "Blocks.TALLGRASS#2",
+      "Blocks.DOUBLE_PLANT#2",
+      "Blocks.WHEAT",
+      "Items.WHEAT_SEEDS",
+      "Items.WHEAT",
+      "Items.PUMPKIN_SEEDS",
+      "Items.TORCHFLOWER_SEEDS",
+      "Items.PITCHER_POD",
+      "Items.DRIED_KELP",
+      "Items.BEETROOT",
+      "Items.BEETROOT_SEEDS",
+      "Items.NETHER_WART"
+    ],
+    "ENTITIES:minecraft:jewliger": [
+      "CUSTOM:Jewliger"
+    ],
+    "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:BionicToes.boots"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "entity.ismeargavno.baby": "Baby",
+      "painting.ismeargavno.anime_waifu.author": "Ganov",
+      "gui.ismeargavno.homeless_gui.tooltip_coins": "Credit Card",
+      "item.ismeargavno.deep_dark_chip": "Deep Dark Chip",
+      "gui.ismeargavno.calcium_recomb_gui.tooltip_insert_bone_blocks": "Insert Bone Blocks",
+      "subtitles.dankymerme": "Danky Song Plays",
+      "gui.ismeargavno.phone_rig_gui.button_start": "Start",
+      "item.ismeargavno.mountain_dew": "Mountain Dew",
+      "subtitles.momgetthecamera": "Mom gets the camera",
+      "block.ismeargavno.phone_scrolling_rig": "Phone Scrolling Rig",
+      "item.ismeargavno.block_harvester.description_0": "Can break most items with a gui in structures",
+      "item_group.ismeargavno.i_smear_gavno": "I Smear Gavno",
+      "item.ismeargavno.bionic_toes_boots": "Bionic Toes Boots",
+      "entity.ismeargavno.jewliger": "Jewliger",
+      "block.ismeargavno.canal_wall": "Canal Wall",
+      "jei.ismeargavno.guildedsausagetooltip": "made with 1 sausage casing, 1 slop and a golden apple in the hot dog stand",
+      "item.ismeargavno.lit_boofington": "Lit Boofington",
+      "item.ismeargavno.deep_dark_technic_board": "Deep Dark Technic Board",
+      "block.ismeargavno.accel_bio_dome_block": "Biodome",
+      "item.ismeargavno.bionic_toes_boots.description_0": "Makes you faster and let you fall further at the cost of being extra heavy",
+      "block.ismeargavno.hot_dog_roller": "Hot Dog Roller",
+      "item.ismeargavno.molten_iron_chunk": "Molten Iron Chunk",
+      "block.ismeargavno.aginator_block": "Aginator",
+      "item.ismeargavno.forsaken_heart": "Forsaken Heart",
+      "item.ismeargavno.unrefined_whippet": "Unrefined Whippet",
+      "item.ismeargavno.vegan_sausage": "Vegan Sausage",
+      "gui.ismeargavno.forginator_gui.label_forginator": "Forginator",
+      "item.ismeargavno.guilded_sausage": "Guilded Sausage",
+      "jei.ismeargavno.calcium_recomb_info": "Can only be broken with a block harvester and can be used to recycle 2 bone blocks into mysterious crust and random goodies",
+      "item.ismeargavno.money_hungry_sausage": "Money Hungry Sausage",
+      "entity.minecraft.villager.ismeargavno.sausage_seller": "Sausage Seller",
+      "item.ismeargavno.under_ground_amalgam_item": "Underground Amalgam",
+      "item.ismeargavno.silver_fish_scales": "Silver Fish Scales",
+      "gui.ismeargavno.redditor_gui.label_you_recieve_money": "You recieve (money)",
+      "item.ismeargavno.suspicious_sausage_casing": "Suspicious Sausage Casing",
+      "jei.ismeargavno.vegan_sausagetooltip": "made with 15 organic matter (grass, flowers, leaves, wheat, etc...) and 1 sausage casing in the hot dog stand",
+      "entity.ismeargavno.homeless": "Hobo",
+      "item.ismeargavno.baby_spawn_egg": "Baby Spawn Egg",
+      "gui.ismeargavno.hot_dog_roller_gui.label_hotdog_roller": "Hotdog Roller",
+      "gui.ismeargavno.homeless_gui.BuyStargas": "Buy Stargas",
+      "effect.ismeargavno.bionic_toes_anti_fall": "Bionic Toes ",
+      "item.ismeargavno.faeces": "Faeces",
+      "item.ismeargavno.eye_scoop": "Eyescoop",
+      "gui.ismeargavno.calcium_recomb_gui.label_bone_recombobulinator": "Bone Recombobulinator",
+      "block.ismeargavno.deep_dark_terminal_main_block": "Deep Dark Terminal",
+      "gui.ismeargavno.homeless_gui.tooltip_192": "192",
+      "item.ismeargavno.star_gas": "Star Gas",
+      "entity.ismeargavno.redditor": "Redditor",
+      "jei.ismeargavno.money_hungrty_sausagetooltip": "made with 1 payot, 1 slop and 1 sausage casing in the hot dog stand",
+      "item.ismeargavno.blood_crystal": "Blood Crystal Fragment",
+      "block.ismeargavno.enhanced_storage_unit": "Enhanced Storage Unit",
+      "gui.ismeargavno.deep_dark_terminal_gui.button_find": "Find",
+      "jei.ismeargavno.sausage_casing_tooltip": "Gotten by shearing a villager",
+      "gui.ismeargavno.forginator_gui.tooltip_logs": "logs",
+      "biome.ismeargavno.canal_biome": "Canal Biome",
+      "gui.ismeargavno.redditor_gui.button_trade_alert": "TRADE ALERT!",
+      "gui.ismeargavno.hot_dog_roller_gui.button_cook": "Cook",
+      "gui.ismeargavno.forginator_gui.button_smelt": "Smelt",
+      "item.ismeargavno.gold_coin": "Gold Coin",
+      "item.ismeargavno.payot": "Payot",
+      "gui.ismeargavno.calcium_recomb_gui.button_proccess": "Proccess",
+      "gui.ismeargavno.hot_dog_roller_gui.tooltip_flavour_enhancments_optional": "Flavour enhancments (optional)",
+      "item.ismeargavno.that_boofington": "Chorus Boofington",
+      "subtitles.spongebobstank": "Stinky",
+      "item.ismeargavno.homeless_spawn_egg": "Hobo Spawn Egg",
+      "item.ismeargavno.grinder": "Grinder",
+      "gui.ismeargavno.homeless_gui.BuyStagas": "Buy Star gas",
+      "block.ismeargavno.curdled_milk": "Curdled Milk",
+      "item.ismeargavno.phone": "Phone",
+      "item.ismeargavno.eye": "Sacrificial Eye",
+      "block.ismeargavno.forginator": "Forginator",
+      "block.ismeargavno.portal_to_birth_canal": "Portal To Birth Canal",
+      "gui.ismeargavno.aginator_gui.button_ageify": "Ageify",
+      "item.ismeargavno.mysterious_crust": "Mysterious Crust",
+      "biome.ismeargavno.calcium_land": "Calcium Land",
+      "gui.ismeargavno.aginator_gui.AgifyTimeDisplay": "Time",
+      "gui.ismeargavno.homeless_gui.tooltip_224": "224",
+      "block.ismeargavno.deep_dark_storage_unit": "Deep Dark Storage Unit",
+      "jei.ismeargavno.mysterious_crust_tooltip": "obtained as a byproduct of using the forginator",
+      "jei.ismeargavno.birth_canal_portal": "This is a portal to the birth canal dimension, do be warned bring a hoe because you might be teleported into the ground which is fastest broken with a hoe",
+      "item.ismeargavno.ground_chorus": "Ground Chorus",
+      "item.ismeargavno.illuminati": "Illuminati",
+      "item.ismeargavno.slop": "Slop",
+      "jei.ismeargavno.silverfishscaletooltip": "obtained by killing a silverfish",
+      "jei.ismeargavno.payot_tooltip": "gotten by killing the Sausagecasingless Villager",
+      "item.ismeargavno.redditor_spawn_egg": "Redditor Spawn Egg",
+      "gui.ismeargavno.aginator_gui.label_time": "Time",
+      "gui.ismeargavno.homeless_gui.button_trade": "trade",
+      "item.ismeargavno.coloured_wrapper": "Shred of coloured wrapper",
+      "item.ismeargavno.odd_sausage": "Odd Sausage",
+      "item.ismeargavno.downvote": "Downvote",
+      "block.ismeargavno.atm": "ATM",
+      "item.ismeargavno.malleable_milk_curdles": "Malleable Milk Curdles",
+      "jei.ismeargavno.block_harvester_info": "Be aware that for some reason on the last use it doesnt drop the block",
+      "item.ismeargavno.star_gas_wrapper": "Star Gas Wrapper",
+      "gui.ismeargavno.homeless_gui.tooltip_64": "64",
+      "item.ismeargavno.upvote": "Upvote",
+      "block.ismeargavno.crystalized_blood": "Crystalized Blood",
+      "gui.ismeargavno.homeless_gui.BuyBoofington": "Buy Boofington ",
+      "item.ismeargavno.pyramid_fragment": "Pyramid Fragment",
+      "gui.ismeargavno.redditor_gui.label_i_recieve": "I recieve (Reddit karma)",
+      "gui.ismeargavno.credit_card_gui.button_transfer": "Transfer",
+      "gui.ismeargavno.redditor_gui.button_what_do_you_have_to_offer": "What Do You Have To Offer?",
+      "item.ismeargavno.metal_sheet": "Metal Sheet",
+      "item.ismeargavno.beating_heart": "Beating Heart",
+      "item.ismeargavno.molten_sheet": "Molten Sheet",
+      "block.ismeargavno.calcium_recombobulation_module": "Calcium Recombobulation Module",
+      "gui.ismeargavno.dank_gui.button_dankify": "Dankify!!",
+      "item.ismeargavno.time_fragment": "Time Fragment",
+      "gui.ismeargavno.credit_card_gui.Balance": "Balance",
+      "item.ismeargavno.block_harvester": "Block Harvester",
+      "item.ismeargavno.jewliger_spawn_egg": "Jewliger Spawn Egg",
+      "jei.ismeargavno.forsaken_heart_info": "Aquired by killing the baby in the birth canal dimension and is used in the crafting process of the enhanced storage unit",
+      "painting.ismeargavno.anime_waifu.title": "Anime Waifus",
+      "jei.ismeargavno.oddsausagetooltip": "made with 1 slop and 1 sausage casing in the hot dog stand",
+      "gui.ismeargavno.homeless_gui.BuyFaeces": "Buy Faeces",
+      "item.ismeargavno.credit_card": "Credit Card",
+      "gui.ismeargavno.phone_rig_gui.button_get_dank": "Get Dank",
+      "block.ismeargavno.bone_spike": "Bone Spike",
+      "item.ismeargavno.dust": "Dust"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Forginator",
+        "children": []
+      },
+      {
+        "name": "SilverFishScales",
+        "children": []
+      },
+      {
+        "name": "SausageStand",
+        "children": []
+      },
+      {
+        "name": "StorageEpic",
+        "children": []
+      },
+      {
+        "name": "BirthCanal",
+        "children": []
+      },
+      {
+        "name": "Bionic Toes",
+        "children": []
+      },
+      {
+        "name": "Calcium Biome",
+        "children": []
+      },
+      {
+        "name": "Aginator",
+        "children": []
+      },
+      {
+        "name": "PocketDimension",
+        "children": []
+      },
+      {
+        "name": "HomlessAndGalaxyGas",
+        "children": []
+      },
+      {
+        "name": "DankMemes",
+        "children": []
+      },
+      {
+        "name": "PortalGun",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "ismeargavno",
+    "modName": "ISmearGavno",
+    "version": "1.0.0",
+    "author": "ivank, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib",
+      "jei"
+    ],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.ismeargavno"
+  },
+  "mcreatorVersion": 202400452410
+}

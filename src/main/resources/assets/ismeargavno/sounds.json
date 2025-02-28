@@ -1,0 +1,29 @@
+{
+  "dankymerme": {
+    "subtitle": "subtitles.dankymerme",
+    "sounds": [
+      {
+        "name": "ismeargavno:super_mario_64_-_main_theme_music_-_bob-omb_battlefield",
+        "stream": true
+      }
+    ]
+  },
+  "momgetthecamera": {
+    "subtitle": "subtitles.momgetthecamera",
+    "sounds": [
+      {
+        "name": "ismeargavno:mom-get-the-camera",
+        "stream": true
+      }
+    ]
+  },
+  "spongebobstank": {
+    "subtitle": "subtitles.spongebobstank",
+    "sounds": [
+      {
+        "name": "ismeargavno:sponge-stank-noise_1",
+        "stream": true
+      }
+    ]
+  }
+}

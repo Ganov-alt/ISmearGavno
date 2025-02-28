@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "ismeargavno:block/phonerigside",
+    "bottom": "ismeargavno:block/phonerigside",
+    "top": "ismeargavno:block/phonerigtop",
+    "side": "ismeargavno:block/phonerigside"
+  },
+  "render_type": "solid"
+}

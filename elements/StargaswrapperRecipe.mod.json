@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MalleableMilkCurdles"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ColouredWrapper"
+      },
+      {
+        "value": "CUSTOM:MalleableMilkCurdles"
+      },
+      {
+        "value": "CUSTOM:ColouredWrapper"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MalleableMilkCurdles"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:StarGasWrapper"
+    },
+    "name": "stargaswrapper_recipe",
+    "namespace": "mod"
+  }
+}

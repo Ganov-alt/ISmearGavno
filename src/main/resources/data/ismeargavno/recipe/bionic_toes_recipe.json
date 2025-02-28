@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "b b"
+  ],
+  "key": {
+    "a": {
+      "item": "ismeargavno:deep_dark_technic_board"
+    },
+    "b": {
+      "item": "ismeargavno:metal_sheet"
+    }
+  },
+  "result": {
+    "id": "ismeargavno:bionic_toes_boots",
+    "count": 1
+  }
+}

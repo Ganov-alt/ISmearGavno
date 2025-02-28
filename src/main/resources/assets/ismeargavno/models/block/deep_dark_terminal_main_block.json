@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ismeargavno:block/deepdarkterminaltop",
+    "up": "ismeargavno:block/deepdarkterminaltop",
+    "north": "ismeargavno:block/deepdarkterminalfront",
+    "east": "ismeargavno:block/deepdarkterminalback",
+    "south": "ismeargavno:block/deepdarkterminalback",
+    "west": "ismeargavno:block/deepdarkterminalback",
+    "particle": "ismeargavno:block/deepdarkterminaltop"
+  },
+  "render_type": "solid"
+}

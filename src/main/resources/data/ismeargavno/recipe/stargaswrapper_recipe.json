@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bab",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "ismeargavno:malleable_milk_curdles"
+    },
+    "b": {
+      "item": "ismeargavno:coloured_wrapper"
+    }
+  },
+  "result": {
+    "id": "ismeargavno:star_gas_wrapper",
+    "count": 1
+  }
+}

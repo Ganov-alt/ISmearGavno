@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bbb",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:paper"
+    },
+    "b": {
+      "item": "ismeargavno:ground_chorus"
+    }
+  },
+  "result": {
+    "id": "ismeargavno:that_boofington",
+    "count": 1
+  }
+}

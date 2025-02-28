@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ismeargavno:block/deep_dark_terminal_main_block"
+    },
+    "facing=east": {
+      "model": "ismeargavno:block/deep_dark_terminal_main_block",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ismeargavno:block/deep_dark_terminal_main_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ismeargavno:block/deep_dark_terminal_main_block",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    "ccc"
+  ],
+  "key": {
+    "a": {
+      "item": "ismeargavno:blood_crystal"
+    },
+    "b": {
+      "item": "ismeargavno:forsaken_heart"
+    },
+    "c": {
+      "tag": "minecraft:small_flowers"
+    }
+  },
+  "result": {
+    "id": "ismeargavno:beating_heart",
+    "count": 1
+  }
+}

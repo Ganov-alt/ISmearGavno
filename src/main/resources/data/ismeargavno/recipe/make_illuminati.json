@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    " b ",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "ismeargavno:eye"
+    },
+    "b": {
+      "item": "ismeargavno:pyramid_fragment"
+    },
+    "c": {
+      "item": "ismeargavno:beating_heart"
+    }
+  },
+  "result": {
+    "id": "ismeargavno:illuminati",
+    "count": 1
+  }
+}

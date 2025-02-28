@@ -1,0 +1,14 @@
+{
+  "_fv": 73,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:CalciumRecombobulationModule"
+      }
+    ],
+    "information": [
+      "Can only be broken with a block harvester and can be used to recycle 2 bone blocks into mysterious crust and random goodies"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "river",
+    "mushroom_fields",
+    "sunflower_plains"
+  ],
+  "features": "ismeargavno:portal_to_birth_canal",
+  "step": "underground_ores"
+}

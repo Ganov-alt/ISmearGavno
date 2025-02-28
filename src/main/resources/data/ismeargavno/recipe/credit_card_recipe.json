@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "ismeargavno:gold_coin"
+    },
+    "b": {
+      "item": "ismeargavno:metal_sheet"
+    },
+    "c": {
+      "item": "ismeargavno:malleable_milk_curdles"
+    }
+  },
+  "result": {
+    "id": "ismeargavno:credit_card",
+    "count": 1
+  }
+}

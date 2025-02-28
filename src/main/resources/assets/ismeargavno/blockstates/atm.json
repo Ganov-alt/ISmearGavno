@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ismeargavno:block/atm"
+    },
+    "facing=east": {
+      "model": "ismeargavno:block/atm",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ismeargavno:block/atm",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ismeargavno:block/atm",
+      "y": 270
+    }
+  }
+}

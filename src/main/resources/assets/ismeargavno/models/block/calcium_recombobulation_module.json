@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ismeargavno:block/calciumrecombobulatormodule",
+    "up": "ismeargavno:block/calciumrecombobulatormodule",
+    "north": "ismeargavno:block/calciumrecombobulationmodule",
+    "east": "ismeargavno:block/calciumrecombobulationmodule",
+    "south": "ismeargavno:block/calciumrecombobulationmodule",
+    "west": "ismeargavno:block/calciumrecombobulationmodule",
+    "particle": "ismeargavno:block/calciumrecombobulatormodule"
+  },
+  "render_type": "solid"
+}

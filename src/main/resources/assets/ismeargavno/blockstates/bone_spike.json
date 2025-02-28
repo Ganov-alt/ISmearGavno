@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "ismeargavno:block/bone_spike"
+    },
+    "half=lower": {
+      "model": "ismeargavno:block/bone_spike_bottom"
+    }
+  }
+}

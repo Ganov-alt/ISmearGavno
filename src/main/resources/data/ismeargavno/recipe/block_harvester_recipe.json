@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:conduit"
+    },
+    "b": {
+      "item": "ismeargavno:metal_sheet"
+    }
+  },
+  "result": {
+    "id": "ismeargavno:block_harvester",
+    "count": 1
+  }
+}

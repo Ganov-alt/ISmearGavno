@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:MysteriousCrust"
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      },
+      {
+        "value": "CUSTOM:MysteriousCrust"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DeepDarkTechnicBoard"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DeepDarkChip"
+    },
+    "name": "deep_dark_chip_recipe",
+    "namespace": "mod"
+  }
+}

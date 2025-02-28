@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ismeargavno:block/phone_scrolling_rig"
+    },
+    "type=top": {
+      "model": "ismeargavno:block/phone_scrolling_rig_top"
+    },
+    "type=double": {
+      "model": "ismeargavno:block/phone_scrolling_rig_full"
+    }
+  }
+}

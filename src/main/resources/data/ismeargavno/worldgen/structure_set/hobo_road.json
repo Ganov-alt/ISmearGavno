@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "ismeargavno:hobo_road",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 25,
+    "separation": 2,
+    "salt": 1150589198
+  }
+}

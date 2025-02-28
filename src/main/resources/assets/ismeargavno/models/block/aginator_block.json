@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ismeargavno:block/aginatortop",
+    "up": "ismeargavno:block/aginatortop",
+    "north": "ismeargavno:block/aginatorside",
+    "east": "ismeargavno:block/aginatorside",
+    "south": "ismeargavno:block/aginatorside",
+    "west": "ismeargavno:block/aginatorside",
+    "particle": "ismeargavno:block/aginatortop"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ismeargavno:block/curdledmilk",
+    "up": "ismeargavno:block/curdledmilk",
+    "north": "ismeargavno:block/curdledmilk",
+    "east": "ismeargavno:block/curdledmilk",
+    "south": "ismeargavno:block/curdledmilk",
+    "west": "ismeargavno:block/curdledmilk",
+    "particle": "ismeargavno:block/curdledmilk"
+  },
+  "render_type": "solid"
+}

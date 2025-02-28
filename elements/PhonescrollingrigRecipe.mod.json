@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.REDSTONE_TORCH"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.REDSTONE_TORCH"
+      },
+      {
+        "value": "CUSTOM:DeepDarkTechnicBoard"
+      },
+      {
+        "value": "CUSTOM:MetalSheet"
+      },
+      {
+        "value": "CUSTOM:DeepDarkTechnicBoard"
+      },
+      {
+        "value": "Blocks.COPPER_BLOCK"
+      },
+      {
+        "value": "Items.COMPARATOR"
+      },
+      {
+        "value": "Blocks.COPPER_BLOCK"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PhoneScrollingRig"
+    },
+    "name": "phonescrollingrig_recipe",
+    "namespace": "mod"
+  }
+}

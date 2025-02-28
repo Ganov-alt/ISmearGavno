@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "ccc"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:glass"
+    },
+    "b": {
+      "item": "ismeargavno:under_ground_amalgam_item"
+    },
+    "c": {
+      "tag": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "id": "ismeargavno:accel_bio_dome_block",
+    "count": 1
+  }
+}

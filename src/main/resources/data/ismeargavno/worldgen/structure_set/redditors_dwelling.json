@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "ismeargavno:redditors_dwelling",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 27,
+    "separation": 2,
+    "salt": 50758579
+  }
+}

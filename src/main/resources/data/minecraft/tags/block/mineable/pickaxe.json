@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "ismeargavno:atm",
+    "ismeargavno:enhanced_storage_unit",
+    "ismeargavno:crystalized_blood",
+    "ismeargavno:deep_dark_storage_unit",
+    "ismeargavno:deep_dark_terminal_main_block",
+    "ismeargavno:forginator"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 2,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "Items.CHORUS_FRUIT_POPPED"
+      },
+      {
+        "value": "Items.CHORUS_FRUIT_POPPED"
+      },
+      {
+        "value": "Items.CHORUS_FRUIT_POPPED"
+      },
+      {
+        "value": "Items.CHORUS_FRUIT_POPPED"
+      },
+      {
+        "value": "CUSTOM:Grinder"
+      },
+      {
+        "value": "Items.CHORUS_FRUIT_POPPED"
+      },
+      {
+        "value": "Items.CHORUS_FRUIT_POPPED"
+      },
+      {
+        "value": "Items.CHORUS_FRUIT_POPPED"
+      },
+      {
+        "value": "Items.CHORUS_FRUIT_POPPED"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GroundChorus"
+    },
+    "name": "chorus_grind",
+    "namespace": "mod"
+  }
+}

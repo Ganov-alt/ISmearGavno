@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "ismeargavno:blocks/crystalized_blood",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ismeargavno:blood_crystal",
+          "functions": [
+            {
+              "count": 2,
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

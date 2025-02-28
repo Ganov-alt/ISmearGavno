@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ismeargavno:block/forginatorbottom",
+    "up": "ismeargavno:block/forginatortop",
+    "north": "ismeargavno:block/forginatorfront",
+    "east": "ismeargavno:block/forginatorside",
+    "south": "ismeargavno:block/forginatorside",
+    "west": "ismeargavno:block/forginatorside",
+    "particle": "ismeargavno:block/forginatorbottom"
+  },
+  "render_type": "solid"
+}

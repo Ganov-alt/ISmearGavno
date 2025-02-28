@@ -1,0 +1,16 @@
+{
+  "_fv": 73,
+  "_type": "villagerprofession",
+  "definition": {
+    "displayName": "Sausage Seller",
+    "pointOfInterest": {
+      "value": "CUSTOM:HotDogRoller"
+    },
+    "actionSound": {
+      "value": "block.beehive.drip"
+    },
+    "hat": "Full",
+    "professionTextureFile": "butcher-villager-profession-on-planetminecraft-com.png",
+    "zombifiedProfessionTextureFile": "programmer-art-cured-butcher-zombie-villager-on-planetminecraft-com.png"
+  }
+}

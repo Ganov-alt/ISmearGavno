@@ -1,0 +1,70 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "size": 4,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:gravel"
+          }
+        },
+        "state": {
+          "Name": "ismeargavno:portal_to_birth_canal"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:sand"
+          }
+        },
+        "state": {
+          "Name": "ismeargavno:portal_to_birth_canal"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:clay"
+          }
+        },
+        "state": {
+          "Name": "ismeargavno:portal_to_birth_canal"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:mycelium",
+            "Properties": {
+              "snowy": "false"
+            }
+          }
+        },
+        "state": {
+          "Name": "ismeargavno:portal_to_birth_canal"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:sunflower",
+            "Properties": {
+              "half": "lower"
+            }
+          }
+        },
+        "state": {
+          "Name": "ismeargavno:portal_to_birth_canal"
+        }
+      }
+    ]
+  }
+}

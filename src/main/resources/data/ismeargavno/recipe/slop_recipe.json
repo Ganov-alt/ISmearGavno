@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:beef"
+    },
+    {
+      "item": "ismeargavno:payot"
+    },
+    {
+      "item": "ismeargavno:mysterious_crust"
+    },
+    {
+      "item": "minecraft:leather"
+    }
+  ],
+  "result": {
+    "id": "ismeargavno:slop",
+    "count": 1
+  }
+}

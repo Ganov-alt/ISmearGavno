@@ -1,0 +1,39 @@
+{
+  "_fv": 73,
+  "_type": "structure",
+  "definition": {
+    "structure": "homelessroadbetter",
+    "projection": "terrain_matching",
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      }
+    ],
+    "spacing": 25,
+    "separation": 2,
+    "restrictionBiomes": [
+      {
+        "value": "birch_forest"
+      },
+      {
+        "value": "desert"
+      },
+      {
+        "value": "savanna"
+      },
+      {
+        "value": "plains"
+      }
+    ],
+    "terrainAdaptation": "beard_thin",
+    "generationStep": "TOP_LAYER_MODIFICATION",
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "useStartHeight": false,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 0,
+    "startHeightMax": 128,
+    "size": 1,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": []
+  }
+}

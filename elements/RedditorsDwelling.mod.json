@@ -1,0 +1,39 @@
+{
+  "_fv": 73,
+  "_type": "structure",
+  "definition": {
+    "structure": "redditorsdwelling",
+    "projection": "rigid",
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      }
+    ],
+    "spacing": 27,
+    "separation": 2,
+    "restrictionBiomes": [
+      {
+        "value": "plains"
+      },
+      {
+        "value": "birch_forest"
+      },
+      {
+        "value": "mutated_forest"
+      },
+      {
+        "value": "lush_caves"
+      }
+    ],
+    "terrainAdaptation": "beard_thin",
+    "generationStep": "SURFACE_STRUCTURES",
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "useStartHeight": false,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 0,
+    "startHeightMax": 128,
+    "size": 1,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": []
+  }
+}

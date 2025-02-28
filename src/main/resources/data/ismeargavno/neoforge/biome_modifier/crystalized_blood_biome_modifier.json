@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "ismeargavno:canal_biome",
+  "features": "ismeargavno:crystalized_blood",
+  "step": "underground_ores"
+}

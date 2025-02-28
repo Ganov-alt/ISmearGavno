@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "ddd"
+  ],
+  "key": {
+    "a": {
+      "item": "ismeargavno:mysterious_crust"
+    },
+    "b": {
+      "item": "ismeargavno:deep_dark_technic_board"
+    },
+    "c": {
+      "item": "minecraft:ender_chest"
+    },
+    "d": {
+      "item": "ismeargavno:metal_sheet"
+    }
+  },
+  "result": {
+    "id": "ismeargavno:deep_dark_terminal_main_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "boofingtonhui.png",
+          "use1Xscale": false,
+          "x": 235,
+          "y": 74,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stargassgui.png",
+          "use1Xscale": false,
+          "x": 221,
+          "y": 96,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "faecesgui.png",
+          "use1Xscale": false,
+          "x": 214,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:CreditCard"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 259,
+          "y": 72,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_trade",
+          "text": "trade",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "TradeForGoodies"
+          },
+          "width": 51,
+          "height": 20,
+          "x": 243,
+          "y": 48,
+          "locked": false
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 259,
+          "y": 95,
+          "locked": false
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "BuyFaeces",
+          "text": "Buy Faeces",
+          "x": 133,
+          "y": 48,
+          "locked": false
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "BuyBoofington",
+          "text": "Buy Boofington ",
+          "x": 133,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "BuyStagas",
+          "text": "Buy Star gas",
+          "x": 133,
+          "y": 94,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_coins",
+          "text": {
+            "fixedValue": "Credit Card"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 256,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_64",
+          "text": {
+            "fixedValue": "64"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 131,
+          "y": 46,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_192",
+          "text": {
+            "fixedValue": "192"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 131,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_224",
+          "text": {
+            "fixedValue": "224"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 131,
+          "y": 92,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "ebe"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:granite"
+    },
+    "b": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "item": "minecraft:cobblestone"
+    },
+    "d": {
+      "item": "minecraft:coal_block"
+    },
+    "e": {
+      "item": "minecraft:andesite"
+    }
+  },
+  "result": {
+    "id": "ismeargavno:forginator",
+    "count": 1
+  }
+}

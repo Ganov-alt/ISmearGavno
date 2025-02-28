@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ismeargavno:block/enhancedstorageunittop",
+    "up": "ismeargavno:block/enhancedstorageunittop",
+    "north": "ismeargavno:block/enhancedstorageunit",
+    "east": "ismeargavno:block/enhancedstorageunit",
+    "south": "ismeargavno:block/enhancedstorageunit",
+    "west": "ismeargavno:block/enhancedstorageunit",
+    "particle": "ismeargavno:block/enhancedstorageunittop"
+  },
+  "render_type": "solid"
+}

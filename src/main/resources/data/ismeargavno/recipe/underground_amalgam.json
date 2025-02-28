@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "abc",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "ismeargavno:silver_fish_scales"
+    },
+    "b": {
+      "item": "minecraft:bone"
+    },
+    "c": {
+      "item": "ismeargavno:mysterious_crust"
+    }
+  },
+  "result": {
+    "id": "ismeargavno:under_ground_amalgam_item",
+    "count": 1
+  }
+}

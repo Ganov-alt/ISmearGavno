@@ -1,0 +1,8 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:any"
+  },
+  "features": "ismeargavno:bone_spike",
+  "step": "vegetal_decoration"
+}

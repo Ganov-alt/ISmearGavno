@@ -1,0 +1,14 @@
+{
+  "_fv": 73,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:BlockHarvester"
+      }
+    ],
+    "information": [
+      "Be aware that for some reason on the last use it doesnt drop the block"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    " b ",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "ismeargavno:mysterious_crust"
+    },
+    "b": {
+      "item": "minecraft:echo_shard"
+    },
+    "c": {
+      "item": "ismeargavno:deep_dark_technic_board"
+    }
+  },
+  "result": {
+    "id": "ismeargavno:deep_dark_chip",
+    "count": 1
+  }
+}

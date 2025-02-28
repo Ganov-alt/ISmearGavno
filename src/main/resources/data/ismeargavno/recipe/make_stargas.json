@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "ccc"
+  ],
+  "key": {
+    "a": {
+      "item": "ismeargavno:star_gas_wrapper"
+    },
+    "b": {
+      "item": "ismeargavno:unrefined_whippet"
+    },
+    "c": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "id": "ismeargavno:star_gas",
+    "count": 1
+  }
+}

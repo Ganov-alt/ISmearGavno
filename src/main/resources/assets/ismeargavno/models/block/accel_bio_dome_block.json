@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ismeargavno:block/biodomebotttom",
+    "up": "ismeargavno:block/biodometop",
+    "north": "ismeargavno:block/biodomeside",
+    "east": "ismeargavno:block/biodomeside",
+    "south": "ismeargavno:block/biodomeside",
+    "west": "ismeargavno:block/biodomeside",
+    "particle": "ismeargavno:block/biodomebotttom"
+  },
+  "render_type": "translucent"
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MetalSheet"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:GoldCoin"
+      },
+      {
+        "value": "CUSTOM:DeepDarkTechnicBoard"
+      },
+      {
+        "value": "CUSTOM:GoldCoin"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MetalSheet"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ATM"
+    },
+    "name": "atm_recipe",
+    "namespace": "mod"
+  }
+}

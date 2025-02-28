@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ismeargavno:metal_sheet"
+    },
+    {
+      "item": "ismeargavno:deep_dark_technic_board"
+    },
+    {
+      "item": "minecraft:redstone_torch"
+    }
+  ],
+  "result": {
+    "id": "ismeargavno:phone",
+    "count": 1
+  }
+}

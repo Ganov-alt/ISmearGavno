@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ismeargavno:block/crystalizedblood",
+    "up": "ismeargavno:block/crystalizedblood",
+    "north": "ismeargavno:block/crystalizedblood",
+    "east": "ismeargavno:block/crystalizedblood",
+    "south": "ismeargavno:block/crystalizedblood",
+    "west": "ismeargavno:block/crystalizedblood",
+    "particle": "ismeargavno:block/crystalizedblood"
+  },
+  "render_type": "solid"
+}
