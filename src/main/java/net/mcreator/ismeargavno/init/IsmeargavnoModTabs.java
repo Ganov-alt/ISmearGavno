@@ -99,6 +99,10 @@ public class IsmeargavnoModTabs {
 			tabData.accept(IsmeargavnoModBlocks.BONE_SPIKE.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(IsmeargavnoModItems.BLOCK_HARVESTER.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
+			tabData.accept(IsmeargavnoModItems.PROTALGUN.get());
+			tabData.accept(IsmeargavnoModBlocks.PORTAL_BLOCK_1.get().asItem());
+			tabData.accept(IsmeargavnoModBlocks.PORTAL_BLOCK_2.get().asItem());
 		}
 	}
 }

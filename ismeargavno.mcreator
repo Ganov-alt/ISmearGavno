@@ -3053,6 +3053,174 @@
         ]
       },
       "path": "~/DankMemes"
+    },
+    {
+      "name": "Protalgun",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "protalgun",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/ProtalgunItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/protalgun.json"
+        ]
+      },
+      "path": "~/PortalGun"
+    },
+    {
+      "name": "PortalBlock1",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal_block_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/block/portal_block_1.json",
+          "src/main/resources/data/ismeargavno/loot_table/blocks/portal_block_1.json",
+          "src/main/java/net/mcreator/ismeargavno/block/PortalBlock1Block.java",
+          "src/main/resources/assets/ismeargavno/blockstates/portal_block_1.json",
+          "src/main/resources/assets/ismeargavno/models/item/portal_block_1.json"
+        ]
+      },
+      "path": "~/PortalGun"
+    },
+    {
+      "name": "PortalBlock1EntityCollidesInTheBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal_block_1_entity_collides_in_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/PortalBlock1EntityCollidesInTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PortalGun"
+    },
+    {
+      "name": "PortalBlock1BlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal_block_1_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/PortalBlock1BlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PortalGun"
+    },
+    {
+      "name": "PortalBlock2",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal_block_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/loot_table/blocks/portal_block_2.json",
+          "src/main/resources/assets/ismeargavno/models/item/portal_block_2.json",
+          "src/main/resources/assets/ismeargavno/blockstates/portal_block_2.json",
+          "src/main/resources/assets/ismeargavno/models/block/portal_block_2.json",
+          "src/main/java/net/mcreator/ismeargavno/block/PortalBlock2Block.java"
+        ]
+      },
+      "path": "~/PortalGun"
+    },
+    {
+      "name": "PortalBlock2EntityCollidesInTheBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal_block_2_entity_collides_in_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/PortalBlock2EntityCollidesInTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PortalGun"
+    },
+    {
+      "name": "PortalBlock2Added",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal_block_2_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/PortalBlock2AddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PortalGun"
     }
   ],
   "variable_elements": [
@@ -3084,6 +3252,42 @@
       "name": "Pocketz",
       "type": "number",
       "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Por1x",
+      "type": "number",
+      "scope": "world",
+      "value": "0.0"
+    },
+    {
+      "name": "Por2x",
+      "type": "number",
+      "scope": "world",
+      "value": "0.0"
+    },
+    {
+      "name": "Por1y",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "Por1z",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "Por2y",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "Por2z",
+      "type": "number",
+      "scope": "world",
       "value": "0"
     }
   ],
@@ -3277,11 +3481,11 @@
   "language_map": {
     "en_us": {
       "entity.ismeargavno.baby": "Baby",
-      "painting.ismeargavno.anime_waifu.author": "Ganov",
       "gui.ismeargavno.homeless_gui.tooltip_coins": "Credit Card",
+      "painting.ismeargavno.anime_waifu.author": "Ganov",
       "item.ismeargavno.deep_dark_chip": "Deep Dark Chip",
-      "gui.ismeargavno.calcium_recomb_gui.tooltip_insert_bone_blocks": "Insert Bone Blocks",
       "subtitles.dankymerme": "Danky Song Plays",
+      "gui.ismeargavno.calcium_recomb_gui.tooltip_insert_bone_blocks": "Insert Bone Blocks",
       "gui.ismeargavno.phone_rig_gui.button_start": "Start",
       "item.ismeargavno.mountain_dew": "Mountain Dew",
       "subtitles.momgetthecamera": "Mom gets the camera",
@@ -3302,13 +3506,15 @@
       "item.ismeargavno.forsaken_heart": "Forsaken Heart",
       "item.ismeargavno.unrefined_whippet": "Unrefined Whippet",
       "item.ismeargavno.vegan_sausage": "Vegan Sausage",
-      "gui.ismeargavno.forginator_gui.label_forginator": "Forginator",
-      "item.ismeargavno.guilded_sausage": "Guilded Sausage",
       "jei.ismeargavno.calcium_recomb_info": "Can only be broken with a block harvester and can be used to recycle 2 bone blocks into mysterious crust and random goodies",
+      "item.ismeargavno.guilded_sausage": "Guilded Sausage",
+      "gui.ismeargavno.forginator_gui.label_forginator": "Forginator",
       "item.ismeargavno.money_hungry_sausage": "Money Hungry Sausage",
       "entity.minecraft.villager.ismeargavno.sausage_seller": "Sausage Seller",
       "item.ismeargavno.under_ground_amalgam_item": "Underground Amalgam",
+      "block.ismeargavno.portal_block_1": "Portal Block 1",
       "item.ismeargavno.silver_fish_scales": "Silver Fish Scales",
+      "block.ismeargavno.portal_block_2": "Portal Block 1",
       "gui.ismeargavno.redditor_gui.label_you_recieve_money": "You recieve (money)",
       "item.ismeargavno.suspicious_sausage_casing": "Suspicious Sausage Casing",
       "jei.ismeargavno.vegan_sausagetooltip": "made with 15 organic matter (grass, flowers, leaves, wheat, etc...) and 1 sausage casing in the hot dog stand",
@@ -3367,6 +3573,7 @@
       "item.ismeargavno.coloured_wrapper": "Shred of coloured wrapper",
       "item.ismeargavno.odd_sausage": "Odd Sausage",
       "item.ismeargavno.downvote": "Downvote",
+      "item.ismeargavno.protalgun": "Portal Gun",
       "block.ismeargavno.atm": "ATM",
       "item.ismeargavno.malleable_milk_curdles": "Malleable Milk Curdles",
       "jei.ismeargavno.block_harvester_info": "Be aware that for some reason on the last use it doesnt drop the block",

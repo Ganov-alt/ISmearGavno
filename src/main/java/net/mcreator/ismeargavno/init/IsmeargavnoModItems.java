@@ -31,6 +31,7 @@ import net.mcreator.ismeargavno.item.StarGasItem;
 import net.mcreator.ismeargavno.item.SlopItem;
 import net.mcreator.ismeargavno.item.SilverFishScalesItem;
 import net.mcreator.ismeargavno.item.PyramidFragmentItem;
+import net.mcreator.ismeargavno.item.ProtalgunItem;
 import net.mcreator.ismeargavno.item.PhoneItem;
 import net.mcreator.ismeargavno.item.PayotItem;
 import net.mcreator.ismeargavno.item.OddSausageItem;
@@ -127,6 +128,9 @@ public class IsmeargavnoModItems {
 	public static final DeferredItem<Item> EYE_SCOOP = REGISTRY.register("eye_scoop", EyeScoopItem::new);
 	public static final DeferredItem<Item> EYE = REGISTRY.register("eye", EyeItem::new);
 	public static final DeferredItem<Item> ILLUMINATI = REGISTRY.register("illuminati", IlluminatiItem::new);
+	public static final DeferredItem<Item> PROTALGUN = REGISTRY.register("protalgun", ProtalgunItem::new);
+	public static final DeferredItem<Item> PORTAL_BLOCK_1 = block(IsmeargavnoModBlocks.PORTAL_BLOCK_1);
+	public static final DeferredItem<Item> PORTAL_BLOCK_2 = block(IsmeargavnoModBlocks.PORTAL_BLOCK_2);
 
 	// Start of user code block custom items
 	// End of user code block custom items
