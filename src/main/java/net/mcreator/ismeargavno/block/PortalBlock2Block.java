@@ -5,7 +5,7 @@ import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.DoorBlock;
+import net.minecraft.world.level.block.ButtonBlock;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.BlockPos;
@@ -13,9 +13,9 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.ismeargavno.procedures.PortalBlock2EntityCollidesInTheBlockProcedure;
 import net.mcreator.ismeargavno.procedures.PortalBlock2BlockAddedProcedure;
 
-public class PortalBlock2Block extends DoorBlock {
+public class PortalBlock2Block extends ButtonBlock {
 	public PortalBlock2Block() {
-		super(BlockSetType.STONE, BlockBehaviour.Properties.of().sound(SoundType.SLIME_BLOCK).strength(1f, 10f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockSetType.STONE, 20, BlockBehaviour.Properties.of().sound(SoundType.SLIME_BLOCK).strength(1f, 10f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

@@ -1,7 +1,3 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "minecraft:block/blue_wool"
-  },
-  "render_type": "solid"
+  "parent": "ismeargavno:block/portal_block_2_inventory"
 }

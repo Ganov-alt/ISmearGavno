@@ -107,6 +107,12 @@ public class IsmeargavnoModVariables {
 		public double Por2y = 0;
 		public double Por2z = 0;
 		public double JustEnteredPortal = 0;
+		public double Portal1LocationOffsetX = 0;
+		public double Portal1LocationOffsetY = 0;
+		public double Portal1LocationOffsetZ = 0;
+		public double Portal2LocationOffsetX = 0;
+		public double Portal2LocationOffsetY = 0;
+		public double Portal2LocationOffsetZ = 0;
 
 		public static WorldVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			WorldVariables data = new WorldVariables();
@@ -122,6 +128,12 @@ public class IsmeargavnoModVariables {
 			Por2y = nbt.getDouble("Por2y");
 			Por2z = nbt.getDouble("Por2z");
 			JustEnteredPortal = nbt.getDouble("JustEnteredPortal");
+			Portal1LocationOffsetX = nbt.getDouble("Portal1LocationOffsetX");
+			Portal1LocationOffsetY = nbt.getDouble("Portal1LocationOffsetY");
+			Portal1LocationOffsetZ = nbt.getDouble("Portal1LocationOffsetZ");
+			Portal2LocationOffsetX = nbt.getDouble("Portal2LocationOffsetX");
+			Portal2LocationOffsetY = nbt.getDouble("Portal2LocationOffsetY");
+			Portal2LocationOffsetZ = nbt.getDouble("Portal2LocationOffsetZ");
 		}
 
 		@Override
@@ -133,6 +145,12 @@ public class IsmeargavnoModVariables {
 			nbt.putDouble("Por2y", Por2y);
 			nbt.putDouble("Por2z", Por2z);
 			nbt.putDouble("JustEnteredPortal", JustEnteredPortal);
+			nbt.putDouble("Portal1LocationOffsetX", Portal1LocationOffsetX);
+			nbt.putDouble("Portal1LocationOffsetY", Portal1LocationOffsetY);
+			nbt.putDouble("Portal1LocationOffsetZ", Portal1LocationOffsetZ);
+			nbt.putDouble("Portal2LocationOffsetX", Portal2LocationOffsetX);
+			nbt.putDouble("Portal2LocationOffsetY", Portal2LocationOffsetY);
+			nbt.putDouble("Portal2LocationOffsetZ", Portal2LocationOffsetZ);
 			return nbt;
 		}
 

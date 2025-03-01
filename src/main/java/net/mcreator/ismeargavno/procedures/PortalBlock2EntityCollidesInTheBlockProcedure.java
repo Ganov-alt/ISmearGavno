@@ -22,37 +22,37 @@ public class PortalBlock2EntityCollidesInTheBlockProcedure {
 			IsmeargavnoModVariables.WorldVariables.get(world).syncData(world);
 		} else {
 			while (IsmeargavnoModVariables.WorldVariables.get(world).JustEnteredPortal != 0) {
-				if (entity.getX() > x + 0.1) {
+				if (entity.getX() > x + IsmeargavnoModVariables.WorldVariables.get(world).Portal2LocationOffsetX + 0.5) {
 					IsmeargavnoModVariables.WorldVariables.get(world).JustEnteredPortal = 0;
 					IsmeargavnoModVariables.WorldVariables.get(world).syncData(world);
 				} else {
 					break;
 				}
-				if (entity.getX() < x - 0.1) {
+				if (entity.getX() < x + IsmeargavnoModVariables.WorldVariables.get(world).Portal2LocationOffsetX - 0.5) {
 					IsmeargavnoModVariables.WorldVariables.get(world).JustEnteredPortal = 0;
 					IsmeargavnoModVariables.WorldVariables.get(world).syncData(world);
 				} else {
 					break;
 				}
-				if (entity.getY() > y + 0.1) {
+				if (entity.getY() > y + IsmeargavnoModVariables.WorldVariables.get(world).Portal2LocationOffsetY + 0.5) {
 					IsmeargavnoModVariables.WorldVariables.get(world).JustEnteredPortal = 0;
 					IsmeargavnoModVariables.WorldVariables.get(world).syncData(world);
 				} else {
 					break;
 				}
-				if (entity.getY() < y - 0.1) {
+				if (entity.getY() < y + IsmeargavnoModVariables.WorldVariables.get(world).Portal2LocationOffsetY - 0.5) {
 					IsmeargavnoModVariables.WorldVariables.get(world).JustEnteredPortal = 0;
 					IsmeargavnoModVariables.WorldVariables.get(world).syncData(world);
 				} else {
 					break;
 				}
-				if (entity.getY() > z + 0.1) {
+				if (entity.getY() > z + IsmeargavnoModVariables.WorldVariables.get(world).Portal2LocationOffsetZ + 0.5) {
 					IsmeargavnoModVariables.WorldVariables.get(world).JustEnteredPortal = 0;
 					IsmeargavnoModVariables.WorldVariables.get(world).syncData(world);
 				} else {
 					break;
 				}
-				if (entity.getY() < z - 0.1) {
+				if (entity.getY() < z + IsmeargavnoModVariables.WorldVariables.get(world).Portal2LocationOffsetZ - 0.5) {
 					IsmeargavnoModVariables.WorldVariables.get(world).JustEnteredPortal = 0;
 					IsmeargavnoModVariables.WorldVariables.get(world).syncData(world);
 				} else {
