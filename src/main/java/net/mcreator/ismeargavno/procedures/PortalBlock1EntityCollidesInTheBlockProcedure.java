@@ -12,10 +12,11 @@ public class PortalBlock1EntityCollidesInTheBlockProcedure {
 			return;
 		{
 			Entity _ent = entity;
-			_ent.teleportTo(IsmeargavnoModVariables.WorldVariables.get(world).Por2x, IsmeargavnoModVariables.WorldVariables.get(world).Por2y, IsmeargavnoModVariables.WorldVariables.get(world).Por2z);
+			_ent.teleportTo((IsmeargavnoModVariables.WorldVariables.get(world).Por2x + entity.getDeltaMovement().x() * 2), (IsmeargavnoModVariables.WorldVariables.get(world).Por2y + entity.getDeltaMovement().y() * 2),
+					(IsmeargavnoModVariables.WorldVariables.get(world).Por2z + entity.getDeltaMovement().z() * 2));
 			if (_ent instanceof ServerPlayer _serverPlayer)
-				_serverPlayer.connection.teleport(IsmeargavnoModVariables.WorldVariables.get(world).Por2x, IsmeargavnoModVariables.WorldVariables.get(world).Por2y, IsmeargavnoModVariables.WorldVariables.get(world).Por2z, _ent.getYRot(),
-						_ent.getXRot());
+				_serverPlayer.connection.teleport((IsmeargavnoModVariables.WorldVariables.get(world).Por2x + entity.getDeltaMovement().x() * 2), (IsmeargavnoModVariables.WorldVariables.get(world).Por2y + entity.getDeltaMovement().y() * 2),
+						(IsmeargavnoModVariables.WorldVariables.get(world).Por2z + entity.getDeltaMovement().z() * 2), _ent.getYRot(), _ent.getXRot());
 		}
 	}
 }

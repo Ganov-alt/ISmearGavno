@@ -82,6 +82,11 @@ public class IsmeargavnoModTabs {
 				tabData.accept(IsmeargavnoModItems.EYE_SCOOP.get());
 				tabData.accept(IsmeargavnoModItems.EYE.get());
 				tabData.accept(IsmeargavnoModItems.ILLUMINATI.get());
+				tabData.accept(IsmeargavnoModItems.PROTALGUN.get());
+				tabData.accept(IsmeargavnoModBlocks.PORTAL_BLOCK_1.get().asItem());
+				tabData.accept(IsmeargavnoModBlocks.PORTAL_BLOCK_2.get().asItem());
+				tabData.accept(IsmeargavnoModItems.PINGLE_CAN.get());
+				tabData.accept(IsmeargavnoModItems.CHIP.get());
 			}).build());
 
 	@SubscribeEvent

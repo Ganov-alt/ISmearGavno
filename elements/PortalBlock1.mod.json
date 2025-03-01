@@ -45,6 +45,9 @@
     "creativeTabs": [
       {
         "value": "REDSTONE"
+      },
+      {
+        "value": "CUSTOM:ISmearGavno"
       }
     ],
     "destroyTool": "Not specified",
@@ -121,6 +124,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onBlockAdded": {
+      "name": "PortalBlock1BlockAdded"
+    },
+    "onEntityCollides": {
+      "name": "PortalBlock1EntityCollidesInTheBlock"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

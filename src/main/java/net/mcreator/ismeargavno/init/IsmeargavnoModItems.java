@@ -32,6 +32,7 @@ import net.mcreator.ismeargavno.item.SlopItem;
 import net.mcreator.ismeargavno.item.SilverFishScalesItem;
 import net.mcreator.ismeargavno.item.PyramidFragmentItem;
 import net.mcreator.ismeargavno.item.ProtalgunItem;
+import net.mcreator.ismeargavno.item.PingleCanItem;
 import net.mcreator.ismeargavno.item.PhoneItem;
 import net.mcreator.ismeargavno.item.PayotItem;
 import net.mcreator.ismeargavno.item.OddSausageItem;
@@ -58,6 +59,7 @@ import net.mcreator.ismeargavno.item.DeepDarkTechnicBoardItem;
 import net.mcreator.ismeargavno.item.DeepDarkChipItem;
 import net.mcreator.ismeargavno.item.CreditCardItem;
 import net.mcreator.ismeargavno.item.ColouredWrapperItem;
+import net.mcreator.ismeargavno.item.ChipItem;
 import net.mcreator.ismeargavno.item.BloodCrystalItem;
 import net.mcreator.ismeargavno.item.BlockHarvesterItem;
 import net.mcreator.ismeargavno.item.BionicToesItem;
@@ -131,6 +133,8 @@ public class IsmeargavnoModItems {
 	public static final DeferredItem<Item> PROTALGUN = REGISTRY.register("protalgun", ProtalgunItem::new);
 	public static final DeferredItem<Item> PORTAL_BLOCK_1 = block(IsmeargavnoModBlocks.PORTAL_BLOCK_1);
 	public static final DeferredItem<Item> PORTAL_BLOCK_2 = block(IsmeargavnoModBlocks.PORTAL_BLOCK_2);
+	public static final DeferredItem<Item> PINGLE_CAN = REGISTRY.register("pingle_can", PingleCanItem::new);
+	public static final DeferredItem<Item> CHIP = REGISTRY.register("chip", ChipItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
