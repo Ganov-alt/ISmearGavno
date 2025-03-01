@@ -3247,6 +3247,38 @@
         ]
       },
       "path": "~/PortalGun"
+    },
+    {
+      "name": "GopnikVarOne",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gopnik_var_one",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/entity/GopnikVarOneEntity.java",
+          "src/main/java/net/mcreator/ismeargavno/client/renderer/GopnikVarOneRenderer.java",
+          "src/main/resources/assets/ismeargavno/models/item/gopnik_var_one_spawn_egg.json",
+          "src/main/resources/data/ismeargavno/neoforge/biome_modifier/gopnik_var_one_biome_modifier.json"
+        ]
+      },
+      "path": "~/Town"
+    },
+    {
+      "name": "GopnikVarTwo",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gopnik_var_two",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/client/renderer/GopnikVarTwoRenderer.java",
+          "src/main/java/net/mcreator/ismeargavno/entity/GopnikVarTwoEntity.java",
+          "src/main/resources/data/ismeargavno/neoforge/biome_modifier/gopnik_var_two_biome_modifier.json",
+          "src/main/resources/assets/ismeargavno/models/item/gopnik_var_two_spawn_egg.json"
+        ]
+      },
+      "path": "~/Town"
     }
   ],
   "variable_elements": [
@@ -3593,6 +3625,7 @@
       "effect.ismeargavno.bionic_toes_anti_fall": "Bionic Toes ",
       "item.ismeargavno.faeces": "Faeces",
       "item.ismeargavno.eye_scoop": "Eyescoop",
+      "item.ismeargavno.gopnik_var_two_spawn_egg": "Gopnik Var Two Spawn Egg",
       "gui.ismeargavno.calcium_recomb_gui.label_bone_recombobulinator": "Bone Recombobulinator",
       "block.ismeargavno.deep_dark_terminal_main_block": "Deep Dark Terminal",
       "gui.ismeargavno.homeless_gui.tooltip_192": "192",
@@ -3642,6 +3675,7 @@
       "item.ismeargavno.odd_sausage": "Odd Sausage",
       "item.ismeargavno.downvote": "Downvote",
       "item.ismeargavno.protalgun": "Portal Gun",
+      "item.ismeargavno.gopnik_var_one_spawn_egg": "Gopnik Var One Spawn Egg",
       "block.ismeargavno.atm": "ATM",
       "item.ismeargavno.malleable_milk_curdles": "Malleable Milk Curdles",
       "jei.ismeargavno.block_harvester_info": "Be aware that for some reason on the last use it doesnt drop the block",
@@ -3655,6 +3689,7 @@
       "gui.ismeargavno.credit_card_gui.button_transfer": "Transfer",
       "gui.ismeargavno.redditor_gui.button_what_do_you_have_to_offer": "What Do You Have To Offer?",
       "item.ismeargavno.metal_sheet": "Metal Sheet",
+      "entity.ismeargavno.gopnik_var_two": "Gopnik Var Two",
       "item.ismeargavno.beating_heart": "Beating Heart",
       "item.ismeargavno.molten_sheet": "Molten Sheet",
       "block.ismeargavno.calcium_recombobulation_module": "Calcium Recombobulation Module",
@@ -3669,6 +3704,7 @@
       "gui.ismeargavno.homeless_gui.BuyFaeces": "Buy Faeces",
       "item.ismeargavno.credit_card": "Credit Card",
       "gui.ismeargavno.phone_rig_gui.button_get_dank": "Get Dank",
+      "entity.ismeargavno.gopnik_var_one": "Gopnik Var One",
       "block.ismeargavno.bone_spike": "Bone Spike",
       "item.ismeargavno.dust": "Dust"
     }
@@ -3722,6 +3758,10 @@
       },
       {
         "name": "PortalGun",
+        "children": []
+      },
+      {
+        "name": "Town",
         "children": []
       }
     ]
