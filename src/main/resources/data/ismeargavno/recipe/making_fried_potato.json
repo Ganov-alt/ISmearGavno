@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 50,
+  "ingredient": {
+    "item": "minecraft:baked_potato"
+  },
+  "result": {
+    "id": "ismeargavno:chip"
+  }
+}

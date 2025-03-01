@@ -45,6 +45,9 @@
     "creativeTabs": [
       {
         "value": "REDSTONE"
+      },
+      {
+        "value": "CUSTOM:ISmearGavno"
       }
     ],
     "destroyTool": "Not specified",
