@@ -3101,6 +3101,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -3192,14 +3204,14 @@
       "path": "~/PortalGun"
     },
     {
-      "name": "PortalBlock2Added",
+      "name": "PortalBlock2BlockAdded",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "portal_block_2_added",
+      "registry_name": "portal_block_2_block_added",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ismeargavno/procedures/PortalBlock2AddedProcedure.java"
+          "src/main/java/net/mcreator/ismeargavno/procedures/PortalBlock2BlockAddedProcedure.java"
         ],
         "dependencies": [
           {
@@ -3286,6 +3298,12 @@
     },
     {
       "name": "Por2z",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "JustEnteredPortal",
       "type": "number",
       "scope": "world",
       "value": "0"
@@ -3481,11 +3499,11 @@
   "language_map": {
     "en_us": {
       "entity.ismeargavno.baby": "Baby",
-      "gui.ismeargavno.homeless_gui.tooltip_coins": "Credit Card",
       "painting.ismeargavno.anime_waifu.author": "Ganov",
+      "gui.ismeargavno.homeless_gui.tooltip_coins": "Credit Card",
       "item.ismeargavno.deep_dark_chip": "Deep Dark Chip",
-      "subtitles.dankymerme": "Danky Song Plays",
       "gui.ismeargavno.calcium_recomb_gui.tooltip_insert_bone_blocks": "Insert Bone Blocks",
+      "subtitles.dankymerme": "Danky Song Plays",
       "gui.ismeargavno.phone_rig_gui.button_start": "Start",
       "item.ismeargavno.mountain_dew": "Mountain Dew",
       "subtitles.momgetthecamera": "Mom gets the camera",
@@ -3506,15 +3524,15 @@
       "item.ismeargavno.forsaken_heart": "Forsaken Heart",
       "item.ismeargavno.unrefined_whippet": "Unrefined Whippet",
       "item.ismeargavno.vegan_sausage": "Vegan Sausage",
-      "jei.ismeargavno.calcium_recomb_info": "Can only be broken with a block harvester and can be used to recycle 2 bone blocks into mysterious crust and random goodies",
-      "item.ismeargavno.guilded_sausage": "Guilded Sausage",
       "gui.ismeargavno.forginator_gui.label_forginator": "Forginator",
+      "item.ismeargavno.guilded_sausage": "Guilded Sausage",
+      "jei.ismeargavno.calcium_recomb_info": "Can only be broken with a block harvester and can be used to recycle 2 bone blocks into mysterious crust and random goodies",
       "item.ismeargavno.money_hungry_sausage": "Money Hungry Sausage",
       "entity.minecraft.villager.ismeargavno.sausage_seller": "Sausage Seller",
       "item.ismeargavno.under_ground_amalgam_item": "Underground Amalgam",
       "block.ismeargavno.portal_block_1": "Portal Block 1",
       "item.ismeargavno.silver_fish_scales": "Silver Fish Scales",
-      "block.ismeargavno.portal_block_2": "Portal Block 1",
+      "block.ismeargavno.portal_block_2": "Portal Block 2",
       "gui.ismeargavno.redditor_gui.label_you_recieve_money": "You recieve (money)",
       "item.ismeargavno.suspicious_sausage_casing": "Suspicious Sausage Casing",
       "jei.ismeargavno.vegan_sausagetooltip": "made with 15 organic matter (grass, flowers, leaves, wheat, etc...) and 1 sausage casing in the hot dog stand",

@@ -106,6 +106,7 @@ public class IsmeargavnoModVariables {
 		public double Por1z = 0;
 		public double Por2y = 0;
 		public double Por2z = 0;
+		public double JustEnteredPortal = 0;
 
 		public static WorldVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			WorldVariables data = new WorldVariables();
@@ -120,6 +121,7 @@ public class IsmeargavnoModVariables {
 			Por1z = nbt.getDouble("Por1z");
 			Por2y = nbt.getDouble("Por2y");
 			Por2z = nbt.getDouble("Por2z");
+			JustEnteredPortal = nbt.getDouble("JustEnteredPortal");
 		}
 
 		@Override
@@ -130,6 +132,7 @@ public class IsmeargavnoModVariables {
 			nbt.putDouble("Por1z", Por1z);
 			nbt.putDouble("Por2y", Por2y);
 			nbt.putDouble("Por2z", Por2z);
+			nbt.putDouble("JustEnteredPortal", JustEnteredPortal);
 			return nbt;
 		}
 

@@ -34,7 +34,7 @@
       }
     ],
     "customProperties": [],
-    "name": "Portal Block 1",
+    "name": "Portal Block 2",
     "specialInformation": {
       "fixedValue": []
     },
@@ -121,6 +121,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onBlockAdded": {
+      "name": "PortalBlock2BlockAdded"
+    },
+    "onEntityCollides": {
+      "name": "PortalBlock2EntityCollidesInTheBlock"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

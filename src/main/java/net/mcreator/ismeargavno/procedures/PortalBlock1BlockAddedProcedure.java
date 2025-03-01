@@ -11,12 +11,6 @@ import net.mcreator.ismeargavno.network.IsmeargavnoModVariables;
 
 public class PortalBlock1BlockAddedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		IsmeargavnoModVariables.WorldVariables.get(world).Por1x = x;
-		IsmeargavnoModVariables.WorldVariables.get(world).syncData(world);
-		IsmeargavnoModVariables.WorldVariables.get(world).Por1y = y;
-		IsmeargavnoModVariables.WorldVariables.get(world).syncData(world);
-		IsmeargavnoModVariables.WorldVariables.get(world).Por1z = z;
-		IsmeargavnoModVariables.WorldVariables.get(world).syncData(world);
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
 				_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.end_portal_frame.fill")), SoundSource.NEUTRAL, 1, 1);
@@ -24,5 +18,11 @@ public class PortalBlock1BlockAddedProcedure {
 				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.end_portal_frame.fill")), SoundSource.NEUTRAL, 1, 1, false);
 			}
 		}
+		IsmeargavnoModVariables.WorldVariables.get(world).Por1x = x;
+		IsmeargavnoModVariables.WorldVariables.get(world).syncData(world);
+		IsmeargavnoModVariables.WorldVariables.get(world).Por1y = y;
+		IsmeargavnoModVariables.WorldVariables.get(world).syncData(world);
+		IsmeargavnoModVariables.WorldVariables.get(world).Por1z = z;
+		IsmeargavnoModVariables.WorldVariables.get(world).syncData(world);
 	}
 }
