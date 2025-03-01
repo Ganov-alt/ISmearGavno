@@ -5,7 +5,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 
 import net.mcreator.ismeargavno.network.IsmeargavnoModVariables;
-import net.mcreator.ismeargavno.IsmeargavnoMod;
 
 public class PortalBlock2EntityCollidesInTheBlockProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -21,22 +20,45 @@ public class PortalBlock2EntityCollidesInTheBlockProcedure {
 			}
 			IsmeargavnoModVariables.WorldVariables.get(world).JustEnteredPortal = 1;
 			IsmeargavnoModVariables.WorldVariables.get(world).syncData(world);
-		}
-		IsmeargavnoMod.queueServerWork(20, () -> {
-			while (true) {
-				if (entity.getX() != x) {
+		} else {
+			while (IsmeargavnoModVariables.WorldVariables.get(world).JustEnteredPortal != 0) {
+				if (entity.getX() > x + 0.1) {
 					IsmeargavnoModVariables.WorldVariables.get(world).JustEnteredPortal = 0;
 					IsmeargavnoModVariables.WorldVariables.get(world).syncData(world);
+				} else {
+					break;
 				}
-				if (entity.getY() != y) {
+				if (entity.getX() < x - 0.1) {
 					IsmeargavnoModVariables.WorldVariables.get(world).JustEnteredPortal = 0;
 					IsmeargavnoModVariables.WorldVariables.get(world).syncData(world);
+				} else {
+					break;
 				}
-				if (entity.getZ() != z) {
+				if (entity.getY() > y + 0.1) {
 					IsmeargavnoModVariables.WorldVariables.get(world).JustEnteredPortal = 0;
 					IsmeargavnoModVariables.WorldVariables.get(world).syncData(world);
+				} else {
+					break;
+				}
+				if (entity.getY() < y - 0.1) {
+					IsmeargavnoModVariables.WorldVariables.get(world).JustEnteredPortal = 0;
+					IsmeargavnoModVariables.WorldVariables.get(world).syncData(world);
+				} else {
+					break;
+				}
+				if (entity.getY() > z + 0.1) {
+					IsmeargavnoModVariables.WorldVariables.get(world).JustEnteredPortal = 0;
+					IsmeargavnoModVariables.WorldVariables.get(world).syncData(world);
+				} else {
+					break;
+				}
+				if (entity.getY() < z - 0.1) {
+					IsmeargavnoModVariables.WorldVariables.get(world).JustEnteredPortal = 0;
+					IsmeargavnoModVariables.WorldVariables.get(world).syncData(world);
+				} else {
+					break;
 				}
 			}
-		});
+		}
 	}
 }

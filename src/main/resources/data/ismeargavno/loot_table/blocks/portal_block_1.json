@@ -12,7 +12,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "ismeargavno:portal_block_1"
+          "name": "ismeargavno:portal_block_1",
+          "conditions": [
+            {
+              "block": "ismeargavno:portal_block_1",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
         }
       ]
     }

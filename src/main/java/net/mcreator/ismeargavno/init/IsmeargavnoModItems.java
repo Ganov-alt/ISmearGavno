@@ -129,8 +129,8 @@ public class IsmeargavnoModItems {
 	public static final DeferredItem<Item> EYE = REGISTRY.register("eye", EyeItem::new);
 	public static final DeferredItem<Item> ILLUMINATI = REGISTRY.register("illuminati", IlluminatiItem::new);
 	public static final DeferredItem<Item> PROTALGUN = REGISTRY.register("protalgun", ProtalgunItem::new);
-	public static final DeferredItem<Item> PORTAL_BLOCK_1 = block(IsmeargavnoModBlocks.PORTAL_BLOCK_1);
-	public static final DeferredItem<Item> PORTAL_BLOCK_2 = block(IsmeargavnoModBlocks.PORTAL_BLOCK_2);
+	public static final DeferredItem<Item> PORTAL_BLOCK_1 = doubleBlock(IsmeargavnoModBlocks.PORTAL_BLOCK_1);
+	public static final DeferredItem<Item> PORTAL_BLOCK_2 = doubleBlock(IsmeargavnoModBlocks.PORTAL_BLOCK_2);
 
 	// Start of user code block custom items
 	// End of user code block custom items

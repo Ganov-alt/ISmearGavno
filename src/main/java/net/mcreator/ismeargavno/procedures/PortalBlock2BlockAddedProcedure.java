@@ -18,11 +18,11 @@ public class PortalBlock2BlockAddedProcedure {
 				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.end_portal_frame.fill")), SoundSource.NEUTRAL, 1, 1, false);
 			}
 		}
-		IsmeargavnoModVariables.WorldVariables.get(world).Por2x = x;
+		IsmeargavnoModVariables.WorldVariables.get(world).Por2x = x + 0;
 		IsmeargavnoModVariables.WorldVariables.get(world).syncData(world);
-		IsmeargavnoModVariables.WorldVariables.get(world).Por2y = y;
+		IsmeargavnoModVariables.WorldVariables.get(world).Por2y = y + 0;
 		IsmeargavnoModVariables.WorldVariables.get(world).syncData(world);
-		IsmeargavnoModVariables.WorldVariables.get(world).Por2z = z;
+		IsmeargavnoModVariables.WorldVariables.get(world).Por2z = z + 0;
 		IsmeargavnoModVariables.WorldVariables.get(world).syncData(world);
 	}
 }

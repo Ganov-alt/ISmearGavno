@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_top_right",
+  "textures": {
+    "particle": "minecraft:block/blue_wool",
+    "bottom": "minecraft:block/blue_wool",
+    "top": "minecraft:block/blue_wool"
+  },
+  "render_type": "solid"
+}
