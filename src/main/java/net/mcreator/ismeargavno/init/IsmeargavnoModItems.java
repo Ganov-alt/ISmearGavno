@@ -131,6 +131,8 @@ public class IsmeargavnoModItems {
 	public static final DeferredItem<Item> PROTALGUN = REGISTRY.register("protalgun", ProtalgunItem::new);
 	public static final DeferredItem<Item> PORTAL_BLOCK_1 = doubleBlock(IsmeargavnoModBlocks.PORTAL_BLOCK_1);
 	public static final DeferredItem<Item> PORTAL_BLOCK_2 = doubleBlock(IsmeargavnoModBlocks.PORTAL_BLOCK_2);
+	public static final DeferredItem<Item> GOPNIK_VAR_ONE_SPAWN_EGG = REGISTRY.register("gopnik_var_one_spawn_egg", () -> new DeferredSpawnEggItem(IsmeargavnoModEntities.GOPNIK_VAR_ONE, -16777216, -1, new Item.Properties()));
+	public static final DeferredItem<Item> GOPNIK_VAR_TWO_SPAWN_EGG = REGISTRY.register("gopnik_var_two_spawn_egg", () -> new DeferredSpawnEggItem(IsmeargavnoModEntities.GOPNIK_VAR_TWO, -1, -16777216, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

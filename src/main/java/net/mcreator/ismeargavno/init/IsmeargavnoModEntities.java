@@ -24,6 +24,8 @@ import net.mcreator.ismeargavno.entity.JewligerEntity;
 import net.mcreator.ismeargavno.entity.IlluminatiBeamEntity;
 import net.mcreator.ismeargavno.entity.HomelessEntityProjectile;
 import net.mcreator.ismeargavno.entity.HomelessEntity;
+import net.mcreator.ismeargavno.entity.GopnikVarTwoEntity;
+import net.mcreator.ismeargavno.entity.GopnikVarOneEntity;
 import net.mcreator.ismeargavno.entity.BabyEntity;
 import net.mcreator.ismeargavno.IsmeargavnoMod;
 
@@ -48,6 +50,14 @@ public class IsmeargavnoModEntities {
 					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<IlluminatiBeamEntity>> ILLUMINATI_BEAM = register("illuminati_beam",
 			EntityType.Builder.<IlluminatiBeamEntity>of(IlluminatiBeamEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<GopnikVarOneEntity>> GOPNIK_VAR_ONE = register("gopnik_var_one",
+			EntityType.Builder.<GopnikVarOneEntity>of(GopnikVarOneEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<GopnikVarTwoEntity>> GOPNIK_VAR_TWO = register("gopnik_var_two",
+			EntityType.Builder.<GopnikVarTwoEntity>of(GopnikVarTwoEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -67,6 +77,8 @@ public class IsmeargavnoModEntities {
 		BabyEntity.init(event);
 		HomelessEntity.init(event);
 		RedditorEntity.init(event);
+		GopnikVarOneEntity.init(event);
+		GopnikVarTwoEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -75,5 +87,7 @@ public class IsmeargavnoModEntities {
 		event.put(BABY.get(), BabyEntity.createAttributes().build());
 		event.put(HOMELESS.get(), HomelessEntity.createAttributes().build());
 		event.put(REDDITOR.get(), RedditorEntity.createAttributes().build());
+		event.put(GOPNIK_VAR_ONE.get(), GopnikVarOneEntity.createAttributes().build());
+		event.put(GOPNIK_VAR_TWO.get(), GopnikVarTwoEntity.createAttributes().build());
 	}
 }
