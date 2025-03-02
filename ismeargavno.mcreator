@@ -3540,6 +3540,19 @@
         ]
       },
       "path": "~/Town"
+    },
+    {
+      "name": "PotatoWaterCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potato_water_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/potato_water_craft.json"
+        ]
+      },
+      "path": "~/Town"
     }
   ],
   "variable_elements": [
