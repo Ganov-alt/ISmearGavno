@@ -14,6 +14,8 @@ import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.mcreator.ismeargavno.client.renderer.RedditorRenderer;
 import net.mcreator.ismeargavno.client.renderer.JewligerRenderer;
 import net.mcreator.ismeargavno.client.renderer.HomelessRenderer;
+import net.mcreator.ismeargavno.client.renderer.GopnikVarTwoRenderer;
+import net.mcreator.ismeargavno.client.renderer.GopnikVarOneRenderer;
 import net.mcreator.ismeargavno.client.renderer.BabyRenderer;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -26,5 +28,7 @@ public class IsmeargavnoModEntityRenderers {
 		event.registerEntityRenderer(IsmeargavnoModEntities.HOMELESS_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(IsmeargavnoModEntities.REDDITOR.get(), RedditorRenderer::new);
 		event.registerEntityRenderer(IsmeargavnoModEntities.ILLUMINATI_BEAM.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(IsmeargavnoModEntities.GOPNIK_VAR_ONE.get(), GopnikVarOneRenderer::new);
+		event.registerEntityRenderer(IsmeargavnoModEntities.GOPNIK_VAR_TWO.get(), GopnikVarTwoRenderer::new);
 	}
 }

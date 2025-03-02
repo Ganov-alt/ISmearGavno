@@ -84,6 +84,15 @@ public class IsmeargavnoModTabs {
 				tabData.accept(IsmeargavnoModItems.ILLUMINATI.get());
 				tabData.accept(IsmeargavnoModItems.PROTALGUN.get());
 				tabData.accept(IsmeargavnoModBlocks.PORTAL_BLOCK_1.get().asItem());
+				tabData.accept(IsmeargavnoModItems.GOPNIK_VAR_ONE_SPAWN_EGG.get());
+				tabData.accept(IsmeargavnoModItems.GOPNIK_VAR_TWO_SPAWN_EGG.get());
+				tabData.accept(IsmeargavnoModItems.VODKA.get());
+				tabData.accept(IsmeargavnoModBlocks.DISTILLATION_CONTAINER.get().asItem());
+				tabData.accept(IsmeargavnoModItems.CHIP.get());
+				tabData.accept(IsmeargavnoModItems.BRITISH_CHIP.get());
+				tabData.accept(IsmeargavnoModItems.SCALPEL.get());
+				tabData.accept(IsmeargavnoModItems.PINGLE_CAN.get());
+				tabData.accept(IsmeargavnoModItems.POTATO_WATER_BUCKET.get());
 			}).build());
 
 	@SubscribeEvent
@@ -93,6 +102,8 @@ public class IsmeargavnoModTabs {
 			tabData.accept(IsmeargavnoModItems.BABY_SPAWN_EGG.get());
 			tabData.accept(IsmeargavnoModItems.HOMELESS_SPAWN_EGG.get());
 			tabData.accept(IsmeargavnoModItems.REDDITOR_SPAWN_EGG.get());
+			tabData.accept(IsmeargavnoModItems.GOPNIK_VAR_ONE_SPAWN_EGG.get());
+			tabData.accept(IsmeargavnoModItems.GOPNIK_VAR_TWO_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(IsmeargavnoModItems.BIONIC_TOES_BOOTS.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {

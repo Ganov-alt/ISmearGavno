@@ -13,16 +13,7 @@
     "separation": 2,
     "restrictionBiomes": [
       {
-        "value": "plains"
-      },
-      {
-        "value": "savanna"
-      },
-      {
-        "value": "frozen_peaks"
-      },
-      {
-        "value": "snowy_tundra"
+        "value": "#minecraft:is_overworld"
       }
     ],
     "terrainAdaptation": "beard_thin",

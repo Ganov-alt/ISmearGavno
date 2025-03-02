@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "ismeargavno:gop_stop",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 45,
+    "separation": 1,
+    "salt": 284723539
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "_fv": 73,
+  "_type": "structure",
+  "definition": {
+    "structure": "roadcross",
+    "projection": "rigid",
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      }
+    ],
+    "spacing": 45,
+    "separation": 1,
+    "restrictionBiomes": [
+      {
+        "value": "beaches"
+      },
+      {
+        "value": "forest"
+      },
+      {
+        "value": "jungle"
+      },
+      {
+        "value": "savanna"
+      },
+      {
+        "value": "plains"
+      }
+    ],
+    "terrainAdaptation": "beard_thin",
+    "generationStep": "SURFACE_STRUCTURES",
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "useStartHeight": false,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 0,
+    "startHeightMax": 128,
+    "size": 1,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": [
+      {
+        "poolName": "road",
+        "fallbackPool": "ismeargavno:gop_stop_road",
+        "poolParts": [
+          {
+            "weight": 3,
+            "structure": "roadcross",
+            "projection": "rigid",
+            "ignoredBlocks": [
+              {
+                "value": "Blocks.STRUCTURE_BLOCK"
+              }
+            ]
+          },
+          {
+            "weight": 1,
+            "structure": "roadbend",
+            "projection": "rigid",
+            "ignoredBlocks": [
+              {
+                "value": "Blocks.STRUCTURE_BLOCK"
+              }
+            ]
+          },
+          {
+            "weight": 2,
+            "structure": "roadstraight",
+            "projection": "rigid",
+            "ignoredBlocks": [
+              {
+                "value": "Blocks.STRUCTURE_BLOCK"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "poolName": "building",
+        "fallbackPool": "ismeargavno:gop_stop_building",
+        "poolParts": [
+          {
+            "weight": 1,
+            "structure": "shop",
+            "projection": "rigid",
+            "ignoredBlocks": [
+              {
+                "value": "Blocks.STRUCTURE_BLOCK"
+              }
+            ]
+          },
+          {
+            "weight": 3,
+            "structure": "playground",
+            "projection": "rigid",
+            "ignoredBlocks": [
+              {
+                "value": "Blocks.STRUCTURE_BLOCK"
+              }
+            ]
+          },
+          {
+            "weight": 1,
+            "structure": "office",
+            "projection": "rigid",
+            "ignoredBlocks": [
+              {
+                "value": "Blocks.STRUCTURE_BLOCK"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

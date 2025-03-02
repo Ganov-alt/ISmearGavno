@@ -17,6 +17,7 @@ import net.mcreator.ismeargavno.world.inventory.HotDogRollerGuiMenu;
 import net.mcreator.ismeargavno.world.inventory.HomelessGuiMenu;
 import net.mcreator.ismeargavno.world.inventory.ForginatorGuiMenu;
 import net.mcreator.ismeargavno.world.inventory.EnhancedstorageunitbloodgyuMenu;
+import net.mcreator.ismeargavno.world.inventory.DistillationContainerGuiMenu;
 import net.mcreator.ismeargavno.world.inventory.DeepDarkTerminalGuiMenu;
 import net.mcreator.ismeargavno.world.inventory.DeepDarkStorageUnitGuiMenu;
 import net.mcreator.ismeargavno.world.inventory.DankGuiMenu;
@@ -39,4 +40,5 @@ public class IsmeargavnoModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<DankGuiMenu>> DANK_GUI = REGISTRY.register("dank_gui", () -> IMenuTypeExtension.create(DankGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<PhoneRigGuiMenu>> PHONE_RIG_GUI = REGISTRY.register("phone_rig_gui", () -> IMenuTypeExtension.create(PhoneRigGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<RedditorGuiMenu>> REDDITOR_GUI = REGISTRY.register("redditor_gui", () -> IMenuTypeExtension.create(RedditorGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<DistillationContainerGuiMenu>> DISTILLATION_CONTAINER_GUI = REGISTRY.register("distillation_container_gui", () -> IMenuTypeExtension.create(DistillationContainerGuiMenu::new));
 }

@@ -25,6 +25,8 @@ import net.mcreator.ismeargavno.init.IsmeargavnoModSounds;
 import net.mcreator.ismeargavno.init.IsmeargavnoModMobEffects;
 import net.mcreator.ismeargavno.init.IsmeargavnoModMenus;
 import net.mcreator.ismeargavno.init.IsmeargavnoModItems;
+import net.mcreator.ismeargavno.init.IsmeargavnoModFluids;
+import net.mcreator.ismeargavno.init.IsmeargavnoModFluidTypes;
 import net.mcreator.ismeargavno.init.IsmeargavnoModEntities;
 import net.mcreator.ismeargavno.init.IsmeargavnoModBlocks;
 import net.mcreator.ismeargavno.init.IsmeargavnoModBlockEntities;
@@ -58,6 +60,8 @@ public class IsmeargavnoMod {
 		IsmeargavnoModMenus.REGISTRY.register(modEventBus);
 
 		IsmeargavnoModVillagerProfessions.PROFESSIONS.register(modEventBus);
+		IsmeargavnoModFluids.REGISTRY.register(modEventBus);
+		IsmeargavnoModFluidTypes.REGISTRY.register(modEventBus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

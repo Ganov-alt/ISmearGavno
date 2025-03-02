@@ -19,6 +19,7 @@ import net.mcreator.ismeargavno.block.entity.PhoneScrollingRigBlockEntity;
 import net.mcreator.ismeargavno.block.entity.HotDogRollerBlockEntity;
 import net.mcreator.ismeargavno.block.entity.ForginatorBlockEntity;
 import net.mcreator.ismeargavno.block.entity.EnhancedStorageUnitBlockEntity;
+import net.mcreator.ismeargavno.block.entity.DistillationContainerBlockEntity;
 import net.mcreator.ismeargavno.block.entity.DeepDarkTerminalMainBlockBlockEntity;
 import net.mcreator.ismeargavno.block.entity.DeepDarkStorageUnitBlockEntity;
 import net.mcreator.ismeargavno.block.entity.CalciumRecombobulationModuleBlockEntity;
@@ -39,6 +40,7 @@ public class IsmeargavnoModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> AGINATOR_BLOCK = register("aginator_block", IsmeargavnoModBlocks.AGINATOR_BLOCK, AginatorBlockBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> ATM = register("atm", IsmeargavnoModBlocks.ATM, ATMBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> PHONE_SCROLLING_RIG = register("phone_scrolling_rig", IsmeargavnoModBlocks.PHONE_SCROLLING_RIG, PhoneScrollingRigBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> DISTILLATION_CONTAINER = register("distillation_container", IsmeargavnoModBlocks.DISTILLATION_CONTAINER, DistillationContainerBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -57,5 +59,6 @@ public class IsmeargavnoModBlockEntities {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, AGINATOR_BLOCK.get(), (blockEntity, side) -> ((AginatorBlockBlockEntity) blockEntity).getItemHandler());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, ATM.get(), (blockEntity, side) -> ((ATMBlockEntity) blockEntity).getItemHandler());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, PHONE_SCROLLING_RIG.get(), (blockEntity, side) -> ((PhoneScrollingRigBlockEntity) blockEntity).getItemHandler());
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, DISTILLATION_CONTAINER.get(), (blockEntity, side) -> ((DistillationContainerBlockEntity) blockEntity).getItemHandler());
 	}
 }

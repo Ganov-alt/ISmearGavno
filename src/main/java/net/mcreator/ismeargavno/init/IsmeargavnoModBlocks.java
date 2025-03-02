@@ -9,6 +9,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.ismeargavno.block.PotatoWaterBlock;
 import net.mcreator.ismeargavno.block.PortalToBirthCanalBlock;
 import net.mcreator.ismeargavno.block.PortalBlock2Block;
 import net.mcreator.ismeargavno.block.PortalBlock1Block;
@@ -16,6 +17,7 @@ import net.mcreator.ismeargavno.block.PhoneScrollingRigBlock;
 import net.mcreator.ismeargavno.block.HotDogRollerBlock;
 import net.mcreator.ismeargavno.block.ForginatorBlock;
 import net.mcreator.ismeargavno.block.EnhancedStorageUnitBlock;
+import net.mcreator.ismeargavno.block.DistillationContainerBlock;
 import net.mcreator.ismeargavno.block.DeepDarkTerminalMainBlockBlock;
 import net.mcreator.ismeargavno.block.DeepDarkStorageUnitBlock;
 import net.mcreator.ismeargavno.block.CurdledMilkBlock;
@@ -47,6 +49,8 @@ public class IsmeargavnoModBlocks {
 	public static final DeferredBlock<Block> PHONE_SCROLLING_RIG = REGISTRY.register("phone_scrolling_rig", PhoneScrollingRigBlock::new);
 	public static final DeferredBlock<Block> PORTAL_BLOCK_1 = REGISTRY.register("portal_block_1", PortalBlock1Block::new);
 	public static final DeferredBlock<Block> PORTAL_BLOCK_2 = REGISTRY.register("portal_block_2", PortalBlock2Block::new);
+	public static final DeferredBlock<Block> DISTILLATION_CONTAINER = REGISTRY.register("distillation_container", DistillationContainerBlock::new);
+	public static final DeferredBlock<Block> POTATO_WATER = REGISTRY.register("potato_water", PotatoWaterBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

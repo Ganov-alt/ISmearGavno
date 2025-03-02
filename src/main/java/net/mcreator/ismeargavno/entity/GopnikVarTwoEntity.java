@@ -6,6 +6,7 @@ import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
@@ -23,9 +24,11 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import net.mcreator.ismeargavno.init.IsmeargavnoModItems;
 import net.mcreator.ismeargavno.init.IsmeargavnoModEntities;
 
 public class GopnikVarTwoEntity extends Monster {
@@ -53,6 +56,11 @@ public class GopnikVarTwoEntity extends Monster {
 	@Override
 	public Vec3 getPassengerRidingPosition(Entity entity) {
 		return super.getPassengerRidingPosition(entity).add(0, -0.35F, 0);
+	}
+
+	protected void dropCustomDeathLoot(ServerLevel serverLevel, DamageSource source, boolean recentlyHitIn) {
+		super.dropCustomDeathLoot(serverLevel, source, recentlyHitIn);
+		this.spawnAtLocation(new ItemStack(IsmeargavnoModItems.VODKA.get()));
 	}
 
 	@Override

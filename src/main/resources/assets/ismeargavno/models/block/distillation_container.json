@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ismeargavno:block/forginatorbottom",
+    "up": "ismeargavno:block/forginatortop",
+    "north": "ismeargavno:block/distillationcontainersifde",
+    "east": "ismeargavno:block/distillationcontainersifde",
+    "south": "ismeargavno:block/distillationcontainersifde",
+    "west": "ismeargavno:block/distillationcontainersifde",
+    "particle": "ismeargavno:block/forginatorbottom"
+  },
+  "render_type": "solid"
+}

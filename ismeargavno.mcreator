@@ -3076,18 +3076,13 @@
       "registry_name": "portal_block_1",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ismeargavno/models/block/portal_block_1_top_right_open.json",
-          "src/main/resources/assets/ismeargavno/models/block/portal_block_1_top_left_open.json",
-          "src/main/resources/assets/ismeargavno/models/block/portal_block_1_top_right.json",
+          "src/main/resources/assets/ismeargavno/models/block/portal_block_1_inventory.json",
           "src/main/resources/data/ismeargavno/loot_table/blocks/portal_block_1.json",
-          "src/main/resources/assets/ismeargavno/models/block/portal_block_1_bottom_left_open.json",
           "src/main/java/net/mcreator/ismeargavno/block/PortalBlock1Block.java",
-          "src/main/resources/assets/ismeargavno/models/block/portal_block_1_top_left.json",
-          "src/main/resources/assets/ismeargavno/models/block/portal_block_1_bottom_left.json",
-          "src/main/resources/assets/ismeargavno/blockstates/portal_block_1.json",
-          "src/main/resources/assets/ismeargavno/models/block/portal_block_1_bottom_right_open.json",
           "src/main/resources/assets/ismeargavno/models/item/portal_block_1.json",
-          "src/main/resources/assets/ismeargavno/models/block/portal_block_1_bottom_right.json"
+          "src/main/resources/assets/ismeargavno/models/block/portal_block_1.json",
+          "src/main/resources/assets/ismeargavno/blockstates/portal_block_1.json",
+          "src/main/resources/assets/ismeargavno/models/block/portal_block_1_pressed.json"
         ]
       },
       "path": "~/PortalGun"
@@ -3166,18 +3161,13 @@
       "registry_name": "portal_block_2",
       "metadata": {
         "files": [
-          "src/main/resources/data/ismeargavno/loot_table/blocks/portal_block_2.json",
-          "src/main/resources/assets/ismeargavno/models/item/portal_block_2.json",
-          "src/main/resources/assets/ismeargavno/blockstates/portal_block_2.json",
-          "src/main/resources/assets/ismeargavno/models/block/portal_block_2_bottom_right_open.json",
-          "src/main/resources/assets/ismeargavno/models/block/portal_block_2_bottom_left_open.json",
-          "src/main/resources/assets/ismeargavno/models/block/portal_block_2_bottom_left.json",
-          "src/main/resources/assets/ismeargavno/models/block/portal_block_2_top_right.json",
-          "src/main/resources/assets/ismeargavno/models/block/portal_block_2_top_left_open.json",
-          "src/main/resources/assets/ismeargavno/models/block/portal_block_2_top_left.json",
-          "src/main/resources/assets/ismeargavno/models/block/portal_block_2_bottom_right.json",
+          "src/main/resources/assets/ismeargavno/models/block/portal_block_2_inventory.json",
           "src/main/java/net/mcreator/ismeargavno/block/PortalBlock2Block.java",
-          "src/main/resources/assets/ismeargavno/models/block/portal_block_2_top_right_open.json"
+          "src/main/resources/assets/ismeargavno/models/item/portal_block_2.json",
+          "src/main/resources/assets/ismeargavno/models/block/portal_block_2.json",
+          "src/main/resources/assets/ismeargavno/models/block/portal_block_2_pressed.json",
+          "src/main/resources/data/ismeargavno/loot_table/blocks/portal_block_2.json",
+          "src/main/resources/assets/ismeargavno/blockstates/portal_block_2.json"
         ]
       },
       "path": "~/PortalGun"
@@ -3276,6 +3266,277 @@
           "src/main/java/net/mcreator/ismeargavno/entity/GopnikVarTwoEntity.java",
           "src/main/resources/data/ismeargavno/neoforge/biome_modifier/gopnik_var_two_biome_modifier.json",
           "src/main/resources/assets/ismeargavno/models/item/gopnik_var_two_spawn_egg.json"
+        ]
+      },
+      "path": "~/Town"
+    },
+    {
+      "name": "VodkaPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vodka_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/VodkaPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Town"
+    },
+    {
+      "name": "Vodka",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vodka",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/item/vodka.json",
+          "src/main/java/net/mcreator/ismeargavno/item/VodkaItem.java"
+        ]
+      },
+      "path": "~/Town"
+    },
+    {
+      "name": "GopStop",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gop_stop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/worldgen/template_pool/gop_stop_road.json",
+          "src/main/resources/data/ismeargavno/worldgen/structure/gop_stop.json",
+          "src/main/resources/data/ismeargavno/worldgen/template_pool/gop_stop.json",
+          "src/main/resources/data/ismeargavno/worldgen/template_pool/gop_stop_building.json",
+          "src/main/resources/data/ismeargavno/worldgen/structure_set/gop_stop.json"
+        ]
+      },
+      "path": "~/Town"
+    },
+    {
+      "name": "DistillationContainer",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "distillation_container",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/loot_table/blocks/distillation_container.json",
+          "src/main/resources/assets/ismeargavno/models/block/distillation_container.json",
+          "src/main/java/net/mcreator/ismeargavno/block/DistillationContainerBlock.java",
+          "src/main/resources/assets/ismeargavno/models/item/distillation_container.json",
+          "src/main/java/net/mcreator/ismeargavno/block/entity/DistillationContainerBlockEntity.java",
+          "src/main/resources/assets/ismeargavno/blockstates/distillation_container.json"
+        ]
+      },
+      "path": "~/Town"
+    },
+    {
+      "name": "DistillationContainerGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "distillation_container_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/client/gui/DistillationContainerGuiScreen.java",
+          "src/main/java/net/mcreator/ismeargavno/network/DistillationContainerGuiButtonMessage.java",
+          "src/main/java/net/mcreator/ismeargavno/world/inventory/DistillationContainerGuiMenu.java"
+        ]
+      },
+      "path": "~/Town"
+    },
+    {
+      "name": "DistillProccess",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "distill_proccess",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/DistillProccessProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Town"
+    },
+    {
+      "name": "Chip",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chip",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/item/chip.json",
+          "src/main/java/net/mcreator/ismeargavno/item/ChipItem.java"
+        ]
+      },
+      "path": "~/Pingles"
+    },
+    {
+      "name": "BritishChip",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "british_chip",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/item/british_chip.json",
+          "src/main/java/net/mcreator/ismeargavno/item/BritishChipItem.java"
+        ]
+      },
+      "path": "~/Pingles"
+    },
+    {
+      "name": "Scalpel",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scalpel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/ScalpelItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/scalpel.json"
+        ]
+      },
+      "path": "~/Pingles"
+    },
+    {
+      "name": "ScalpelPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scalpel_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/ScalpelPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Pingles"
+    },
+    {
+      "name": "PingleCan",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pingle_can",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/item/pingle_can.json",
+          "src/main/java/net/mcreator/ismeargavno/item/PingleCanItem.java"
+        ]
+      },
+      "path": "~/Pingles"
+    },
+    {
+      "name": "MakePingle",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "make_pingle",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/make_pingle.json"
+        ]
+      },
+      "path": "~/Pingles"
+    },
+    {
+      "name": "ScalpelMake",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scalpel_make",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/scalpel_make.json"
+        ]
+      },
+      "path": "~/Pingles"
+    },
+    {
+      "name": "MakeDistillation",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "make_distillation",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/make_distillation.json"
+        ]
+      },
+      "path": "~/Town"
+    },
+    {
+      "name": "PotatoWater",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potato_water",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/block/PotatoWaterBlock.java",
+          "src/main/resources/assets/ismeargavno/blockstates/potato_water.json",
+          "src/main/java/net/mcreator/ismeargavno/fluid/types/PotatoWaterFluidType.java",
+          "src/main/java/net/mcreator/ismeargavno/item/PotatoWaterItem.java",
+          "src/main/java/net/mcreator/ismeargavno/fluid/PotatoWaterFluid.java",
+          "src/main/resources/assets/ismeargavno/models/item/potato_water_bucket.json",
+          "src/main/resources/assets/ismeargavno/models/block/potato_water.json"
         ]
       },
       "path": "~/Town"
@@ -3425,11 +3686,15 @@
       "~CUSTOM:CrystalizedBlood",
       "~CUSTOM:PortalToBirthCanal"
     ],
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:PotatoWater"
+    ],
     "BLOCKS:minecraft:mineable/hoe": [
       "~CUSTOM:CanalWall",
       "~CUSTOM:PortalToBirthCanal"
     ],
     "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:Scalpel",
       "~CUSTOM:Illuminati",
       "~CUSTOM:EyeScoop",
       "~CUSTOM:Grinder",
@@ -3583,12 +3848,15 @@
       "entity.ismeargavno.baby": "Baby",
       "gui.ismeargavno.homeless_gui.tooltip_coins": "Credit Card",
       "painting.ismeargavno.anime_waifu.author": "Ganov",
+      "gui.ismeargavno.distillation_container_gui.button_start": "Start",
       "item.ismeargavno.deep_dark_chip": "Deep Dark Chip",
       "subtitles.dankymerme": "Danky Song Plays",
       "gui.ismeargavno.calcium_recomb_gui.tooltip_insert_bone_blocks": "Insert Bone Blocks",
       "gui.ismeargavno.phone_rig_gui.button_start": "Start",
       "item.ismeargavno.mountain_dew": "Mountain Dew",
+      "block.ismeargavno.distillation_container": "Distillation Container",
       "subtitles.momgetthecamera": "Mom gets the camera",
+      "item.ismeargavno.pingle_can": "Pingle Can",
       "block.ismeargavno.phone_scrolling_rig": "Phone Scrolling Rig",
       "item.ismeargavno.block_harvester.description_0": "Can break most items with a gui in structures",
       "item_group.ismeargavno.i_smear_gavno": "I Smear Gavno",
@@ -3599,12 +3867,14 @@
       "item.ismeargavno.lit_boofington": "Lit Boofington",
       "item.ismeargavno.deep_dark_technic_board": "Deep Dark Technic Board",
       "block.ismeargavno.accel_bio_dome_block": "Biodome",
+      "item.ismeargavno.vodka": "Vodka",
       "item.ismeargavno.bionic_toes_boots.description_0": "Makes you faster and let you fall further at the cost of being extra heavy",
       "block.ismeargavno.hot_dog_roller": "Hot Dog Roller",
       "item.ismeargavno.molten_iron_chunk": "Molten Iron Chunk",
       "block.ismeargavno.aginator_block": "Aginator",
       "item.ismeargavno.forsaken_heart": "Forsaken Heart",
       "item.ismeargavno.unrefined_whippet": "Unrefined Whippet",
+      "gui.ismeargavno.distillation_container_gui.tooltip_potato_water": "Potato Water",
       "item.ismeargavno.vegan_sausage": "Vegan Sausage",
       "jei.ismeargavno.calcium_recomb_info": "Can only be broken with a block harvester and can be used to recycle 2 bone blocks into mysterious crust and random goodies",
       "item.ismeargavno.guilded_sausage": "Guilded Sausage",
@@ -3612,6 +3882,8 @@
       "item.ismeargavno.money_hungry_sausage": "Money Hungry Sausage",
       "entity.minecraft.villager.ismeargavno.sausage_seller": "Sausage Seller",
       "item.ismeargavno.under_ground_amalgam_item": "Underground Amalgam",
+      "item.ismeargavno.chip": "Chip",
+      "item.ismeargavno.british_chip": "British Chip",
       "block.ismeargavno.portal_block_1": "Portal Block 1",
       "item.ismeargavno.silver_fish_scales": "Silver Fish Scales",
       "block.ismeargavno.portal_block_2": "Portal Block 2",
@@ -3660,6 +3932,7 @@
       "biome.ismeargavno.calcium_land": "Calcium Land",
       "gui.ismeargavno.aginator_gui.AgifyTimeDisplay": "Time",
       "gui.ismeargavno.homeless_gui.tooltip_224": "224",
+      "item.ismeargavno.potato_water_bucket": "Potato Water Bucket",
       "block.ismeargavno.deep_dark_storage_unit": "Deep Dark Storage Unit",
       "jei.ismeargavno.mysterious_crust_tooltip": "obtained as a byproduct of using the forginator",
       "jei.ismeargavno.birth_canal_portal": "This is a portal to the birth canal dimension, do be warned bring a hoe because you might be teleported into the ground which is fastest broken with a hoe",
@@ -3668,11 +3941,13 @@
       "item.ismeargavno.slop": "Slop",
       "jei.ismeargavno.silverfishscaletooltip": "obtained by killing a silverfish",
       "jei.ismeargavno.payot_tooltip": "gotten by killing the Sausagecasingless Villager",
+      "item.ismeargavno.scalpel": "Scalpel",
       "item.ismeargavno.redditor_spawn_egg": "Redditor Spawn Egg",
       "gui.ismeargavno.aginator_gui.label_time": "Time",
       "gui.ismeargavno.homeless_gui.button_trade": "trade",
       "item.ismeargavno.coloured_wrapper": "Shred of coloured wrapper",
       "item.ismeargavno.odd_sausage": "Odd Sausage",
+      "gui.ismeargavno.distillation_container_gui.tooltip_vodka_ouptut": "Vodka Ouptut",
       "item.ismeargavno.downvote": "Downvote",
       "item.ismeargavno.protalgun": "Portal Gun",
       "item.ismeargavno.gopnik_var_one_spawn_egg": "Gopnik Var One Spawn Egg",
@@ -3685,6 +3960,7 @@
       "block.ismeargavno.crystalized_blood": "Crystalized Blood",
       "gui.ismeargavno.homeless_gui.BuyBoofington": "Buy Boofington ",
       "item.ismeargavno.pyramid_fragment": "Pyramid Fragment",
+      "fluid.ismeargavno.potato_water": "Potato Water",
       "gui.ismeargavno.redditor_gui.label_i_recieve": "I recieve (Reddit karma)",
       "gui.ismeargavno.credit_card_gui.button_transfer": "Transfer",
       "gui.ismeargavno.redditor_gui.button_what_do_you_have_to_offer": "What Do You Have To Offer?",
@@ -3695,9 +3971,11 @@
       "block.ismeargavno.calcium_recombobulation_module": "Calcium Recombobulation Module",
       "gui.ismeargavno.dank_gui.button_dankify": "Dankify!!",
       "item.ismeargavno.time_fragment": "Time Fragment",
+      "block.ismeargavno.potato_water": "Potato Water",
       "gui.ismeargavno.credit_card_gui.Balance": "Balance",
       "item.ismeargavno.block_harvester": "Block Harvester",
       "item.ismeargavno.jewliger_spawn_egg": "Jewliger Spawn Egg",
+      "gui.ismeargavno.distillation_container_gui.TimeLeft": "Time Left",
       "jei.ismeargavno.forsaken_heart_info": "Aquired by killing the baby in the birth canal dimension and is used in the crafting process of the enhanced storage unit",
       "painting.ismeargavno.anime_waifu.title": "Anime Waifus",
       "jei.ismeargavno.oddsausagetooltip": "made with 1 slop and 1 sausage casing in the hot dog stand",
@@ -3762,6 +4040,10 @@
       },
       {
         "name": "Town",
+        "children": []
+      },
+      {
+        "name": "Pingles",
         "children": []
       }
     ]

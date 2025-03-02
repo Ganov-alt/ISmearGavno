@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:gold_ingot"
+    },
+    "b": {
+      "item": "ismeargavno:metal_sheet"
+    },
+    "c": {
+      "item": "minecraft:barrel"
+    }
+  },
+  "result": {
+    "id": "ismeargavno:distillation_container",
+    "count": 1
+  }
+}

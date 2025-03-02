@@ -19,6 +19,7 @@ import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.ismeargavno.item.inventory.PhoneInventoryCapability;
+import net.mcreator.ismeargavno.item.VodkaItem;
 import net.mcreator.ismeargavno.item.VeganSausageItem;
 import net.mcreator.ismeargavno.item.UpvoteItem;
 import net.mcreator.ismeargavno.item.UnrefinedWhippetItem;
@@ -30,8 +31,11 @@ import net.mcreator.ismeargavno.item.StarGasWrapperItem;
 import net.mcreator.ismeargavno.item.StarGasItem;
 import net.mcreator.ismeargavno.item.SlopItem;
 import net.mcreator.ismeargavno.item.SilverFishScalesItem;
+import net.mcreator.ismeargavno.item.ScalpelItem;
 import net.mcreator.ismeargavno.item.PyramidFragmentItem;
 import net.mcreator.ismeargavno.item.ProtalgunItem;
+import net.mcreator.ismeargavno.item.PotatoWaterItem;
+import net.mcreator.ismeargavno.item.PingleCanItem;
 import net.mcreator.ismeargavno.item.PhoneItem;
 import net.mcreator.ismeargavno.item.PayotItem;
 import net.mcreator.ismeargavno.item.OddSausageItem;
@@ -58,6 +62,8 @@ import net.mcreator.ismeargavno.item.DeepDarkTechnicBoardItem;
 import net.mcreator.ismeargavno.item.DeepDarkChipItem;
 import net.mcreator.ismeargavno.item.CreditCardItem;
 import net.mcreator.ismeargavno.item.ColouredWrapperItem;
+import net.mcreator.ismeargavno.item.ChipItem;
+import net.mcreator.ismeargavno.item.BritishChipItem;
 import net.mcreator.ismeargavno.item.BloodCrystalItem;
 import net.mcreator.ismeargavno.item.BlockHarvesterItem;
 import net.mcreator.ismeargavno.item.BionicToesItem;
@@ -131,6 +137,15 @@ public class IsmeargavnoModItems {
 	public static final DeferredItem<Item> PROTALGUN = REGISTRY.register("protalgun", ProtalgunItem::new);
 	public static final DeferredItem<Item> PORTAL_BLOCK_1 = block(IsmeargavnoModBlocks.PORTAL_BLOCK_1);
 	public static final DeferredItem<Item> PORTAL_BLOCK_2 = block(IsmeargavnoModBlocks.PORTAL_BLOCK_2);
+	public static final DeferredItem<Item> GOPNIK_VAR_ONE_SPAWN_EGG = REGISTRY.register("gopnik_var_one_spawn_egg", () -> new DeferredSpawnEggItem(IsmeargavnoModEntities.GOPNIK_VAR_ONE, -16777216, -1, new Item.Properties()));
+	public static final DeferredItem<Item> GOPNIK_VAR_TWO_SPAWN_EGG = REGISTRY.register("gopnik_var_two_spawn_egg", () -> new DeferredSpawnEggItem(IsmeargavnoModEntities.GOPNIK_VAR_TWO, -1, -16777216, new Item.Properties()));
+	public static final DeferredItem<Item> VODKA = REGISTRY.register("vodka", VodkaItem::new);
+	public static final DeferredItem<Item> DISTILLATION_CONTAINER = block(IsmeargavnoModBlocks.DISTILLATION_CONTAINER);
+	public static final DeferredItem<Item> CHIP = REGISTRY.register("chip", ChipItem::new);
+	public static final DeferredItem<Item> BRITISH_CHIP = REGISTRY.register("british_chip", BritishChipItem::new);
+	public static final DeferredItem<Item> SCALPEL = REGISTRY.register("scalpel", ScalpelItem::new);
+	public static final DeferredItem<Item> PINGLE_CAN = REGISTRY.register("pingle_can", PingleCanItem::new);
+	public static final DeferredItem<Item> POTATO_WATER_BUCKET = REGISTRY.register("potato_water_bucket", PotatoWaterItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

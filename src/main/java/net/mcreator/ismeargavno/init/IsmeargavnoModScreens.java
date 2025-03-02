@@ -15,6 +15,7 @@ import net.mcreator.ismeargavno.client.gui.HotDogRollerGuiScreen;
 import net.mcreator.ismeargavno.client.gui.HomelessGuiScreen;
 import net.mcreator.ismeargavno.client.gui.ForginatorGuiScreen;
 import net.mcreator.ismeargavno.client.gui.EnhancedstorageunitbloodgyuScreen;
+import net.mcreator.ismeargavno.client.gui.DistillationContainerGuiScreen;
 import net.mcreator.ismeargavno.client.gui.DeepDarkTerminalGuiScreen;
 import net.mcreator.ismeargavno.client.gui.DeepDarkStorageUnitGuiScreen;
 import net.mcreator.ismeargavno.client.gui.DankGuiScreen;
@@ -38,5 +39,6 @@ public class IsmeargavnoModScreens {
 		event.register(IsmeargavnoModMenus.DANK_GUI.get(), DankGuiScreen::new);
 		event.register(IsmeargavnoModMenus.PHONE_RIG_GUI.get(), PhoneRigGuiScreen::new);
 		event.register(IsmeargavnoModMenus.REDDITOR_GUI.get(), RedditorGuiScreen::new);
+		event.register(IsmeargavnoModMenus.DISTILLATION_CONTAINER_GUI.get(), DistillationContainerGuiScreen::new);
 	}
 }
