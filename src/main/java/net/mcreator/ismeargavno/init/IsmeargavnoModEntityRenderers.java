@@ -11,6 +11,7 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
+import net.mcreator.ismeargavno.client.renderer.TaxCollectorRenderer;
 import net.mcreator.ismeargavno.client.renderer.RedditorRenderer;
 import net.mcreator.ismeargavno.client.renderer.JewligerRenderer;
 import net.mcreator.ismeargavno.client.renderer.HomelessRenderer;
@@ -30,5 +31,6 @@ public class IsmeargavnoModEntityRenderers {
 		event.registerEntityRenderer(IsmeargavnoModEntities.ILLUMINATI_BEAM.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(IsmeargavnoModEntities.GOPNIK_VAR_ONE.get(), GopnikVarOneRenderer::new);
 		event.registerEntityRenderer(IsmeargavnoModEntities.GOPNIK_VAR_TWO.get(), GopnikVarTwoRenderer::new);
+		event.registerEntityRenderer(IsmeargavnoModEntities.TAX_COLLECTOR.get(), TaxCollectorRenderer::new);
 	}
 }

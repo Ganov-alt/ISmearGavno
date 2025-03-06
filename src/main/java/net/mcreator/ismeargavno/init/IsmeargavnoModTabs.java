@@ -104,6 +104,7 @@ public class IsmeargavnoModTabs {
 			tabData.accept(IsmeargavnoModItems.REDDITOR_SPAWN_EGG.get());
 			tabData.accept(IsmeargavnoModItems.GOPNIK_VAR_ONE_SPAWN_EGG.get());
 			tabData.accept(IsmeargavnoModItems.GOPNIK_VAR_TWO_SPAWN_EGG.get());
+			tabData.accept(IsmeargavnoModItems.TAX_COLLECTOR_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(IsmeargavnoModItems.BIONIC_TOES_BOOTS.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {

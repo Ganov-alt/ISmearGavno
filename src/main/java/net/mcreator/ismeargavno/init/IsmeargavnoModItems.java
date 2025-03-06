@@ -146,6 +146,7 @@ public class IsmeargavnoModItems {
 	public static final DeferredItem<Item> SCALPEL = REGISTRY.register("scalpel", ScalpelItem::new);
 	public static final DeferredItem<Item> PINGLE_CAN = REGISTRY.register("pingle_can", PingleCanItem::new);
 	public static final DeferredItem<Item> POTATO_WATER_BUCKET = REGISTRY.register("potato_water_bucket", PotatoWaterItem::new);
+	public static final DeferredItem<Item> TAX_COLLECTOR_SPAWN_EGG = REGISTRY.register("tax_collector_spawn_egg", () -> new DeferredSpawnEggItem(IsmeargavnoModEntities.TAX_COLLECTOR, -6684928, -16777216, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

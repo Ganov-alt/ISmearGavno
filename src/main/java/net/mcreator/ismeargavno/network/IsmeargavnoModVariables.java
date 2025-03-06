@@ -15,6 +15,7 @@ import net.minecraft.world.level.saveddata.SavedData;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
@@ -71,7 +72,10 @@ public class IsmeargavnoModVariables {
 			clone.Pocketx = original.Pocketx;
 			clone.Pockety = original.Pockety;
 			clone.Pocketz = original.Pocketz;
+			clone.TAXCOLLECTORITEM = original.TAXCOLLECTORITEM;
+			clone.taxdue = original.taxdue;
 			if (!event.isWasDeath()) {
+				clone.TaxTimer = original.TaxTimer;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -251,6 +255,9 @@ public class IsmeargavnoModVariables {
 		public double Pocketx = 0;
 		public double Pockety = 0;
 		public double Pocketz = 0;
+		public ItemStack TAXCOLLECTORITEM = ItemStack.EMPTY;
+		public boolean taxdue = false;
+		public double TaxTimer = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -260,6 +267,9 @@ public class IsmeargavnoModVariables {
 			nbt.putDouble("Pocketx", Pocketx);
 			nbt.putDouble("Pockety", Pockety);
 			nbt.putDouble("Pocketz", Pocketz);
+			nbt.put("TAXCOLLECTORITEM", TAXCOLLECTORITEM.saveOptional(lookupProvider));
+			nbt.putBoolean("taxdue", taxdue);
+			nbt.putDouble("TaxTimer", TaxTimer);
 			return nbt;
 		}
 
@@ -270,6 +280,9 @@ public class IsmeargavnoModVariables {
 			Pocketx = nbt.getDouble("Pocketx");
 			Pockety = nbt.getDouble("Pockety");
 			Pocketz = nbt.getDouble("Pocketz");
+			TAXCOLLECTORITEM = ItemStack.parseOptional(lookupProvider, nbt.getCompound("TAXCOLLECTORITEM"));
+			taxdue = nbt.getBoolean("taxdue");
+			TaxTimer = nbt.getDouble("TaxTimer");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

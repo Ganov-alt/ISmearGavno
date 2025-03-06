@@ -3553,6 +3553,118 @@
         ]
       },
       "path": "~/Town"
+    },
+    {
+      "name": "TaxCollector",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tax_collector",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/entity/TaxCollectorEntity.java",
+          "src/main/resources/data/ismeargavno/neoforge/biome_modifier/tax_collector_biome_modifier.json",
+          "src/main/java/net/mcreator/ismeargavno/client/renderer/TaxCollectorRenderer.java",
+          "src/main/resources/assets/ismeargavno/models/item/tax_collector_spawn_egg.json"
+        ]
+      },
+      "path": "~/TaxCollector"
+    },
+    {
+      "name": "TaxCollecterProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tax_collecter_proc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/TaxCollecterProcProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TaxCollector"
+    },
+    {
+      "name": "TaxCollectorRightClickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tax_collector_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/TaxCollectorRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TaxCollector"
+    },
+    {
+      "name": "TaxTimerStart",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tax_timer_start",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/TaxTimerStartProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/TaxCollector"
+    },
+    {
+      "name": "TaxTimerPlayerTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tax_timer_player_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/TaxTimerPlayerTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/TaxCollector"
     }
   ],
   "variable_elements": [
@@ -3662,6 +3774,24 @@
       "name": "Portal2LocationOffsetZ",
       "type": "number",
       "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "TAXCOLLECTORITEM",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "taxdue",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TaxTimer",
+      "type": "number",
+      "scope": "player_lifetime",
       "value": "0"
     }
   ],
@@ -3932,6 +4062,7 @@
       "gui.ismeargavno.hot_dog_roller_gui.tooltip_flavour_enhancments_optional": "Flavour enhancments (optional)",
       "item.ismeargavno.that_boofington": "Chorus Boofington",
       "subtitles.spongebobstank": "Stinky",
+      "entity.ismeargavno.tax_collector": "Tax Collector",
       "item.ismeargavno.homeless_spawn_egg": "Hobo Spawn Egg",
       "item.ismeargavno.grinder": "Grinder",
       "gui.ismeargavno.homeless_gui.BuyStagas": "Buy Star gas",
@@ -3967,6 +4098,7 @@
       "block.ismeargavno.atm": "ATM",
       "item.ismeargavno.malleable_milk_curdles": "Malleable Milk Curdles",
       "jei.ismeargavno.block_harvester_info": "Be aware that for some reason on the last use it doesnt drop the block",
+      "item.ismeargavno.tax_collector_spawn_egg": "Tax Collector Spawn Egg",
       "item.ismeargavno.star_gas_wrapper": "Star Gas Wrapper",
       "gui.ismeargavno.homeless_gui.tooltip_64": "64",
       "item.ismeargavno.upvote": "Upvote",
@@ -4057,6 +4189,10 @@
       },
       {
         "name": "Pingles",
+        "children": []
+      },
+      {
+        "name": "TaxCollector",
         "children": []
       }
     ]

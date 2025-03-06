@@ -19,6 +19,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.registries.Registries;
 
+import net.mcreator.ismeargavno.entity.TaxCollectorEntity;
 import net.mcreator.ismeargavno.entity.RedditorEntity;
 import net.mcreator.ismeargavno.entity.JewligerEntity;
 import net.mcreator.ismeargavno.entity.IlluminatiBeamEntity;
@@ -58,6 +59,10 @@ public class IsmeargavnoModEntities {
 			EntityType.Builder.<GopnikVarTwoEntity>of(GopnikVarTwoEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<TaxCollectorEntity>> TAX_COLLECTOR = register("tax_collector",
+			EntityType.Builder.<TaxCollectorEntity>of(TaxCollectorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.95f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -79,6 +84,7 @@ public class IsmeargavnoModEntities {
 		RedditorEntity.init(event);
 		GopnikVarOneEntity.init(event);
 		GopnikVarTwoEntity.init(event);
+		TaxCollectorEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -89,5 +95,6 @@ public class IsmeargavnoModEntities {
 		event.put(REDDITOR.get(), RedditorEntity.createAttributes().build());
 		event.put(GOPNIK_VAR_ONE.get(), GopnikVarOneEntity.createAttributes().build());
 		event.put(GOPNIK_VAR_TWO.get(), GopnikVarTwoEntity.createAttributes().build());
+		event.put(TAX_COLLECTOR.get(), TaxCollectorEntity.createAttributes().build());
 	}
 }
