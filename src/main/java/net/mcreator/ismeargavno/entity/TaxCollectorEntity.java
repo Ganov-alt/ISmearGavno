@@ -31,8 +31,8 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
 
-import net.mcreator.ismeargavno.procedures.TaxTimerStartProcedure;
 import net.mcreator.ismeargavno.procedures.TaxCollectorRightClickedOnEntityProcedure;
+import net.mcreator.ismeargavno.procedures.TaxCollectorOnInitialEntitySpawnProcedure;
 import net.mcreator.ismeargavno.init.IsmeargavnoModEntities;
 
 import javax.annotation.Nullable;
@@ -67,7 +67,7 @@ public class TaxCollectorEntity extends Monster {
 	@Override
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata) {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata);
-		TaxTimerStartProcedure.execute(this);
+		TaxCollectorOnInitialEntitySpawnProcedure.execute(this);
 		return retval;
 	}
 

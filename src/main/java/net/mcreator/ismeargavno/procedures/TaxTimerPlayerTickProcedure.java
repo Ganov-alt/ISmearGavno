@@ -40,7 +40,12 @@ public class TaxTimerPlayerTickProcedure {
 				_player.displayClientMessage(Component.literal(("Seconds Left : " + entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES).TaxTimer / 20)), true);
 		} else if (entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES).TaxTimer == 0 && entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES).taxdue == true) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.HARM, 20, 4, false, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.HARM, 60, 4, false, false));
+			{
+				IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
+				_vars.taxdue = false;
+				_vars.syncPlayerVariables(entity);
+			}
 		}
 	}
 }

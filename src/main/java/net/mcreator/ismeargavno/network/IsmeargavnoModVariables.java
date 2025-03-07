@@ -74,8 +74,9 @@ public class IsmeargavnoModVariables {
 			clone.Pocketz = original.Pocketz;
 			clone.TAXCOLLECTORITEM = original.TAXCOLLECTORITEM;
 			clone.taxdue = original.taxdue;
+			clone.TaxTimer = original.TaxTimer;
+			clone.TaxAmountOfItemsNeeded = original.TaxAmountOfItemsNeeded;
 			if (!event.isWasDeath()) {
-				clone.TaxTimer = original.TaxTimer;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -258,6 +259,7 @@ public class IsmeargavnoModVariables {
 		public ItemStack TAXCOLLECTORITEM = ItemStack.EMPTY;
 		public boolean taxdue = false;
 		public double TaxTimer = 0;
+		public double TaxAmountOfItemsNeeded = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -270,6 +272,7 @@ public class IsmeargavnoModVariables {
 			nbt.put("TAXCOLLECTORITEM", TAXCOLLECTORITEM.saveOptional(lookupProvider));
 			nbt.putBoolean("taxdue", taxdue);
 			nbt.putDouble("TaxTimer", TaxTimer);
+			nbt.putDouble("TaxAmountOfItemsNeeded", TaxAmountOfItemsNeeded);
 			return nbt;
 		}
 
@@ -283,6 +286,7 @@ public class IsmeargavnoModVariables {
 			TAXCOLLECTORITEM = ItemStack.parseOptional(lookupProvider, nbt.getCompound("TAXCOLLECTORITEM"));
 			taxdue = nbt.getBoolean("taxdue");
 			TaxTimer = nbt.getDouble("TaxTimer");
+			TaxAmountOfItemsNeeded = nbt.getDouble("TaxAmountOfItemsNeeded");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

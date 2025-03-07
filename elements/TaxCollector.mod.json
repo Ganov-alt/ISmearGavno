@@ -124,7 +124,7 @@
       "name": "TaxCollectorRightClickedOnEntity"
     },
     "onInitialSpawn": {
-      "name": "TaxTimerStart"
+      "name": "TaxCollectorOnInitialEntitySpawn"
     },
     "hasAI": true,
     "aiBase": "(none)",
