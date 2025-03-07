@@ -3647,6 +3647,10 @@
             "type": "entity"
           },
           {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -3657,6 +3661,29 @@
           {
             "name": "z",
             "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TaxCollector"
+    },
+    {
+      "name": "SendTaxMessage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "send_tax_message",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/SendTaxMessageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
           },
           {
             "name": "world",
@@ -3999,8 +4026,8 @@
       "painting.ismeargavno.anime_waifu.author": "Ganov",
       "gui.ismeargavno.distillation_container_gui.button_start": "Start",
       "item.ismeargavno.deep_dark_chip": "Deep Dark Chip",
-      "gui.ismeargavno.calcium_recomb_gui.tooltip_insert_bone_blocks": "Insert Bone Blocks",
       "subtitles.dankymerme": "Danky Song Plays",
+      "gui.ismeargavno.calcium_recomb_gui.tooltip_insert_bone_blocks": "Insert Bone Blocks",
       "gui.ismeargavno.phone_rig_gui.button_start": "Start",
       "item.ismeargavno.mountain_dew": "Mountain Dew",
       "block.ismeargavno.distillation_container": "Distillation Container",

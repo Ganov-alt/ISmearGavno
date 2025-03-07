@@ -1,147 +1,110 @@
 package net.mcreator.ismeargavno.procedures;
 
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
+
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
-import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.BlockPos;
 
 import net.mcreator.ismeargavno.network.IsmeargavnoModVariables;
 import net.mcreator.ismeargavno.init.IsmeargavnoModItems;
+import net.mcreator.ismeargavno.init.IsmeargavnoModEntities;
 
+import javax.annotation.Nullable;
+
+@EventBusSubscriber
 public class TaxCollectorOnInitialEntitySpawnProcedure {
-	public static void execute(Entity entity) {
+	@SubscribeEvent
+	public static void onPlayerTick(PlayerTickEvent.Post event) {
+		execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
+	}
+
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		execute(null, world, x, y, z, entity);
+	}
+
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		double RandoTaxNumber = 0;
-		RandoTaxNumber = Math.round(Mth.nextInt(RandomSource.create(), 1, 5));
-		if (Math.round(RandoTaxNumber) == 1) {
-			{
-				IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
-				_vars.TAXCOLLECTORITEM = new ItemStack(IsmeargavnoModItems.GOLD_COIN.get()).copy();
-				_vars.syncPlayerVariables(entity);
+		if (world.dayTime() == 6000) {
+			if (world instanceof ServerLevel _level) {
+				Entity entityToSpawn = IsmeargavnoModEntities.TAX_COLLECTOR.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+				if (entityToSpawn != null) {
+					entityToSpawn.setDeltaMovement(0, 0, 0);
+				}
 			}
-			{
-				IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
-				_vars.TaxAmountOfItemsNeeded = Math.round(Mth.nextInt(RandomSource.create(), 1, 64));
-				_vars.syncPlayerVariables(entity);
-			}
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(
-						("Tax Collector: We need " + entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES).TaxAmountOfItemsNeeded + entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES).TAXCOLLECTORITEM + ", you have 60 seconds, or else...")),
-						false);
-			{
-				IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
-				_vars.TaxTimer = 1200;
-				_vars.syncPlayerVariables(entity);
-			}
-			{
-				IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
-				_vars.taxdue = true;
-				_vars.syncPlayerVariables(entity);
-			}
-		} else if (Math.round(RandoTaxNumber) == 2) {
-			{
-				IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
-				_vars.TAXCOLLECTORITEM = new ItemStack(Items.DIAMOND).copy();
-				_vars.syncPlayerVariables(entity);
-			}
-			{
-				IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
-				_vars.TaxAmountOfItemsNeeded = Math.round(Mth.nextInt(RandomSource.create(), 1, 16));
-				_vars.syncPlayerVariables(entity);
-			}
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(
-						("Tax Collector: We need " + entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES).TaxAmountOfItemsNeeded + entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES).TAXCOLLECTORITEM + ", you have 60 seconds, or else...")),
-						false);
-			{
-				IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
-				_vars.TaxTimer = 1200;
-				_vars.syncPlayerVariables(entity);
-			}
-			{
-				IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
-				_vars.taxdue = true;
-				_vars.syncPlayerVariables(entity);
-			}
-		} else if (Math.round(RandoTaxNumber) == 3) {
-			{
-				IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
-				_vars.TAXCOLLECTORITEM = new ItemStack(Items.EMERALD).copy();
-				_vars.syncPlayerVariables(entity);
-			}
-			{
-				IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
-				_vars.TaxAmountOfItemsNeeded = Math.round(Mth.nextInt(RandomSource.create(), 1, 8));
-				_vars.syncPlayerVariables(entity);
-			}
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(
-						("Tax Collector: We need " + entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES).TaxAmountOfItemsNeeded + entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES).TAXCOLLECTORITEM + ", you have 60 seconds, or else...")),
-						false);
-			{
-				IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
-				_vars.TaxTimer = 1200;
-				_vars.syncPlayerVariables(entity);
-			}
-			{
-				IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
-				_vars.taxdue = true;
-				_vars.syncPlayerVariables(entity);
-			}
-		} else if (Math.round(RandoTaxNumber) == 4) {
-			{
-				IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
-				_vars.TAXCOLLECTORITEM = new ItemStack(Blocks.DIRT).copy();
-				_vars.syncPlayerVariables(entity);
-			}
-			{
-				IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
-				_vars.TaxAmountOfItemsNeeded = Math.round(Mth.nextInt(RandomSource.create(), 1, 32));
-				_vars.syncPlayerVariables(entity);
-			}
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(
-						("Tax Collector: We need " + entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES).TaxAmountOfItemsNeeded + entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES).TAXCOLLECTORITEM + ", you have 60 seconds, or else...")),
-						false);
-			{
-				IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
-				_vars.TaxTimer = 1200;
-				_vars.syncPlayerVariables(entity);
-			}
-			{
-				IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
-				_vars.taxdue = true;
-				_vars.syncPlayerVariables(entity);
-			}
-		} else if (Math.round(RandoTaxNumber) == 5) {
-			{
-				IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
-				_vars.TAXCOLLECTORITEM = new ItemStack(IsmeargavnoModItems.DOWNVOTE.get()).copy();
-				_vars.syncPlayerVariables(entity);
-			}
-			{
-				IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
-				_vars.TaxAmountOfItemsNeeded = Math.round(Mth.nextInt(RandomSource.create(), 1, 3));
-				_vars.syncPlayerVariables(entity);
-			}
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(
-						("Tax Collector: We need " + entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES).TaxAmountOfItemsNeeded + entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES).TAXCOLLECTORITEM + ", you have 60 seconds, or else...")),
-						false);
-			{
-				IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
-				_vars.TaxTimer = 1200;
-				_vars.syncPlayerVariables(entity);
-			}
-			{
-				IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
-				_vars.taxdue = true;
-				_vars.syncPlayerVariables(entity);
+			RandoTaxNumber = Math.round(Mth.nextInt(RandomSource.create(), 1, 5));
+			if (Math.round(RandoTaxNumber) == 1) {
+				{
+					IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
+					_vars.TAXCOLLECTORITEM = new ItemStack(IsmeargavnoModItems.GOLD_COIN.get()).copy();
+					_vars.syncPlayerVariables(entity);
+				}
+				{
+					IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
+					_vars.TaxAmountOfItemsNeeded = Math.round(Mth.nextInt(RandomSource.create(), 1, 64));
+					_vars.syncPlayerVariables(entity);
+				}
+				SendTaxMessageProcedure.execute(world, entity);
+			} else if (Math.round(RandoTaxNumber) == 2) {
+				{
+					IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
+					_vars.TAXCOLLECTORITEM = new ItemStack(Items.DIAMOND).copy();
+					_vars.syncPlayerVariables(entity);
+				}
+				{
+					IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
+					_vars.TaxAmountOfItemsNeeded = Math.round(Mth.nextInt(RandomSource.create(), 1, 16));
+					_vars.syncPlayerVariables(entity);
+				}
+				SendTaxMessageProcedure.execute(world, entity);
+			} else if (Math.round(RandoTaxNumber) == 3) {
+				{
+					IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
+					_vars.TAXCOLLECTORITEM = new ItemStack(Items.EMERALD).copy();
+					_vars.syncPlayerVariables(entity);
+				}
+				{
+					IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
+					_vars.TaxAmountOfItemsNeeded = Math.round(Mth.nextInt(RandomSource.create(), 1, 8));
+					_vars.syncPlayerVariables(entity);
+				}
+				SendTaxMessageProcedure.execute(world, entity);
+			} else if (Math.round(RandoTaxNumber) == 4) {
+				{
+					IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
+					_vars.TAXCOLLECTORITEM = new ItemStack(Blocks.DIRT).copy();
+					_vars.syncPlayerVariables(entity);
+				}
+				{
+					IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
+					_vars.TaxAmountOfItemsNeeded = Math.round(Mth.nextInt(RandomSource.create(), 1, 32));
+					_vars.syncPlayerVariables(entity);
+				}
+				SendTaxMessageProcedure.execute(world, entity);
+			} else if (Math.round(RandoTaxNumber) == 5) {
+				{
+					IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
+					_vars.TAXCOLLECTORITEM = new ItemStack(IsmeargavnoModItems.DOWNVOTE.get()).copy();
+					_vars.syncPlayerVariables(entity);
+				}
+				{
+					IsmeargavnoModVariables.PlayerVariables _vars = entity.getData(IsmeargavnoModVariables.PLAYER_VARIABLES);
+					_vars.TaxAmountOfItemsNeeded = Math.round(Mth.nextInt(RandomSource.create(), 1, 3));
+					_vars.syncPlayerVariables(entity);
+				}
+				SendTaxMessageProcedure.execute(world, entity);
 			}
 		}
 	}
