@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "ismeargavno:green_tea"
+    },
+    "b": {
+      "item": "ismeargavno:british_chip"
+    },
+    "c": {
+      "tag": "minecraft:cookedfish"
+    },
+    "d": {
+      "item": "ismeargavno:plate"
+    }
+  },
+  "result": {
+    "id": "ismeargavno:proper_geezers_meal",
+    "count": 1
+  }
+}

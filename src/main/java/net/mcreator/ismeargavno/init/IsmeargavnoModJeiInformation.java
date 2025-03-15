@@ -33,5 +33,6 @@ public class IsmeargavnoModJeiInformation implements IModPlugin {
 		registration.addIngredientInfo(List.of(new ItemStack(IsmeargavnoModBlocks.CALCIUM_RECOMBOBULATION_MODULE.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.ismeargavno.calcium_recomb_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(IsmeargavnoModItems.FORSAKEN_HEART.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.ismeargavno.forsaken_heart_info"));
 		registration.addIngredientInfo(List.of(new ItemStack(IsmeargavnoModBlocks.PORTAL_TO_BIRTH_CANAL.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.ismeargavno.birth_canal_portal"));
+		registration.addIngredientInfo(List.of(new ItemStack(IsmeargavnoModItems.PORCELAIN_SHARD.get())), VanillaTypes.ITEM_STACK, Component.translatable("jei.ismeargavno.porcelain_make"));
 	}
 }

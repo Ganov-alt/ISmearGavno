@@ -82,8 +82,6 @@ public class IsmeargavnoModTabs {
 				tabData.accept(IsmeargavnoModItems.EYE_SCOOP.get());
 				tabData.accept(IsmeargavnoModItems.EYE.get());
 				tabData.accept(IsmeargavnoModItems.ILLUMINATI.get());
-				tabData.accept(IsmeargavnoModItems.PROTALGUN.get());
-				tabData.accept(IsmeargavnoModBlocks.PORTAL_BLOCK_1.get().asItem());
 				tabData.accept(IsmeargavnoModItems.GOPNIK_VAR_ONE_SPAWN_EGG.get());
 				tabData.accept(IsmeargavnoModItems.GOPNIK_VAR_TWO_SPAWN_EGG.get());
 				tabData.accept(IsmeargavnoModItems.VODKA.get());
@@ -93,6 +91,16 @@ public class IsmeargavnoModTabs {
 				tabData.accept(IsmeargavnoModItems.SCALPEL.get());
 				tabData.accept(IsmeargavnoModItems.PINGLE_CAN.get());
 				tabData.accept(IsmeargavnoModItems.POTATO_WATER_BUCKET.get());
+				tabData.accept(IsmeargavnoModItems.TAX_COLLECTOR_SPAWN_EGG.get());
+				tabData.accept(IsmeargavnoModItems.EMPTY_TEA_BAG.get());
+				tabData.accept(IsmeargavnoModItems.GREEN_TEA_BAG.get());
+				tabData.accept(IsmeargavnoModItems.BLACK_TEA_BAG.get());
+				tabData.accept(IsmeargavnoModItems.GREEN_TEA.get());
+				tabData.accept(IsmeargavnoModItems.BLACK_TEA.get());
+				tabData.accept(IsmeargavnoModItems.PORCELAIN_SHARD.get());
+				tabData.accept(IsmeargavnoModItems.PLATE.get());
+				tabData.accept(IsmeargavnoModItems.DIRTY_PLATE.get());
+				tabData.accept(IsmeargavnoModItems.PROPER_GEEZERS_MEAL.get());
 			}).build());
 
 	@SubscribeEvent
@@ -113,10 +121,6 @@ public class IsmeargavnoModTabs {
 			tabData.accept(IsmeargavnoModBlocks.BONE_SPIKE.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(IsmeargavnoModItems.BLOCK_HARVESTER.get());
-		} else if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
-			tabData.accept(IsmeargavnoModItems.PROTALGUN.get());
-			tabData.accept(IsmeargavnoModBlocks.PORTAL_BLOCK_1.get().asItem());
-			tabData.accept(IsmeargavnoModBlocks.PORTAL_BLOCK_2.get().asItem());
 		}
 	}
 }

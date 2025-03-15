@@ -39,6 +39,9 @@
     "creativeTabs": [
       {
         "value": "MISC"
+      },
+      {
+        "value": "CUSTOM:ISmearGavno"
       }
     ],
     "isBoss": false,
@@ -72,7 +75,7 @@
     "armorBaseValue": 0.0,
     "trackingRange": 64,
     "followRange": 16,
-    "health": 10,
+    "health": 35,
     "xpAmount": 0,
     "waterMob": false,
     "breatheUnderwater": {
@@ -120,6 +123,9 @@
       "value": ""
     },
     "entityDataEntries": [],
+    "whenMobDies": {
+      "name": "TaxCollectorEntityDies"
+    },
     "onRightClickedOn": {
       "name": "TaxCollectorRightClickedOnEntity"
     },

@@ -28,6 +28,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.ismeargavno.procedures.TaxCollectorRightClickedOnEntityProcedure;
+import net.mcreator.ismeargavno.procedures.TaxCollectorEntityDiesProcedure;
 import net.mcreator.ismeargavno.init.IsmeargavnoModEntities;
 
 public class TaxCollectorEntity extends Monster {
@@ -58,6 +59,12 @@ public class TaxCollectorEntity extends Monster {
 	}
 
 	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		TaxCollectorEntityDiesProcedure.execute(this, source.getEntity());
+	}
+
+	@Override
 	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
 		ItemStack itemstack = sourceentity.getItemInHand(hand);
 		InteractionResult retval = InteractionResult.sidedSuccess(this.level().isClientSide());
@@ -81,7 +88,7 @@ public class TaxCollectorEntity extends Monster {
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.35);
-		builder = builder.add(Attributes.MAX_HEALTH, 10);
+		builder = builder.add(Attributes.MAX_HEALTH, 35);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);

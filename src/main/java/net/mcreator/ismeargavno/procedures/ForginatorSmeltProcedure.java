@@ -231,6 +231,27 @@ public class ForginatorSmeltProcedure {
 									}
 								}
 							}
+						}
+					} else if (new Object() {
+						public int getAmount(int sltid) {
+							if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+								ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+								if (stack != null)
+									return stack.getCount();
+							}
+							return 0;
+						}
+					}.getAmount(1) >= 0) {
+						if (new Object() {
+							public int getAmount(int sltid) {
+								if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+									ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+									if (stack != null)
+										return stack.getCount();
+								}
+								return 0;
+							}
+						}.getAmount(0) >= 1) {
 							if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getItem() == Blocks.IRON_BLOCK
 									.asItem()) {
 								if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()
@@ -256,6 +277,88 @@ public class ForginatorSmeltProcedure {
 												return 0;
 											}
 										}.getAmount(2) + 3));
+										((Slot) _slots.get(2)).set(_setstack);
+										_player.containerMenu.broadcastChanges();
+									}
+								} else {
+									if (world instanceof ServerLevel _level) {
+										ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
+												(entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY));
+										entityToSpawn.setPickUpDelay(1);
+										entityToSpawn.setUnlimitedLifetime();
+										_level.addFreshEntity(entityToSpawn);
+									}
+									if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+										((Slot) _slots.get(2)).set(ItemStack.EMPTY);
+										_player.containerMenu.broadcastChanges();
+									}
+								}
+							}
+							if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getItem() == Items.BRICK) {
+								if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()
+										|| (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY)
+												.getItem() == IsmeargavnoModItems.PORCELAIN_SHARD.get()) {
+									if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+										((Slot) _slots.get(1)).remove(1);
+										_player.containerMenu.broadcastChanges();
+									}
+									if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+										((Slot) _slots.get(0)).remove(1);
+										_player.containerMenu.broadcastChanges();
+									}
+									if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+										ItemStack _setstack = new ItemStack(IsmeargavnoModItems.PORCELAIN_SHARD.get()).copy();
+										_setstack.setCount((int) (new Object() {
+											public int getAmount(int sltid) {
+												if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+													ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+													if (stack != null)
+														return stack.getCount();
+												}
+												return 0;
+											}
+										}.getAmount(2) + 1));
+										((Slot) _slots.get(2)).set(_setstack);
+										_player.containerMenu.broadcastChanges();
+									}
+								} else {
+									if (world instanceof ServerLevel _level) {
+										ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
+												(entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY));
+										entityToSpawn.setPickUpDelay(1);
+										entityToSpawn.setUnlimitedLifetime();
+										_level.addFreshEntity(entityToSpawn);
+									}
+									if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+										((Slot) _slots.get(2)).set(ItemStack.EMPTY);
+										_player.containerMenu.broadcastChanges();
+									}
+								}
+							}
+							if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getItem() == Items.CLAY_BALL) {
+								if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()
+										|| (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY)
+												.getItem() == Items.BRICK) {
+									if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+										((Slot) _slots.get(1)).remove(1);
+										_player.containerMenu.broadcastChanges();
+									}
+									if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+										((Slot) _slots.get(0)).remove(1);
+										_player.containerMenu.broadcastChanges();
+									}
+									if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+										ItemStack _setstack = new ItemStack(Items.BRICK).copy();
+										_setstack.setCount((int) (new Object() {
+											public int getAmount(int sltid) {
+												if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+													ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+													if (stack != null)
+														return stack.getCount();
+												}
+												return 0;
+											}
+										}.getAmount(2) + 2));
 										((Slot) _slots.get(2)).set(_setstack);
 										_player.containerMenu.broadcastChanges();
 									}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:green_dye"
+    },
+    "b": {
+      "item": "ismeargavno:empty_tea_bag"
+    },
+    "c": {
+      "tag": "minecraft:small_flowers"
+    }
+  },
+  "result": {
+    "id": "ismeargavno:green_tea_bag",
+    "count": 1
+  }
+}
