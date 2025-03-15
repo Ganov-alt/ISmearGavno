@@ -1,26 +1,6 @@
 package net.mcreator.ismeargavno.procedures;
 
-import net.neoforged.neoforge.event.tick.PlayerTickEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
-
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.ismeargavno.network.IsmeargavnoModVariables;
-import net.mcreator.ismeargavno.init.IsmeargavnoModItems;
-import net.mcreator.ismeargavno.init.IsmeargavnoModEntities;
-
-import javax.annotation.Nullable;
 
 @EventBusSubscriber
 public class TaxCollectorOnInitialEntitySpawnProcedure {

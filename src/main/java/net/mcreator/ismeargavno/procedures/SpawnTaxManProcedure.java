@@ -1,11 +1,6 @@
 package net.mcreator.ismeargavno.procedures;
 
-import net.neoforged.neoforge.event.tick.PlayerTickEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
-
-import javax.annotation.Nullable;
 
 @EventBusSubscriber
 public class SpawnTaxManProcedure {

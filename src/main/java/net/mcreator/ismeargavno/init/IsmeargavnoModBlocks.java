@@ -11,8 +11,6 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.ismeargavno.block.PotatoWaterBlock;
 import net.mcreator.ismeargavno.block.PortalToBirthCanalBlock;
-import net.mcreator.ismeargavno.block.PortalBlock2Block;
-import net.mcreator.ismeargavno.block.PortalBlock1Block;
 import net.mcreator.ismeargavno.block.PhoneScrollingRigBlock;
 import net.mcreator.ismeargavno.block.HotDogRollerBlock;
 import net.mcreator.ismeargavno.block.ForginatorBlock;
@@ -47,8 +45,6 @@ public class IsmeargavnoModBlocks {
 	public static final DeferredBlock<Block> ACCEL_BIO_DOME_BLOCK = REGISTRY.register("accel_bio_dome_block", AccelBioDomeBlockBlock::new);
 	public static final DeferredBlock<Block> ATM = REGISTRY.register("atm", ATMBlock::new);
 	public static final DeferredBlock<Block> PHONE_SCROLLING_RIG = REGISTRY.register("phone_scrolling_rig", PhoneScrollingRigBlock::new);
-	public static final DeferredBlock<Block> PORTAL_BLOCK_1 = REGISTRY.register("portal_block_1", PortalBlock1Block::new);
-	public static final DeferredBlock<Block> PORTAL_BLOCK_2 = REGISTRY.register("portal_block_2", PortalBlock2Block::new);
 	public static final DeferredBlock<Block> DISTILLATION_CONTAINER = REGISTRY.register("distillation_container", DistillationContainerBlock::new);
 	public static final DeferredBlock<Block> POTATO_WATER = REGISTRY.register("potato_water", PotatoWaterBlock::new);
 	// Start of user code block custom blocks

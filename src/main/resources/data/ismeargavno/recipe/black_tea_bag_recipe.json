@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc"
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:small_flowers"
+    },
+    "b": {
+      "item": "ismeargavno:empty_tea_bag"
+    },
+    "c": {
+      "item": "minecraft:black_dye"
+    }
+  },
+  "result": {
+    "id": "ismeargavno:black_tea_bag",
+    "count": 1
+  }
+}

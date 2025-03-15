@@ -9,7 +9,6 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
-import net.mcreator.ismeargavno.client.gui.TaxRate2Screen;
 import net.mcreator.ismeargavno.client.gui.RedditorGuiScreen;
 import net.mcreator.ismeargavno.client.gui.PhoneRigGuiScreen;
 import net.mcreator.ismeargavno.client.gui.HotDogRollerGuiScreen;
@@ -41,6 +40,5 @@ public class IsmeargavnoModScreens {
 		event.register(IsmeargavnoModMenus.PHONE_RIG_GUI.get(), PhoneRigGuiScreen::new);
 		event.register(IsmeargavnoModMenus.REDDITOR_GUI.get(), RedditorGuiScreen::new);
 		event.register(IsmeargavnoModMenus.DISTILLATION_CONTAINER_GUI.get(), DistillationContainerGuiScreen::new);
-		event.register(IsmeargavnoModMenus.TAX_RATE_2.get(), TaxRate2Screen::new);
 	}
 }
