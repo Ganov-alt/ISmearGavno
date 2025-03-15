@@ -154,13 +154,13 @@ public class IsmeargavnoModItems {
 	public static final DeferredItem<Item> TAX_COLLECTOR_SPAWN_EGG = REGISTRY.register("tax_collector_spawn_egg", () -> new DeferredSpawnEggItem(IsmeargavnoModEntities.TAX_COLLECTOR, -6684928, -16777216, new Item.Properties()));
 	public static final DeferredItem<Item> EMPTY_TEA_BAG = REGISTRY.register("empty_tea_bag", EmptyTeaBagItem::new);
 	public static final DeferredItem<Item> GREEN_TEA_BAG = REGISTRY.register("green_tea_bag", GreenTeaBagItem::new);
+	public static final DeferredItem<Item> DIRTY_PLATE = REGISTRY.register("dirty_plate", DirtyPlateItem::new);
+	public static final DeferredItem<Item> BLACK_TEA = REGISTRY.register("black_tea", BlackTeaItem::new);
+	public static final DeferredItem<Item> PROPER_GEEZERS_MEAL = REGISTRY.register("proper_geezers_meal", ProperGeezersMealItem::new);
+	public static final DeferredItem<Item> PLATE = REGISTRY.register("plate", PlateItem::new);
+	public static final DeferredItem<Item> PORCELAIN_SHARD = REGISTRY.register("porcelain_shard", PorcelainShardItem::new);
 	public static final DeferredItem<Item> BLACK_TEA_BAG = REGISTRY.register("black_tea_bag", BlackTeaBagItem::new);
 	public static final DeferredItem<Item> GREEN_TEA = REGISTRY.register("green_tea", GreenTeaItem::new);
-	public static final DeferredItem<Item> BLACK_TEA = REGISTRY.register("black_tea", BlackTeaItem::new);
-	public static final DeferredItem<Item> PORCELAIN_SHARD = REGISTRY.register("porcelain_shard", PorcelainShardItem::new);
-	public static final DeferredItem<Item> PLATE = REGISTRY.register("plate", PlateItem::new);
-	public static final DeferredItem<Item> DIRTY_PLATE = REGISTRY.register("dirty_plate", DirtyPlateItem::new);
-	public static final DeferredItem<Item> PROPER_GEEZERS_MEAL = REGISTRY.register("proper_geezers_meal", ProperGeezersMealItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

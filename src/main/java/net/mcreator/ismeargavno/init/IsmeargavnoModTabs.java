@@ -94,13 +94,13 @@ public class IsmeargavnoModTabs {
 				tabData.accept(IsmeargavnoModItems.TAX_COLLECTOR_SPAWN_EGG.get());
 				tabData.accept(IsmeargavnoModItems.EMPTY_TEA_BAG.get());
 				tabData.accept(IsmeargavnoModItems.GREEN_TEA_BAG.get());
+				tabData.accept(IsmeargavnoModItems.DIRTY_PLATE.get());
+				tabData.accept(IsmeargavnoModItems.BLACK_TEA.get());
+				tabData.accept(IsmeargavnoModItems.PROPER_GEEZERS_MEAL.get());
+				tabData.accept(IsmeargavnoModItems.PLATE.get());
+				tabData.accept(IsmeargavnoModItems.PORCELAIN_SHARD.get());
 				tabData.accept(IsmeargavnoModItems.BLACK_TEA_BAG.get());
 				tabData.accept(IsmeargavnoModItems.GREEN_TEA.get());
-				tabData.accept(IsmeargavnoModItems.BLACK_TEA.get());
-				tabData.accept(IsmeargavnoModItems.PORCELAIN_SHARD.get());
-				tabData.accept(IsmeargavnoModItems.PLATE.get());
-				tabData.accept(IsmeargavnoModItems.DIRTY_PLATE.get());
-				tabData.accept(IsmeargavnoModItems.PROPER_GEEZERS_MEAL.get());
 			}).build());
 
 	@SubscribeEvent

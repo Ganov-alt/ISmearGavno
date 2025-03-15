@@ -3402,22 +3402,6 @@
             "type": "entity"
           },
           {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -3439,22 +3423,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -3474,6 +3442,29 @@
           {
             "name": "entity",
             "type": "entity"
+          }
+        ]
+      },
+      "path": "~/TaxCollector"
+    },
+    {
+      "name": "SpawnTaxMan",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_tax_man",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/SpawnTaxManProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
           },
           {
             "name": "x",
@@ -3492,20 +3483,6 @@
             "type": "world"
           }
         ]
-      },
-      "path": "~/TaxCollector"
-    },
-    {
-      "name": "SpawnTaxMan",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "spawn_tax_man",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ismeargavno/procedures/SpawnTaxManProcedure.java"
-        ],
-        "dependencies": []
       },
       "path": "~/TaxCollector"
     },
@@ -3527,29 +3504,6 @@
           {
             "name": "world",
             "type": "world"
-          }
-        ]
-      },
-      "path": "~/TaxCollector"
-    },
-    {
-      "name": "TaxCollectorEntityDies",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tax_collector_entity_dies",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ismeargavno/procedures/TaxCollectorEntityDiesProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
           }
         ]
       },
@@ -3584,6 +3538,149 @@
       "path": "~/Tea"
     },
     {
+      "name": "DirtyPlate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirty_plate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/DirtyPlateItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/dirty_plate.json"
+        ]
+      },
+      "path": "~/Tea"
+    },
+    {
+      "name": "GreenTeaBagRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_tea_bag_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/green_tea_bag_recipe.json"
+        ]
+      },
+      "path": "~/Tea"
+    },
+    {
+      "name": "BlackTea",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_tea",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ismeargavno/models/item/black_tea.json",
+          "src/main/java/net/mcreator/ismeargavno/item/BlackTeaItem.java"
+        ]
+      },
+      "path": "~/Tea"
+    },
+    {
+      "name": "ProperGeezersMeal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "proper_geezers_meal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/ProperGeezersMealItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/proper_geezers_meal.json"
+        ]
+      },
+      "path": "~/Tea"
+    },
+    {
+      "name": "PorcelainMake",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "porcelain_make",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Tea"
+    },
+    {
+      "name": "PlateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/plate_recipe.json"
+        ]
+      },
+      "path": "~/Tea"
+    },
+    {
+      "name": "TaxCollectorEntityDies",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tax_collector_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/TaxCollectorEntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/TaxCollector"
+    },
+    {
+      "name": "Plate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/PlateItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/plate.json"
+        ]
+      },
+      "path": "~/Tea"
+    },
+    {
+      "name": "BritishMealRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "british_meal_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ismeargavno/recipe/british_meal_recipe.json"
+        ]
+      },
+      "path": "~/Tea"
+    },
+    {
+      "name": "PorcelainShard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "porcelain_shard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/item/PorcelainShardItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/porcelain_shard.json"
+        ]
+      },
+      "path": "~/Tea"
+    },
+    {
       "name": "BlackTeaBag",
       "type": "item",
       "compiles": true,
@@ -3612,28 +3709,14 @@
       "path": "~/Tea"
     },
     {
-      "name": "BlackTeaBrew",
+      "name": "BlackTeaBagRecipe",
       "type": "recipe",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "black_tea_brew",
+      "registry_name": "black_tea_bag_recipe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ismeargavno/recipe/brewing/BlackTeaBrewBrewingRecipe.java"
-        ]
-      },
-      "path": "~/Tea"
-    },
-    {
-      "name": "BlackTea",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "black_tea",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/ismeargavno/models/item/black_tea.json",
-          "src/main/java/net/mcreator/ismeargavno/item/BlackTeaItem.java"
+          "src/main/resources/data/ismeargavno/recipe/black_tea_bag_recipe.json"
         ]
       },
       "path": "~/Tea"
@@ -3647,88 +3730,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/ismeargavno/recipe/brewing/GreenTeaBrewBrewingRecipe.java"
-        ]
-      },
-      "path": "~/Tea"
-    },
-    {
-      "name": "PorcelainShard",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "porcelain_shard",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ismeargavno/item/PorcelainShardItem.java",
-          "src/main/resources/assets/ismeargavno/models/item/porcelain_shard.json"
-        ]
-      },
-      "path": "~/Tea"
-    },
-    {
-      "name": "Plate",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "plate",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ismeargavno/item/PlateItem.java",
-          "src/main/resources/assets/ismeargavno/models/item/plate.json"
-        ]
-      },
-      "path": "~/Tea"
-    },
-    {
-      "name": "PlateRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "plate_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ismeargavno/recipe/plate_recipe.json"
-        ]
-      },
-      "path": "~/Tea"
-    },
-    {
-      "name": "DirtyPlate",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dirty_plate",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ismeargavno/item/DirtyPlateItem.java",
-          "src/main/resources/assets/ismeargavno/models/item/dirty_plate.json"
-        ]
-      },
-      "path": "~/Tea"
-    },
-    {
-      "name": "ProperGeezersMeal",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "proper_geezers_meal",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ismeargavno/item/ProperGeezersMealItem.java",
-          "src/main/resources/assets/ismeargavno/models/item/proper_geezers_meal.json"
-        ]
-      },
-      "path": "~/Tea"
-    },
-    {
-      "name": "BritishMealRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "british_meal_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ismeargavno/recipe/british_meal_recipe.json"
         ]
       },
       "path": "~/Tea"
@@ -3769,41 +3770,63 @@
       "path": "~/Tea"
     },
     {
-      "name": "GreenTeaBagRecipe",
+      "name": "BlackTeaBrew",
       "type": "recipe",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "green_tea_bag_recipe",
+      "registry_name": "black_tea_brew",
       "metadata": {
         "files": [
-          "src/main/resources/data/ismeargavno/recipe/green_tea_bag_recipe.json"
+          "src/main/java/net/mcreator/ismeargavno/recipe/brewing/BlackTeaBrewBrewingRecipe.java"
         ]
       },
       "path": "~/Tea"
     },
     {
-      "name": "BlackTeaBagRecipe",
-      "type": "recipe",
+      "name": "TaxRate2",
+      "type": "gui",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "black_tea_bag_recipe",
+      "registry_name": "tax_rate_2",
       "metadata": {
         "files": [
-          "src/main/resources/data/ismeargavno/recipe/black_tea_bag_recipe.json"
+          "src/main/java/net/mcreator/ismeargavno/world/inventory/TaxRate2Menu.java",
+          "src/main/java/net/mcreator/ismeargavno/client/gui/TaxRate2Screen.java"
         ]
       },
-      "path": "~/Tea"
+      "path": "~/Koby"
     },
     {
-      "name": "PorcelainMake",
-      "type": "jeiinformation",
+      "name": "WeatherBasedEconomy",
+      "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "porcelain_make",
+      "registry_name": "weather_based_economy",
       "metadata": {
-        "files": []
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/WeatherBasedEconomyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
-      "path": "~/Tea"
+      "path": "~/Koby"
+    },
+    {
+      "name": "TaxRate",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tax_rate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/client/screens/TaxRateOverlay.java"
+        ]
+      },
+      "path": "~/Koby"
     }
   ],
   "variable_elements": [
@@ -3988,10 +4011,6 @@
       "~CUSTOM:Grinder",
       "~CUSTOM:LitBoofington"
     ],
-    "ITEMS:minecraft:tea": [
-      "CUSTOM:GreenTea",
-      "CUSTOM:BlackTea"
-    ],
     "ITEMS:minecraft:pickaxes": [
       "~CUSTOM:BlockHarvester"
     ],
@@ -4058,10 +4077,6 @@
       "Items.DYE#17",
       "Items.DYE#18",
       "Items.DYE#19"
-    ],
-    "ITEMS:minecraft:cookedfish": [
-      "Items.COOKED_FISH#0",
-      "Items.COOKED_FISH#1"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:ATM",
@@ -4162,7 +4177,6 @@
       "jei.ismeargavno.guildedsausagetooltip": "made with 1 sausage casing, 1 slop and a golden apple in the hot dog stand",
       "item.ismeargavno.lit_boofington": "Lit Boofington",
       "item.ismeargavno.deep_dark_technic_board": "Deep Dark Technic Board",
-      "item.ismeargavno.dirty_plate": "Dirty Plate",
       "block.ismeargavno.accel_bio_dome_block": "Biodome",
       "item.ismeargavno.vodka": "Vodka",
       "item.ismeargavno.bionic_toes_boots.description_0": "Makes you faster and let you fall further at the cost of being extra heavy",
@@ -4172,7 +4186,6 @@
       "item.ismeargavno.forsaken_heart": "Forsaken Heart",
       "item.ismeargavno.unrefined_whippet": "Unrefined Whippet",
       "gui.ismeargavno.distillation_container_gui.tooltip_potato_water": "Potato Water",
-      "item.ismeargavno.porcelain_shard": "Porcelain Shard",
       "item.ismeargavno.vegan_sausage": "Vegan Sausage",
       "jei.ismeargavno.calcium_recomb_info": "Can only be broken with a block harvester and can be used to recycle 2 bone blocks into mysterious crust and random goodies",
       "item.ismeargavno.guilded_sausage": "Guilded Sausage",
@@ -4190,7 +4203,6 @@
       "item.ismeargavno.baby_spawn_egg": "Baby Spawn Egg",
       "gui.ismeargavno.hot_dog_roller_gui.label_hotdog_roller": "Hotdog Roller",
       "gui.ismeargavno.homeless_gui.BuyStargas": "Buy Stargas",
-      "item.ismeargavno.black_tea_bag": "Black Tea Bag",
       "effect.ismeargavno.bionic_toes_anti_fall": "Bionic Toes ",
       "item.ismeargavno.faeces": "Faeces",
       "item.ismeargavno.eye_scoop": "Eyescoop",
@@ -4201,7 +4213,6 @@
       "item.ismeargavno.star_gas": "Star Gas",
       "entity.ismeargavno.redditor": "Redditor",
       "jei.ismeargavno.money_hungrty_sausagetooltip": "made with 1 payot, 1 slop and 1 sausage casing in the hot dog stand",
-      "item.ismeargavno.proper_geezers_meal": "British Slop",
       "item.ismeargavno.blood_crystal": "Blood Crystal Fragment",
       "block.ismeargavno.enhanced_storage_unit": "Enhanced Storage Unit",
       "gui.ismeargavno.deep_dark_terminal_gui.button_find": "Find",
@@ -4215,14 +4226,12 @@
       "item.ismeargavno.payot": "Payot",
       "gui.ismeargavno.calcium_recomb_gui.button_proccess": "Proccess",
       "gui.ismeargavno.hot_dog_roller_gui.tooltip_flavour_enhancments_optional": "Flavour enhancments (optional)",
-      "jei.ismeargavno.porcelain_make": "Made from subjecting clay to extreme heat in the forginator",
       "item.ismeargavno.that_boofington": "Chorus Boofington",
       "subtitles.spongebobstank": "Stinky",
       "entity.ismeargavno.tax_collector": "Tax Collector",
       "item.ismeargavno.homeless_spawn_egg": "Hobo Spawn Egg",
       "item.ismeargavno.grinder": "Grinder",
       "gui.ismeargavno.homeless_gui.BuyStagas": "Buy Star gas",
-      "item.ismeargavno.green_tea": "Green Tea",
       "block.ismeargavno.curdled_milk": "Curdled Milk",
       "item.ismeargavno.phone": "Phone",
       "item.ismeargavno.eye": "Sacrificial Eye",
@@ -4238,7 +4247,6 @@
       "jei.ismeargavno.mysterious_crust_tooltip": "obtained as a byproduct of using the forginator",
       "jei.ismeargavno.birth_canal_portal": "This is a portal to the birth canal dimension, do be warned bring a hoe because you might be teleported into the ground which is fastest broken with a hoe",
       "item.ismeargavno.ground_chorus": "Ground Chorus",
-      "item.ismeargavno.black_tea": "Black Tea",
       "item.ismeargavno.illuminati": "Illuminati",
       "item.ismeargavno.slop": "Slop",
       "jei.ismeargavno.silverfishscaletooltip": "obtained by killing a silverfish",
@@ -4280,10 +4288,7 @@
       "gui.ismeargavno.distillation_container_gui.TimeLeft": "Time Left",
       "jei.ismeargavno.forsaken_heart_info": "Aquired by killing the baby in the birth canal dimension and is used in the crafting process of the enhanced storage unit",
       "painting.ismeargavno.anime_waifu.title": "Anime Waifus",
-      "item.ismeargavno.green_tea_bag": "Green Tea Bag",
       "jei.ismeargavno.oddsausagetooltip": "made with 1 slop and 1 sausage casing in the hot dog stand",
-      "item.ismeargavno.empty_tea_bag": "Empty Tea Bag",
-      "item.ismeargavno.plate": "Plate",
       "gui.ismeargavno.homeless_gui.BuyFaeces": "Buy Faeces",
       "item.ismeargavno.credit_card": "Credit Card",
       "gui.ismeargavno.phone_rig_gui.button_get_dank": "Get Dank",
@@ -4296,35 +4301,15 @@
     "name": "~",
     "children": [
       {
-        "name": "Forginator",
+        "name": "DankMemes",
         "children": []
       },
       {
-        "name": "SilverFishScales",
-        "children": []
-      },
-      {
-        "name": "SausageStand",
+        "name": "Town",
         "children": []
       },
       {
         "name": "StorageEpic",
-        "children": []
-      },
-      {
-        "name": "BirthCanal",
-        "children": []
-      },
-      {
-        "name": "Bionic Toes",
-        "children": []
-      },
-      {
-        "name": "Calcium Biome",
-        "children": []
-      },
-      {
-        "name": "Aginator",
         "children": []
       },
       {
@@ -4336,11 +4321,11 @@
         "children": []
       },
       {
-        "name": "DankMemes",
+        "name": "SausageStand",
         "children": []
       },
       {
-        "name": "Town",
+        "name": "Koby",
         "children": []
       },
       {
@@ -4348,11 +4333,35 @@
         "children": []
       },
       {
-        "name": "TaxCollector",
+        "name": "BirthCanal",
+        "children": []
+      },
+      {
+        "name": "Forginator",
+        "children": []
+      },
+      {
+        "name": "Calcium Biome",
         "children": []
       },
       {
         "name": "Tea",
+        "children": []
+      },
+      {
+        "name": "SilverFishScales",
+        "children": []
+      },
+      {
+        "name": "Bionic Toes",
+        "children": []
+      },
+      {
+        "name": "Aginator",
+        "children": []
+      },
+      {
+        "name": "TaxCollector",
         "children": []
       }
     ]

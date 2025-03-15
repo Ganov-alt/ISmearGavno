@@ -33,13 +33,13 @@ public class IsmeargavnoModBrewingRecipes implements IModPlugin {
 		ItemStack potion2 = new ItemStack(Items.POTION);
 		List<ItemStack> ingredientStack = new ArrayList<>();
 		List<ItemStack> inputStack = new ArrayList<>();
-		ingredientStack.add(new ItemStack(IsmeargavnoModItems.BLACK_TEA_BAG.get()));
-		potion.set(DataComponents.POTION_CONTENTS, new PotionContents(Potions.WATER));
-		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), potion.copy(), new ItemStack(IsmeargavnoModItems.BLACK_TEA.get())));
-		ingredientStack.clear();
 		ingredientStack.add(new ItemStack(IsmeargavnoModItems.GREEN_TEA_BAG.get()));
 		potion.set(DataComponents.POTION_CONTENTS, new PotionContents(Potions.WATER));
 		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), potion.copy(), new ItemStack(IsmeargavnoModItems.GREEN_TEA.get())));
+		ingredientStack.clear();
+		ingredientStack.add(new ItemStack(IsmeargavnoModItems.BLACK_TEA_BAG.get()));
+		potion.set(DataComponents.POTION_CONTENTS, new PotionContents(Potions.WATER));
+		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), potion.copy(), new ItemStack(IsmeargavnoModItems.BLACK_TEA.get())));
 		ingredientStack.clear();
 		registration.addRecipes(RecipeTypes.BREWING, brewingRecipes);
 	}
