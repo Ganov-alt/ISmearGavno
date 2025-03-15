@@ -10,14 +10,14 @@
       "item": "ismeargavno:dust"
     },
     "b": {
-      "item": "ismeargavno:deleted_mod_element"
+      "item": "ismeargavno:porcelain_shard"
     },
     "c": {
       "item": "ismeargavno:malleable_milk_curdles"
     }
   },
   "result": {
-    "id": "ismeargavno:deleted_mod_element",
+    "id": "ismeargavno:plate",
     "count": 1
   }
 }

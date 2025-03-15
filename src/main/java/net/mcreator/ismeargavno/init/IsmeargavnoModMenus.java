@@ -11,7 +11,6 @@ import net.neoforged.neoforge.common.extensions.IMenuTypeExtension;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.core.registries.Registries;
 
-import net.mcreator.ismeargavno.world.inventory.TaxRate2Menu;
 import net.mcreator.ismeargavno.world.inventory.RedditorGuiMenu;
 import net.mcreator.ismeargavno.world.inventory.PhoneRigGuiMenu;
 import net.mcreator.ismeargavno.world.inventory.HotDogRollerGuiMenu;
@@ -42,5 +41,4 @@ public class IsmeargavnoModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<PhoneRigGuiMenu>> PHONE_RIG_GUI = REGISTRY.register("phone_rig_gui", () -> IMenuTypeExtension.create(PhoneRigGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<RedditorGuiMenu>> REDDITOR_GUI = REGISTRY.register("redditor_gui", () -> IMenuTypeExtension.create(RedditorGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<DistillationContainerGuiMenu>> DISTILLATION_CONTAINER_GUI = REGISTRY.register("distillation_container_gui", () -> IMenuTypeExtension.create(DistillationContainerGuiMenu::new));
-	public static final DeferredHolder<MenuType<?>, MenuType<TaxRate2Menu>> TAX_RATE_2 = REGISTRY.register("tax_rate_2", () -> IMenuTypeExtension.create(TaxRate2Menu::new));
 }
