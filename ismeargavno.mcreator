@@ -9,11 +9,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/ismeargavno/models/item/forginator.json",
-          "src/main/resources/assets/ismeargavno/blockstates/forginator.json",
-          "src/main/java/net/mcreator/ismeargavno/block/ForginatorBlock.java",
-          "src/main/resources/assets/ismeargavno/models/block/forginator.json",
+          "src/main/java/net/mcreator/ismeargavno/block/entity/ForginatorBlockEntity.java",
           "src/main/resources/data/ismeargavno/loot_table/blocks/forginator.json",
-          "src/main/java/net/mcreator/ismeargavno/block/entity/ForginatorBlockEntity.java"
+          "src/main/resources/assets/ismeargavno/models/block/forginator.json",
+          "src/main/java/net/mcreator/ismeargavno/block/ForginatorBlock.java",
+          "src/main/resources/assets/ismeargavno/blockstates/forginator.json"
         ]
       },
       "path": "~/Forginator"
@@ -189,8 +189,8 @@
       "registry_name": "deep_dark_technic_board",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ismeargavno/models/item/deep_dark_technic_board.json",
-          "src/main/java/net/mcreator/ismeargavno/item/DeepDarkTechnicBoardItem.java"
+          "src/main/java/net/mcreator/ismeargavno/item/DeepDarkTechnicBoardItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/deep_dark_technic_board.json"
         ]
       },
       "path": "~/StorageEpic"
@@ -216,14 +216,14 @@
       "registry_name": "hot_dog_roller",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ismeargavno/blockstates/hot_dog_roller.json",
-          "src/main/java/net/mcreator/ismeargavno/block/HotDogRollerBlock.java",
-          "src/main/resources/assets/ismeargavno/models/block/hot_dog_roller_outer.json",
           "src/main/java/net/mcreator/ismeargavno/block/entity/HotDogRollerBlockEntity.java",
+          "src/main/resources/assets/ismeargavno/models/block/hot_dog_roller_inner.json",
           "src/main/resources/data/ismeargavno/loot_table/blocks/hot_dog_roller.json",
+          "src/main/java/net/mcreator/ismeargavno/block/HotDogRollerBlock.java",
           "src/main/resources/assets/ismeargavno/models/item/hot_dog_roller.json",
           "src/main/resources/assets/ismeargavno/models/block/hot_dog_roller.json",
-          "src/main/resources/assets/ismeargavno/models/block/hot_dog_roller_inner.json"
+          "src/main/resources/assets/ismeargavno/models/block/hot_dog_roller_outer.json",
+          "src/main/resources/assets/ismeargavno/blockstates/hot_dog_roller.json"
         ]
       },
       "path": "~/SausageStand"
@@ -249,8 +249,8 @@
       "registry_name": "payot",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ismeargavno/item/PayotItem.java",
-          "src/main/resources/assets/ismeargavno/models/item/payot.json"
+          "src/main/resources/assets/ismeargavno/models/item/payot.json",
+          "src/main/java/net/mcreator/ismeargavno/item/PayotItem.java"
         ]
       },
       "path": "~/SausageStand"
@@ -263,8 +263,8 @@
       "registry_name": "gold_coin",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ismeargavno/models/item/gold_coin.json",
-          "src/main/java/net/mcreator/ismeargavno/item/GoldCoinItem.java"
+          "src/main/java/net/mcreator/ismeargavno/item/GoldCoinItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/gold_coin.json"
         ]
       },
       "path": "~/SausageStand"
@@ -277,9 +277,9 @@
       "registry_name": "jewliger",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/ismeargavno/client/renderer/JewligerRenderer.java",
           "src/main/resources/assets/ismeargavno/models/item/jewliger_spawn_egg.json",
-          "src/main/java/net/mcreator/ismeargavno/entity/JewligerEntity.java",
-          "src/main/java/net/mcreator/ismeargavno/client/renderer/JewligerRenderer.java"
+          "src/main/java/net/mcreator/ismeargavno/entity/JewligerEntity.java"
         ]
       },
       "path": "~/SausageStand"
@@ -331,8 +331,8 @@
       "registry_name": "suspicious_sausage_casing",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ismeargavno/item/SuspiciousSausageCasingItem.java",
-          "src/main/resources/assets/ismeargavno/models/item/suspicious_sausage_casing.json"
+          "src/main/resources/assets/ismeargavno/models/item/suspicious_sausage_casing.json",
+          "src/main/java/net/mcreator/ismeargavno/item/SuspiciousSausageCasingItem.java"
         ]
       },
       "path": "~/SausageStand"
@@ -390,8 +390,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/ismeargavno/network/HotDogRollerGuiButtonMessage.java",
-          "src/main/java/net/mcreator/ismeargavno/world/inventory/HotDogRollerGuiMenu.java",
-          "src/main/java/net/mcreator/ismeargavno/client/gui/HotDogRollerGuiScreen.java"
+          "src/main/java/net/mcreator/ismeargavno/client/gui/HotDogRollerGuiScreen.java",
+          "src/main/java/net/mcreator/ismeargavno/world/inventory/HotDogRollerGuiMenu.java"
         ]
       },
       "path": "~/SausageStand"
@@ -404,8 +404,8 @@
       "registry_name": "odd_sausage",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ismeargavno/models/item/odd_sausage.json",
-          "src/main/java/net/mcreator/ismeargavno/item/OddSausageItem.java"
+          "src/main/java/net/mcreator/ismeargavno/item/OddSausageItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/odd_sausage.json"
         ]
       },
       "path": "~/SausageStand"
@@ -517,8 +517,8 @@
       "registry_name": "money_hungry_sausage",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ismeargavno/models/item/money_hungry_sausage.json",
-          "src/main/java/net/mcreator/ismeargavno/item/MoneyHungrySausageItem.java"
+          "src/main/java/net/mcreator/ismeargavno/item/MoneyHungrySausageItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/money_hungry_sausage.json"
         ]
       },
       "path": "~/SausageStand"
@@ -578,8 +578,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/ismeargavno/worldgen/structure_set/sausage_stander.json",
-          "src/main/resources/data/ismeargavno/worldgen/template_pool/sausage_stander.json",
-          "src/main/resources/data/ismeargavno/worldgen/structure/sausage_stander.json"
+          "src/main/resources/data/ismeargavno/worldgen/structure/sausage_stander.json",
+          "src/main/resources/data/ismeargavno/worldgen/template_pool/sausage_stander.json"
         ]
       },
       "path": "~/SausageStand"
@@ -693,8 +693,8 @@
       "registry_name": "molten_iron_chunk",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ismeargavno/item/MoltenIronChunkItem.java",
-          "src/main/resources/assets/ismeargavno/models/item/molten_iron_chunk.json"
+          "src/main/resources/assets/ismeargavno/models/item/molten_iron_chunk.json",
+          "src/main/java/net/mcreator/ismeargavno/item/MoltenIronChunkItem.java"
         ]
       },
       "path": "~/Forginator"
@@ -809,12 +809,12 @@
       "registry_name": "deep_dark_terminal_main_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ismeargavno/block/DeepDarkTerminalMainBlockBlock.java",
           "src/main/resources/data/ismeargavno/loot_table/blocks/deep_dark_terminal_main_block.json",
-          "src/main/java/net/mcreator/ismeargavno/block/entity/DeepDarkTerminalMainBlockBlockEntity.java",
+          "src/main/resources/assets/ismeargavno/blockstates/deep_dark_terminal_main_block.json",
+          "src/main/java/net/mcreator/ismeargavno/block/DeepDarkTerminalMainBlockBlock.java",
           "src/main/resources/assets/ismeargavno/models/item/deep_dark_terminal_main_block.json",
-          "src/main/resources/assets/ismeargavno/models/block/deep_dark_terminal_main_block.json",
-          "src/main/resources/assets/ismeargavno/blockstates/deep_dark_terminal_main_block.json"
+          "src/main/java/net/mcreator/ismeargavno/block/entity/DeepDarkTerminalMainBlockBlockEntity.java",
+          "src/main/resources/assets/ismeargavno/models/block/deep_dark_terminal_main_block.json"
         ]
       },
       "path": "~/StorageEpic"
@@ -840,9 +840,9 @@
       "registry_name": "deep_dark_terminal_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ismeargavno/network/DeepDarkTerminalGuiButtonMessage.java",
           "src/main/java/net/mcreator/ismeargavno/world/inventory/DeepDarkTerminalGuiMenu.java",
-          "src/main/java/net/mcreator/ismeargavno/client/gui/DeepDarkTerminalGuiScreen.java"
+          "src/main/java/net/mcreator/ismeargavno/client/gui/DeepDarkTerminalGuiScreen.java",
+          "src/main/java/net/mcreator/ismeargavno/network/DeepDarkTerminalGuiButtonMessage.java"
         ]
       },
       "path": "~/StorageEpic"
@@ -890,8 +890,8 @@
       "registry_name": "deep_dark_chip",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ismeargavno/item/DeepDarkChipItem.java",
-          "src/main/resources/assets/ismeargavno/models/item/deep_dark_chip.json"
+          "src/main/resources/assets/ismeargavno/models/item/deep_dark_chip.json",
+          "src/main/java/net/mcreator/ismeargavno/item/DeepDarkChipItem.java"
         ]
       },
       "path": "~/StorageEpic"
@@ -959,9 +959,9 @@
           "src/main/java/net/mcreator/ismeargavno/block/entity/DeepDarkStorageUnitBlockEntity.java",
           "src/main/resources/assets/ismeargavno/models/item/deep_dark_storage_unit.json",
           "src/main/resources/assets/ismeargavno/blockstates/deep_dark_storage_unit.json",
-          "src/main/resources/data/ismeargavno/loot_table/blocks/deep_dark_storage_unit.json",
+          "src/main/java/net/mcreator/ismeargavno/block/DeepDarkStorageUnitBlock.java",
           "src/main/resources/assets/ismeargavno/models/block/deep_dark_storage_unit.json",
-          "src/main/java/net/mcreator/ismeargavno/block/DeepDarkStorageUnitBlock.java"
+          "src/main/resources/data/ismeargavno/loot_table/blocks/deep_dark_storage_unit.json"
         ]
       },
       "path": "~/StorageEpic"
@@ -974,8 +974,8 @@
       "registry_name": "deep_dark_storage_unit_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ismeargavno/client/gui/DeepDarkStorageUnitGuiScreen.java",
-          "src/main/java/net/mcreator/ismeargavno/world/inventory/DeepDarkStorageUnitGuiMenu.java"
+          "src/main/java/net/mcreator/ismeargavno/world/inventory/DeepDarkStorageUnitGuiMenu.java",
+          "src/main/java/net/mcreator/ismeargavno/client/gui/DeepDarkStorageUnitGuiScreen.java"
         ]
       },
       "path": "~/StorageEpic"
@@ -988,14 +988,14 @@
       "registry_name": "portal_to_birth_canal",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ismeargavno/blockstates/portal_to_birth_canal.json",
           "src/main/resources/data/ismeargavno/loot_table/blocks/portal_to_birth_canal.json",
+          "src/main/resources/data/ismeargavno/worldgen/configured_feature/portal_to_birth_canal.json",
           "src/main/java/net/mcreator/ismeargavno/block/PortalToBirthCanalBlock.java",
           "src/main/resources/assets/ismeargavno/models/block/portal_to_birth_canal.json",
-          "src/main/resources/data/ismeargavno/worldgen/configured_feature/portal_to_birth_canal.json",
-          "src/main/resources/data/ismeargavno/worldgen/placed_feature/portal_to_birth_canal.json",
           "src/main/resources/assets/ismeargavno/models/item/portal_to_birth_canal.json",
-          "src/main/resources/data/ismeargavno/neoforge/biome_modifier/portal_to_birth_canal_biome_modifier.json"
+          "src/main/resources/assets/ismeargavno/blockstates/portal_to_birth_canal.json",
+          "src/main/resources/data/ismeargavno/neoforge/biome_modifier/portal_to_birth_canal_biome_modifier.json",
+          "src/main/resources/data/ismeargavno/worldgen/placed_feature/portal_to_birth_canal.json"
         ]
       },
       "path": "~/BirthCanal"
@@ -1008,11 +1008,11 @@
       "registry_name": "canal_wall",
       "metadata": {
         "files": [
+          "src/main/resources/data/ismeargavno/loot_table/blocks/canal_wall.json",
           "src/main/resources/assets/ismeargavno/models/block/canal_wall.json",
           "src/main/java/net/mcreator/ismeargavno/block/CanalWallBlock.java",
-          "src/main/resources/assets/ismeargavno/blockstates/canal_wall.json",
-          "src/main/resources/data/ismeargavno/loot_table/blocks/canal_wall.json",
-          "src/main/resources/assets/ismeargavno/models/item/canal_wall.json"
+          "src/main/resources/assets/ismeargavno/models/item/canal_wall.json",
+          "src/main/resources/assets/ismeargavno/blockstates/canal_wall.json"
         ]
       },
       "path": "~/BirthCanal"
@@ -1025,9 +1025,9 @@
       "registry_name": "canal_biome",
       "metadata": {
         "files": [
-          "src/main/resources/data/ismeargavno/worldgen/configured_feature/canal_biome_tree.json",
+          "src/main/resources/data/ismeargavno/worldgen/biome/canal_biome.json",
           "src/main/resources/data/ismeargavno/worldgen/placed_feature/canal_biome_tree.json",
-          "src/main/resources/data/ismeargavno/worldgen/biome/canal_biome.json"
+          "src/main/resources/data/ismeargavno/worldgen/configured_feature/canal_biome_tree.json"
         ]
       },
       "path": "~/BirthCanal"
@@ -1040,8 +1040,8 @@
       "registry_name": "blood_crystal",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ismeargavno/item/BloodCrystalItem.java",
-          "src/main/resources/assets/ismeargavno/models/item/blood_crystal.json"
+          "src/main/resources/assets/ismeargavno/models/item/blood_crystal.json",
+          "src/main/java/net/mcreator/ismeargavno/item/BloodCrystalItem.java"
         ]
       },
       "path": "~/BirthCanal"
@@ -1054,14 +1054,14 @@
       "registry_name": "crystalized_blood",
       "metadata": {
         "files": [
-          "src/main/resources/data/ismeargavno/worldgen/configured_feature/crystalized_blood.json",
+          "src/main/resources/assets/ismeargavno/models/item/crystalized_blood.json",
+          "src/main/resources/data/ismeargavno/neoforge/biome_modifier/crystalized_blood_biome_modifier.json",
+          "src/main/java/net/mcreator/ismeargavno/block/CrystalizedBloodBlock.java",
+          "src/main/resources/data/ismeargavno/worldgen/placed_feature/crystalized_blood.json",
           "src/main/resources/assets/ismeargavno/models/block/crystalized_blood.json",
           "src/main/resources/data/ismeargavno/loot_table/blocks/crystalized_blood.json",
-          "src/main/resources/data/ismeargavno/neoforge/biome_modifier/crystalized_blood_biome_modifier.json",
-          "src/main/resources/data/ismeargavno/worldgen/placed_feature/crystalized_blood.json",
-          "src/main/resources/assets/ismeargavno/blockstates/crystalized_blood.json",
-          "src/main/resources/assets/ismeargavno/models/item/crystalized_blood.json",
-          "src/main/java/net/mcreator/ismeargavno/block/CrystalizedBloodBlock.java"
+          "src/main/resources/data/ismeargavno/worldgen/configured_feature/crystalized_blood.json",
+          "src/main/resources/assets/ismeargavno/blockstates/crystalized_blood.json"
         ]
       },
       "path": "~/BirthCanal"
@@ -1074,9 +1074,9 @@
       "registry_name": "the_birth_canal",
       "metadata": {
         "files": [
-          "src/main/resources/data/ismeargavno/dimension_type/the_birth_canal.json",
+          "src/main/java/net/mcreator/ismeargavno/world/dimension/TheBirthCanalDimension.java",
           "src/main/resources/data/ismeargavno/dimension/the_birth_canal.json",
-          "src/main/java/net/mcreator/ismeargavno/world/dimension/TheBirthCanalDimension.java"
+          "src/main/resources/data/ismeargavno/dimension_type/the_birth_canal.json"
         ]
       },
       "path": "~/BirthCanal"
@@ -1141,8 +1141,8 @@
       "registry_name": "beating_heart",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ismeargavno/models/item/beating_heart.json",
-          "src/main/java/net/mcreator/ismeargavno/item/BeatingHeartItem.java"
+          "src/main/java/net/mcreator/ismeargavno/item/BeatingHeartItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/beating_heart.json"
         ]
       },
       "path": "~/BirthCanal"
@@ -1182,12 +1182,12 @@
       "registry_name": "enhanced_storage_unit",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ismeargavno/block/EnhancedStorageUnitBlock.java",
+          "src/main/resources/assets/ismeargavno/models/item/enhanced_storage_unit.json",
+          "src/main/resources/assets/ismeargavno/models/block/enhanced_storage_unit.json",
+          "src/main/java/net/mcreator/ismeargavno/block/entity/EnhancedStorageUnitBlockEntity.java",
           "src/main/resources/data/ismeargavno/loot_table/blocks/enhanced_storage_unit.json",
           "src/main/resources/assets/ismeargavno/blockstates/enhanced_storage_unit.json",
-          "src/main/resources/assets/ismeargavno/models/item/enhanced_storage_unit.json",
-          "src/main/java/net/mcreator/ismeargavno/block/entity/EnhancedStorageUnitBlockEntity.java",
-          "src/main/resources/assets/ismeargavno/models/block/enhanced_storage_unit.json"
+          "src/main/java/net/mcreator/ismeargavno/block/EnhancedStorageUnitBlock.java"
         ]
       },
       "path": "~/StorageEpic"
@@ -1200,8 +1200,8 @@
       "registry_name": "bionic_toes",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ismeargavno/item/BionicToesItem.java",
-          "src/main/resources/assets/ismeargavno/models/item/bionic_toes_boots.json"
+          "src/main/resources/assets/ismeargavno/models/item/bionic_toes_boots.json",
+          "src/main/java/net/mcreator/ismeargavno/item/BionicToesItem.java"
         ]
       },
       "path": "~/Bionic Toes"
@@ -1259,11 +1259,11 @@
       "registry_name": "curdled_milk",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ismeargavno/blockstates/curdled_milk.json",
-          "src/main/resources/assets/ismeargavno/models/item/curdled_milk.json",
           "src/main/resources/assets/ismeargavno/models/block/curdled_milk.json",
+          "src/main/resources/assets/ismeargavno/models/item/curdled_milk.json",
+          "src/main/resources/data/ismeargavno/loot_table/blocks/curdled_milk.json",
           "src/main/java/net/mcreator/ismeargavno/block/CurdledMilkBlock.java",
-          "src/main/resources/data/ismeargavno/loot_table/blocks/curdled_milk.json"
+          "src/main/resources/assets/ismeargavno/blockstates/curdled_milk.json"
         ]
       },
       "path": "~/Calcium Biome"
@@ -1291,13 +1291,13 @@
         "files": [
           "src/main/java/net/mcreator/ismeargavno/block/BoneSpikeBlock.java",
           "src/main/resources/assets/ismeargavno/models/block/bone_spike_bottom.json",
-          "src/main/resources/assets/ismeargavno/blockstates/bone_spike.json",
           "src/main/resources/data/ismeargavno/worldgen/placed_feature/bone_spike.json",
-          "src/main/resources/data/ismeargavno/loot_table/blocks/bone_spike.json",
-          "src/main/resources/data/ismeargavno/neoforge/biome_modifier/bone_spike_biome_modifier.json",
           "src/main/resources/assets/ismeargavno/models/item/bone_spike.json",
+          "src/main/resources/assets/ismeargavno/models/block/bone_spike.json",
           "src/main/resources/data/ismeargavno/worldgen/configured_feature/bone_spike.json",
-          "src/main/resources/assets/ismeargavno/models/block/bone_spike.json"
+          "src/main/resources/assets/ismeargavno/blockstates/bone_spike.json",
+          "src/main/resources/data/ismeargavno/loot_table/blocks/bone_spike.json",
+          "src/main/resources/data/ismeargavno/neoforge/biome_modifier/bone_spike_biome_modifier.json"
         ]
       },
       "path": "~/Calcium Biome"
@@ -1310,12 +1310,12 @@
       "registry_name": "calcium_recombobulation_module",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ismeargavno/models/block/calcium_recombobulation_module.json",
-          "src/main/resources/data/ismeargavno/loot_table/blocks/calcium_recombobulation_module.json",
+          "src/main/resources/assets/ismeargavno/blockstates/calcium_recombobulation_module.json",
           "src/main/resources/assets/ismeargavno/models/item/calcium_recombobulation_module.json",
           "src/main/java/net/mcreator/ismeargavno/block/entity/CalciumRecombobulationModuleBlockEntity.java",
+          "src/main/resources/assets/ismeargavno/models/block/calcium_recombobulation_module.json",
           "src/main/java/net/mcreator/ismeargavno/block/CalciumRecombobulationModuleBlock.java",
-          "src/main/resources/assets/ismeargavno/blockstates/calcium_recombobulation_module.json"
+          "src/main/resources/data/ismeargavno/loot_table/blocks/calcium_recombobulation_module.json"
         ]
       },
       "path": "~/Calcium Biome"
@@ -1328,9 +1328,9 @@
       "registry_name": "calcium_recomb_shrine",
       "metadata": {
         "files": [
-          "src/main/resources/data/ismeargavno/worldgen/template_pool/calcium_recomb_shrine.json",
+          "src/main/resources/data/ismeargavno/worldgen/structure/calcium_recomb_shrine.json",
           "src/main/resources/data/ismeargavno/worldgen/structure_set/calcium_recomb_shrine.json",
-          "src/main/resources/data/ismeargavno/worldgen/structure/calcium_recomb_shrine.json"
+          "src/main/resources/data/ismeargavno/worldgen/template_pool/calcium_recomb_shrine.json"
         ]
       },
       "path": "~/Calcium Biome"
@@ -1343,9 +1343,9 @@
       "registry_name": "calcium_recomb_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/ismeargavno/client/gui/CalciumRecombGuiScreen.java",
           "src/main/java/net/mcreator/ismeargavno/network/CalciumRecombGuiButtonMessage.java",
-          "src/main/java/net/mcreator/ismeargavno/world/inventory/CalciumRecombGuiMenu.java",
-          "src/main/java/net/mcreator/ismeargavno/client/gui/CalciumRecombGuiScreen.java"
+          "src/main/java/net/mcreator/ismeargavno/world/inventory/CalciumRecombGuiMenu.java"
         ]
       },
       "path": "~/Calcium Biome"
@@ -1393,8 +1393,8 @@
       "registry_name": "block_harvester",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ismeargavno/models/item/block_harvester.json",
-          "src/main/java/net/mcreator/ismeargavno/item/BlockHarvesterItem.java"
+          "src/main/java/net/mcreator/ismeargavno/item/BlockHarvesterItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/block_harvester.json"
         ]
       },
       "path": "~/Calcium Biome"
@@ -1534,9 +1534,9 @@
       "registry_name": "baby_containment_chamber",
       "metadata": {
         "files": [
+          "src/main/resources/data/ismeargavno/worldgen/template_pool/baby_containment_chamber.json",
           "src/main/resources/data/ismeargavno/worldgen/structure_set/baby_containment_chamber.json",
-          "src/main/resources/data/ismeargavno/worldgen/structure/baby_containment_chamber.json",
-          "src/main/resources/data/ismeargavno/worldgen/template_pool/baby_containment_chamber.json"
+          "src/main/resources/data/ismeargavno/worldgen/structure/baby_containment_chamber.json"
         ]
       },
       "path": "~/BirthCanal"
@@ -1549,9 +1549,9 @@
       "registry_name": "aginator_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ismeargavno/network/AginatorGuiButtonMessage.java",
+          "src/main/java/net/mcreator/ismeargavno/client/gui/AginatorGuiScreen.java",
           "src/main/java/net/mcreator/ismeargavno/world/inventory/AginatorGuiMenu.java",
-          "src/main/java/net/mcreator/ismeargavno/client/gui/AginatorGuiScreen.java"
+          "src/main/java/net/mcreator/ismeargavno/network/AginatorGuiButtonMessage.java"
         ]
       },
       "path": "~/Aginator"
@@ -1564,12 +1564,12 @@
       "registry_name": "aginator_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ismeargavno/block/AginatorBlockBlock.java",
-          "src/main/resources/assets/ismeargavno/models/block/aginator_block.json",
-          "src/main/resources/data/ismeargavno/loot_table/blocks/aginator_block.json",
-          "src/main/resources/assets/ismeargavno/models/item/aginator_block.json",
           "src/main/java/net/mcreator/ismeargavno/block/entity/AginatorBlockBlockEntity.java",
-          "src/main/resources/assets/ismeargavno/blockstates/aginator_block.json"
+          "src/main/java/net/mcreator/ismeargavno/block/AginatorBlockBlock.java",
+          "src/main/resources/assets/ismeargavno/models/item/aginator_block.json",
+          "src/main/resources/data/ismeargavno/loot_table/blocks/aginator_block.json",
+          "src/main/resources/assets/ismeargavno/blockstates/aginator_block.json",
+          "src/main/resources/assets/ismeargavno/models/block/aginator_block.json"
         ]
       },
       "path": "~/Aginator"
@@ -1582,8 +1582,8 @@
       "registry_name": "dust",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ismeargavno/item/DustItem.java",
-          "src/main/resources/assets/ismeargavno/models/item/dust.json"
+          "src/main/resources/assets/ismeargavno/models/item/dust.json",
+          "src/main/java/net/mcreator/ismeargavno/item/DustItem.java"
         ]
       },
       "path": "~/Aginator"
@@ -1596,8 +1596,8 @@
       "registry_name": "malleable_milk_curdles",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ismeargavno/models/item/malleable_milk_curdles.json",
-          "src/main/java/net/mcreator/ismeargavno/item/MalleableMilkCurdlesItem.java"
+          "src/main/java/net/mcreator/ismeargavno/item/MalleableMilkCurdlesItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/malleable_milk_curdles.json"
         ]
       },
       "path": "~/Aginator"
@@ -1645,11 +1645,11 @@
       "registry_name": "accel_bio_dome_block",
       "metadata": {
         "files": [
-          "src/main/resources/data/ismeargavno/loot_table/blocks/accel_bio_dome_block.json",
+          "src/main/resources/assets/ismeargavno/models/item/accel_bio_dome_block.json",
+          "src/main/resources/assets/ismeargavno/models/block/accel_bio_dome_block.json",
           "src/main/java/net/mcreator/ismeargavno/block/AccelBioDomeBlockBlock.java",
           "src/main/resources/assets/ismeargavno/blockstates/accel_bio_dome_block.json",
-          "src/main/resources/assets/ismeargavno/models/item/accel_bio_dome_block.json",
-          "src/main/resources/assets/ismeargavno/models/block/accel_bio_dome_block.json"
+          "src/main/resources/data/ismeargavno/loot_table/blocks/accel_bio_dome_block.json"
         ]
       },
       "path": "~/PocketDimension"
@@ -1728,8 +1728,8 @@
       "registry_name": "pocket_dimension",
       "metadata": {
         "files": [
-          "src/main/resources/data/ismeargavno/dimension/pocket_dimension.json",
           "src/main/java/net/mcreator/ismeargavno/world/dimension/PocketDimensionDimension.java",
+          "src/main/resources/data/ismeargavno/dimension/pocket_dimension.json",
           "src/main/resources/data/ismeargavno/dimension_type/pocket_dimension.json"
         ]
       },
@@ -1902,11 +1902,11 @@
       "registry_name": "homeless",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ismeargavno/client/renderer/HomelessRenderer.java",
-          "src/main/java/net/mcreator/ismeargavno/entity/HomelessEntity.java",
-          "src/main/resources/data/ismeargavno/neoforge/biome_modifier/homeless_biome_modifier.json",
           "src/main/java/net/mcreator/ismeargavno/entity/HomelessEntityProjectile.java",
-          "src/main/resources/assets/ismeargavno/models/item/homeless_spawn_egg.json"
+          "src/main/java/net/mcreator/ismeargavno/client/renderer/HomelessRenderer.java",
+          "src/main/resources/assets/ismeargavno/models/item/homeless_spawn_egg.json",
+          "src/main/java/net/mcreator/ismeargavno/entity/HomelessEntity.java",
+          "src/main/resources/data/ismeargavno/neoforge/biome_modifier/homeless_biome_modifier.json"
         ]
       },
       "path": "~/HomlessAndGalaxyGas"
@@ -1919,8 +1919,8 @@
       "registry_name": "faeces",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ismeargavno/item/FaecesItem.java",
-          "src/main/resources/assets/ismeargavno/models/item/faeces.json"
+          "src/main/resources/assets/ismeargavno/models/item/faeces.json",
+          "src/main/java/net/mcreator/ismeargavno/item/FaecesItem.java"
         ]
       },
       "path": "~/HomlessAndGalaxyGas"
@@ -1971,8 +1971,8 @@
       "registry_name": "unrefined_whippet",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ismeargavno/item/UnrefinedWhippetItem.java",
-          "src/main/resources/assets/ismeargavno/models/item/unrefined_whippet.json"
+          "src/main/resources/assets/ismeargavno/models/item/unrefined_whippet.json",
+          "src/main/java/net/mcreator/ismeargavno/item/UnrefinedWhippetItem.java"
         ]
       },
       "path": "~/HomlessAndGalaxyGas"
@@ -1985,8 +1985,8 @@
       "registry_name": "coloured_wrapper",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ismeargavno/models/item/coloured_wrapper.json",
-          "src/main/java/net/mcreator/ismeargavno/item/ColouredWrapperItem.java"
+          "src/main/java/net/mcreator/ismeargavno/item/ColouredWrapperItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/coloured_wrapper.json"
         ]
       },
       "path": "~/HomlessAndGalaxyGas"
@@ -2012,8 +2012,8 @@
       "registry_name": "star_gas_wrapper",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ismeargavno/item/StarGasWrapperItem.java",
-          "src/main/resources/assets/ismeargavno/models/item/star_gas_wrapper.json"
+          "src/main/resources/assets/ismeargavno/models/item/star_gas_wrapper.json",
+          "src/main/java/net/mcreator/ismeargavno/item/StarGasWrapperItem.java"
         ]
       },
       "path": "~/HomlessAndGalaxyGas"
@@ -2072,8 +2072,8 @@
       "registry_name": "lit_boofington",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ismeargavno/item/LitBoofingtonItem.java",
-          "src/main/resources/assets/ismeargavno/models/item/lit_boofington.json"
+          "src/main/resources/assets/ismeargavno/models/item/lit_boofington.json",
+          "src/main/java/net/mcreator/ismeargavno/item/LitBoofingtonItem.java"
         ]
       },
       "path": "~/HomlessAndGalaxyGas"
@@ -2187,8 +2187,8 @@
       "registry_name": "grinder",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ismeargavno/models/item/grinder.json",
-          "src/main/java/net/mcreator/ismeargavno/item/GrinderItem.java"
+          "src/main/java/net/mcreator/ismeargavno/item/GrinderItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/grinder.json"
         ]
       },
       "path": "~/HomlessAndGalaxyGas"
@@ -2214,8 +2214,8 @@
       "registry_name": "ground_chorus",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ismeargavno/item/GroundChorusItem.java",
-          "src/main/resources/assets/ismeargavno/models/item/ground_chorus.json"
+          "src/main/resources/assets/ismeargavno/models/item/ground_chorus.json",
+          "src/main/java/net/mcreator/ismeargavno/item/GroundChorusItem.java"
         ]
       },
       "path": "~/HomlessAndGalaxyGas"
@@ -2255,8 +2255,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/ismeargavno/network/HomelessGuiButtonMessage.java",
-          "src/main/java/net/mcreator/ismeargavno/client/gui/HomelessGuiScreen.java",
-          "src/main/java/net/mcreator/ismeargavno/world/inventory/HomelessGuiMenu.java"
+          "src/main/java/net/mcreator/ismeargavno/world/inventory/HomelessGuiMenu.java",
+          "src/main/java/net/mcreator/ismeargavno/client/gui/HomelessGuiScreen.java"
         ]
       },
       "path": "~/HomlessAndGalaxyGas"
@@ -2336,8 +2336,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/ismeargavno/world/inventory/CreditCardGuiMenu.java",
-          "src/main/java/net/mcreator/ismeargavno/client/gui/CreditCardGuiScreen.java",
-          "src/main/java/net/mcreator/ismeargavno/network/CreditCardGuiButtonMessage.java"
+          "src/main/java/net/mcreator/ismeargavno/network/CreditCardGuiButtonMessage.java",
+          "src/main/java/net/mcreator/ismeargavno/client/gui/CreditCardGuiScreen.java"
         ]
       },
       "path": "~/HomlessAndGalaxyGas"
@@ -2389,11 +2389,11 @@
       "registry_name": "atm",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ismeargavno/blockstates/atm.json",
-          "src/main/java/net/mcreator/ismeargavno/block/ATMBlock.java",
           "src/main/resources/data/ismeargavno/loot_table/blocks/atm.json",
           "src/main/resources/assets/ismeargavno/models/block/atm.json",
           "src/main/resources/assets/ismeargavno/models/item/atm.json",
+          "src/main/java/net/mcreator/ismeargavno/block/ATMBlock.java",
+          "src/main/resources/assets/ismeargavno/blockstates/atm.json",
           "src/main/java/net/mcreator/ismeargavno/block/entity/ATMBlockEntity.java"
         ]
       },
@@ -2420,8 +2420,8 @@
       "registry_name": "hobo_road",
       "metadata": {
         "files": [
-          "src/main/resources/data/ismeargavno/worldgen/structure/hobo_road.json",
           "src/main/resources/data/ismeargavno/worldgen/structure_set/hobo_road.json",
+          "src/main/resources/data/ismeargavno/worldgen/structure/hobo_road.json",
           "src/main/resources/data/ismeargavno/worldgen/template_pool/hobo_road.json"
         ]
       },
@@ -2436,8 +2436,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/ismeargavno/client/gui/DankGuiScreen.java",
-          "src/main/java/net/mcreator/ismeargavno/world/inventory/DankGuiMenu.java",
-          "src/main/java/net/mcreator/ismeargavno/network/DankGuiButtonMessage.java"
+          "src/main/java/net/mcreator/ismeargavno/network/DankGuiButtonMessage.java",
+          "src/main/java/net/mcreator/ismeargavno/world/inventory/DankGuiMenu.java"
         ]
       },
       "path": "~/DankMemes"
@@ -2450,9 +2450,9 @@
       "registry_name": "phone",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ismeargavno/models/item/phone.json",
           "src/main/java/net/mcreator/ismeargavno/item/inventory/PhoneInventoryCapability.java",
-          "src/main/java/net/mcreator/ismeargavno/item/PhoneItem.java"
+          "src/main/java/net/mcreator/ismeargavno/item/PhoneItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/phone.json"
         ]
       },
       "path": "~/DankMemes"
@@ -2511,8 +2511,8 @@
       "registry_name": "mountain_dew",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ismeargavno/item/MountainDewItem.java",
-          "src/main/resources/assets/ismeargavno/models/item/mountain_dew.json"
+          "src/main/resources/assets/ismeargavno/models/item/mountain_dew.json",
+          "src/main/java/net/mcreator/ismeargavno/item/MountainDewItem.java"
         ]
       },
       "path": "~/DankMemes"
@@ -2600,8 +2600,8 @@
       "registry_name": "downvote",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ismeargavno/item/DownvoteItem.java",
-          "src/main/resources/assets/ismeargavno/models/item/downvote.json"
+          "src/main/resources/assets/ismeargavno/models/item/downvote.json",
+          "src/main/java/net/mcreator/ismeargavno/item/DownvoteItem.java"
         ]
       },
       "path": "~/DankMemes"
@@ -2615,12 +2615,12 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/ismeargavno/models/block/phone_scrolling_rig_top.json",
-          "src/main/resources/data/ismeargavno/loot_table/blocks/phone_scrolling_rig.json",
-          "src/main/resources/assets/ismeargavno/models/block/phone_scrolling_rig_full.json",
-          "src/main/resources/assets/ismeargavno/models/item/phone_scrolling_rig.json",
-          "src/main/resources/assets/ismeargavno/blockstates/phone_scrolling_rig.json",
           "src/main/resources/assets/ismeargavno/models/block/phone_scrolling_rig.json",
           "src/main/java/net/mcreator/ismeargavno/block/entity/PhoneScrollingRigBlockEntity.java",
+          "src/main/resources/data/ismeargavno/loot_table/blocks/phone_scrolling_rig.json",
+          "src/main/resources/assets/ismeargavno/models/item/phone_scrolling_rig.json",
+          "src/main/resources/assets/ismeargavno/blockstates/phone_scrolling_rig.json",
+          "src/main/resources/assets/ismeargavno/models/block/phone_scrolling_rig_full.json",
           "src/main/java/net/mcreator/ismeargavno/block/PhoneScrollingRigBlock.java"
         ]
       },
@@ -2736,8 +2736,8 @@
       "registry_name": "pyramid_fragment",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ismeargavno/item/PyramidFragmentItem.java",
-          "src/main/resources/assets/ismeargavno/models/item/pyramid_fragment.json"
+          "src/main/resources/assets/ismeargavno/models/item/pyramid_fragment.json",
+          "src/main/java/net/mcreator/ismeargavno/item/PyramidFragmentItem.java"
         ]
       },
       "path": "~/DankMemes"
@@ -2750,9 +2750,9 @@
       "registry_name": "redditor",
       "metadata": {
         "files": [
+          "src/main/resources/assets/ismeargavno/models/item/redditor_spawn_egg.json",
           "src/main/java/net/mcreator/ismeargavno/entity/RedditorEntity.java",
-          "src/main/java/net/mcreator/ismeargavno/client/renderer/RedditorRenderer.java",
-          "src/main/resources/assets/ismeargavno/models/item/redditor_spawn_egg.json"
+          "src/main/java/net/mcreator/ismeargavno/client/renderer/RedditorRenderer.java"
         ]
       },
       "path": "~/DankMemes"
@@ -2766,8 +2766,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/ismeargavno/client/gui/RedditorGuiScreen.java",
-          "src/main/java/net/mcreator/ismeargavno/world/inventory/RedditorGuiMenu.java",
-          "src/main/java/net/mcreator/ismeargavno/network/RedditorGuiButtonMessage.java"
+          "src/main/java/net/mcreator/ismeargavno/network/RedditorGuiButtonMessage.java",
+          "src/main/java/net/mcreator/ismeargavno/world/inventory/RedditorGuiMenu.java"
         ]
       },
       "path": "~/DankMemes"
@@ -2799,9 +2799,9 @@
       "registry_name": "redditors_dwelling",
       "metadata": {
         "files": [
-          "src/main/resources/data/ismeargavno/worldgen/structure/redditors_dwelling.json",
           "src/main/resources/data/ismeargavno/worldgen/structure_set/redditors_dwelling.json",
-          "src/main/resources/data/ismeargavno/worldgen/template_pool/redditors_dwelling.json"
+          "src/main/resources/data/ismeargavno/worldgen/template_pool/redditors_dwelling.json",
+          "src/main/resources/data/ismeargavno/worldgen/structure/redditors_dwelling.json"
         ]
       },
       "path": "~/DankMemes"
@@ -2814,8 +2814,8 @@
       "registry_name": "eye_scoop",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ismeargavno/item/EyeScoopItem.java",
-          "src/main/resources/assets/ismeargavno/models/item/eye_scoop.json"
+          "src/main/resources/assets/ismeargavno/models/item/eye_scoop.json",
+          "src/main/java/net/mcreator/ismeargavno/item/EyeScoopItem.java"
         ]
       },
       "path": "~/DankMemes"
@@ -2890,8 +2890,8 @@
       "registry_name": "illuminati",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ismeargavno/models/item/illuminati.json",
-          "src/main/java/net/mcreator/ismeargavno/item/IlluminatiItem.java"
+          "src/main/java/net/mcreator/ismeargavno/item/IlluminatiItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/illuminati.json"
         ]
       },
       "path": "~/DankMemes"
@@ -3076,13 +3076,13 @@
       "registry_name": "portal_block_1",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ismeargavno/models/block/portal_block_1_inventory.json",
-          "src/main/resources/data/ismeargavno/loot_table/blocks/portal_block_1.json",
           "src/main/java/net/mcreator/ismeargavno/block/PortalBlock1Block.java",
+          "src/main/resources/assets/ismeargavno/blockstates/portal_block_1.json",
+          "src/main/resources/assets/ismeargavno/models/block/portal_block_1_pressed.json",
           "src/main/resources/assets/ismeargavno/models/item/portal_block_1.json",
           "src/main/resources/assets/ismeargavno/models/block/portal_block_1.json",
-          "src/main/resources/assets/ismeargavno/blockstates/portal_block_1.json",
-          "src/main/resources/assets/ismeargavno/models/block/portal_block_1_pressed.json"
+          "src/main/resources/data/ismeargavno/loot_table/blocks/portal_block_1.json",
+          "src/main/resources/assets/ismeargavno/models/block/portal_block_1_inventory.json"
         ]
       },
       "path": "~/PortalGun"
@@ -3161,13 +3161,13 @@
       "registry_name": "portal_block_2",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ismeargavno/models/block/portal_block_2_inventory.json",
-          "src/main/java/net/mcreator/ismeargavno/block/PortalBlock2Block.java",
           "src/main/resources/assets/ismeargavno/models/item/portal_block_2.json",
+          "src/main/resources/assets/ismeargavno/models/block/portal_block_2_inventory.json",
           "src/main/resources/assets/ismeargavno/models/block/portal_block_2.json",
+          "src/main/java/net/mcreator/ismeargavno/block/PortalBlock2Block.java",
+          "src/main/resources/assets/ismeargavno/blockstates/portal_block_2.json",
           "src/main/resources/assets/ismeargavno/models/block/portal_block_2_pressed.json",
-          "src/main/resources/data/ismeargavno/loot_table/blocks/portal_block_2.json",
-          "src/main/resources/assets/ismeargavno/blockstates/portal_block_2.json"
+          "src/main/resources/data/ismeargavno/loot_table/blocks/portal_block_2.json"
         ]
       },
       "path": "~/PortalGun"
@@ -3247,9 +3247,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/ismeargavno/entity/GopnikVarOneEntity.java",
-          "src/main/java/net/mcreator/ismeargavno/client/renderer/GopnikVarOneRenderer.java",
           "src/main/resources/assets/ismeargavno/models/item/gopnik_var_one_spawn_egg.json",
-          "src/main/resources/data/ismeargavno/neoforge/biome_modifier/gopnik_var_one_biome_modifier.json"
+          "src/main/resources/data/ismeargavno/neoforge/biome_modifier/gopnik_var_one_biome_modifier.json",
+          "src/main/java/net/mcreator/ismeargavno/client/renderer/GopnikVarOneRenderer.java"
         ]
       },
       "path": "~/Town"
@@ -3262,10 +3262,10 @@
       "registry_name": "gopnik_var_two",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ismeargavno/client/renderer/GopnikVarTwoRenderer.java",
-          "src/main/java/net/mcreator/ismeargavno/entity/GopnikVarTwoEntity.java",
+          "src/main/resources/assets/ismeargavno/models/item/gopnik_var_two_spawn_egg.json",
           "src/main/resources/data/ismeargavno/neoforge/biome_modifier/gopnik_var_two_biome_modifier.json",
-          "src/main/resources/assets/ismeargavno/models/item/gopnik_var_two_spawn_egg.json"
+          "src/main/java/net/mcreator/ismeargavno/entity/GopnikVarTwoEntity.java",
+          "src/main/java/net/mcreator/ismeargavno/client/renderer/GopnikVarTwoRenderer.java"
         ]
       },
       "path": "~/Town"
@@ -3314,8 +3314,8 @@
           "src/main/resources/data/ismeargavno/worldgen/template_pool/gop_stop_road.json",
           "src/main/resources/data/ismeargavno/worldgen/structure/gop_stop.json",
           "src/main/resources/data/ismeargavno/worldgen/template_pool/gop_stop.json",
-          "src/main/resources/data/ismeargavno/worldgen/template_pool/gop_stop_building.json",
-          "src/main/resources/data/ismeargavno/worldgen/structure_set/gop_stop.json"
+          "src/main/resources/data/ismeargavno/worldgen/structure_set/gop_stop.json",
+          "src/main/resources/data/ismeargavno/worldgen/template_pool/gop_stop_building.json"
         ]
       },
       "path": "~/Town"
@@ -3330,10 +3330,10 @@
         "files": [
           "src/main/resources/data/ismeargavno/loot_table/blocks/distillation_container.json",
           "src/main/resources/assets/ismeargavno/models/block/distillation_container.json",
+          "src/main/resources/assets/ismeargavno/blockstates/distillation_container.json",
           "src/main/java/net/mcreator/ismeargavno/block/DistillationContainerBlock.java",
           "src/main/resources/assets/ismeargavno/models/item/distillation_container.json",
-          "src/main/java/net/mcreator/ismeargavno/block/entity/DistillationContainerBlockEntity.java",
-          "src/main/resources/assets/ismeargavno/blockstates/distillation_container.json"
+          "src/main/java/net/mcreator/ismeargavno/block/entity/DistillationContainerBlockEntity.java"
         ]
       },
       "path": "~/Town"
@@ -3396,8 +3396,8 @@
       "registry_name": "chip",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ismeargavno/models/item/chip.json",
-          "src/main/java/net/mcreator/ismeargavno/item/ChipItem.java"
+          "src/main/java/net/mcreator/ismeargavno/item/ChipItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/chip.json"
         ]
       },
       "path": "~/Pingles"
@@ -3477,8 +3477,8 @@
       "registry_name": "pingle_can",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ismeargavno/models/item/pingle_can.json",
-          "src/main/java/net/mcreator/ismeargavno/item/PingleCanItem.java"
+          "src/main/java/net/mcreator/ismeargavno/item/PingleCanItem.java",
+          "src/main/resources/assets/ismeargavno/models/item/pingle_can.json"
         ]
       },
       "path": "~/Pingles"
@@ -3532,11 +3532,11 @@
         "files": [
           "src/main/java/net/mcreator/ismeargavno/block/PotatoWaterBlock.java",
           "src/main/resources/assets/ismeargavno/blockstates/potato_water.json",
-          "src/main/java/net/mcreator/ismeargavno/fluid/types/PotatoWaterFluidType.java",
-          "src/main/java/net/mcreator/ismeargavno/item/PotatoWaterItem.java",
-          "src/main/java/net/mcreator/ismeargavno/fluid/PotatoWaterFluid.java",
           "src/main/resources/assets/ismeargavno/models/item/potato_water_bucket.json",
-          "src/main/resources/assets/ismeargavno/models/block/potato_water.json"
+          "src/main/java/net/mcreator/ismeargavno/item/PotatoWaterItem.java",
+          "src/main/resources/assets/ismeargavno/models/block/potato_water.json",
+          "src/main/java/net/mcreator/ismeargavno/fluid/types/PotatoWaterFluidType.java",
+          "src/main/java/net/mcreator/ismeargavno/fluid/PotatoWaterFluid.java"
         ]
       },
       "path": "~/Town"
@@ -3562,10 +3562,10 @@
       "registry_name": "tax_collector",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ismeargavno/entity/TaxCollectorEntity.java",
-          "src/main/resources/data/ismeargavno/neoforge/biome_modifier/tax_collector_biome_modifier.json",
+          "src/main/resources/assets/ismeargavno/models/item/tax_collector_spawn_egg.json",
           "src/main/java/net/mcreator/ismeargavno/client/renderer/TaxCollectorRenderer.java",
-          "src/main/resources/assets/ismeargavno/models/item/tax_collector_spawn_egg.json"
+          "src/main/resources/data/ismeargavno/neoforge/biome_modifier/tax_collector_biome_modifier.json",
+          "src/main/java/net/mcreator/ismeargavno/entity/TaxCollectorEntity.java"
         ]
       },
       "path": "~/TaxCollector"
@@ -3584,6 +3584,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
           },
           {
             "name": "world",
@@ -3626,29 +3642,6 @@
           {
             "name": "entity",
             "type": "entity"
-          }
-        ]
-      },
-      "path": "~/TaxCollector"
-    },
-    {
-      "name": "SpawnTaxMan",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "spawn_tax_man",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ismeargavno/procedures/SpawnTaxManProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
           },
           {
             "name": "x",
@@ -3667,6 +3660,20 @@
             "type": "world"
           }
         ]
+      },
+      "path": "~/TaxCollector"
+    },
+    {
+      "name": "SpawnTaxMan",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_tax_man",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ismeargavno/procedures/SpawnTaxManProcedure.java"
+        ],
+        "dependencies": []
       },
       "path": "~/TaxCollector"
     },

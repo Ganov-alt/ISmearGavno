@@ -15,9 +15,9 @@
             "value": -1,
             "falpha": 0.0
           },
-          "anchorPoint": "CENTER",
-          "x": 24,
-          "y": 17,
+          "anchorPoint": "TOP_LEFT",
+          "x": 6,
+          "y": 8,
           "locked": false
         }
       }

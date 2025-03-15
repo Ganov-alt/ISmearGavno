@@ -32,7 +32,7 @@ public class TaxRateOverlay {
 			z = entity.getZ();
 		}
 		if (true) {
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.ismeargavno.tax_rate.label_taxrate"), w / 2 + -189, h / 2 + -103, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.ismeargavno.tax_rate.label_taxrate"), 6, 8, -1, false);
 		}
 	}
 }

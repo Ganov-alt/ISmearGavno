@@ -68,7 +68,7 @@ public class TaxCollectorEntity extends Monster {
 		Entity entity = this;
 		Level world = this.level();
 
-		TaxCollectorRightClickedOnEntityProcedure.execute(world, x, y, z, entity, sourceentity);
+		TaxCollectorRightClickedOnEntityProcedure.execute(world, entity);
 		return retval;
 	}
 
